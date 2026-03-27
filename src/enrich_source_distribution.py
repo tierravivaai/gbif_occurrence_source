@@ -19,6 +19,7 @@ def enrich_files():
     
     files_to_enrich = [
         "source_by_country.parquet",
+        "source_by_country_no_aves.parquet",
         "source_by_country_kingdom.parquet",
         "source_by_country_kingdom_no_aves.parquet"
     ]

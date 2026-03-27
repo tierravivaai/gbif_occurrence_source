@@ -6,7 +6,7 @@ OCC_PATH = "/Volumes/Mybook18/TAXONOMY_ARCHIVE/gbifdump_20260101/occurrence.parq
 REGISTRY_PATH = "data/gbif_registry_lookup.parquet"
 OUTPUT_DIR = "data/processed"
 
-COUNTRY_CODE_PATH = "/Volumes/pauloldham/Documents/cali-allocation-model-unscale-v3/data-raw/countrycode.csv"
+COUNTRY_CODE_PATH = "data-raw/countrycode.csv"
 
 def run_analysis():
     os.makedirs(OUTPUT_DIR, exist_ok=True)
@@ -65,6 +65,36 @@ def run_analysis():
     """).df()
     df_country.to_parquet(f"{OUTPUT_DIR}/source_by_country.parquet")
     df_country.to_csv(f"{OUTPUT_DIR}/source_by_country.csv", index=False)
+
+    # 2.1 Report A_NO_AVES: By Country (EXCLUDING AVES)
+    print("Generating Report A_NO_AVES: Source by Country (EXCLUDING AVES) (Enriched)...")
+    df_country_no_aves = con.sql("""
+        SELECT 
+            m.*,
+            c.internal_count,
+            c.external_count,
+            c.unknown_count,
+            c.total_count,
+            c.internal_percentage,
+            c.external_percentage
+        FROM (
+            SELECT 
+                countrycode,
+                count(*) filter (where source_type = 'INTERNAL') as internal_count,
+                count(*) filter (where source_type = 'EXTERNAL') as external_count,
+                count(*) filter (where source_type = 'UNKNOWN') as unknown_count,
+                count(*) as total_count,
+                round(100.0 * internal_count / total_count, 2) as internal_percentage,
+                round(100.0 * external_count / total_count, 2) as external_percentage
+            FROM occurrence_classification
+            WHERE class != 'Aves' OR class IS NULL
+            GROUP BY 1
+        ) c
+        LEFT JOIN country_metadata m ON c.countrycode = m.iso2c
+        ORDER BY c.total_count DESC
+    """).df()
+    df_country_no_aves.to_parquet(f"{OUTPUT_DIR}/source_by_country_no_aves.parquet")
+    df_country_no_aves.to_csv(f"{OUTPUT_DIR}/source_by_country_no_aves.csv", index=False)
     
     # 3. Report B: By Country and Kingdom
     print("Generating Report B: Source by Country and Kingdom (Enriched)...")

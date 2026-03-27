@@ -8,3 +8,4 @@ data-raw/*
 *.parquet
 *.csv
 !data/processed/*.csv
+!data/processed/source_by_country_no_aves.csv
