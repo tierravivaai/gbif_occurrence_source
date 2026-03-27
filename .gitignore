@@ -1,0 +1,6 @@
+.DS_Store
+data/
+data-raw/
+.factory/
+*.parquet
+*.csv
