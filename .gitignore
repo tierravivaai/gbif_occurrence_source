@@ -1,8 +1,9 @@
 .DS_Store
-data/**
+data/*
 !data/processed/
 data/processed/*.parquet
-data-raw/**
+!data/gbif_registry_lookup.csv
+data-raw/*
 .factory/
 *.parquet
 *.csv
