@@ -1,0 +1,8 @@
+un_region_name,un_intermediate_region_name,internal_count,external_count,unknown_count,total_count,internal_percentage,external_percentage
+Africa,Eastern Africa,1068586,17770413,4317,18843316,5.67,94.31
+Africa,Middle Africa,231175,4046656,43,4277874,5.4,94.6
+Africa,Southern Africa,31483111,14332655,3,45815769,68.72,31.28
+Africa,Western Africa,1897799,5446980,7,7344786,25.84,74.16
+Americas,Caribbean,144314,7434227,6,7578547,1.9,98.1
+Americas,Central America,12046707,82509115,33,94555855,12.74,87.26
+Americas,South America,32147318,99231538,450,131379306,24.47,75.53
