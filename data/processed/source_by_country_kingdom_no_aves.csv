@@ -753,8 +753,8 @@ ISR,IL,IL,Israel,FALSE,Asia,Western Asia,,Asia,Western-Asia,,Developing,Chromist
 SVK,SK,SK,Slovakia,TRUE,Europe,Eastern Europe,,Europe,Eastern-Europe,,Developed,incertae sedis,13037,1796,0,14833,87.89,12.11,True,High income
 GRL,GL,GL,Greenland,FALSE,Americas,Northern America,,Americas,Northern-America,,Developed,incertae sedis,148,14624,1,14773,1.0,98.99,,
 DEU,DE,DE,Germany,TRUE,Europe,Western Europe,,Europe,Western-Europe,,Developed,Viruses,171,14149,0,14320,1.19,98.81,True,High income
-PRI,PR,PR,Puerto Rico,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,incertae sedis,62,14171,0,14233,0.44,99.56,,
 VIR,VI,VI,"Virgin Islands, U.S.",FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Chromista,0,14233,0,14233,0.0,100.0,,
+PRI,PR,PR,Puerto Rico,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,incertae sedis,62,14171,0,14233,0.44,99.56,,
 TKM,TM,TM,Turkmenistan,FALSE,Asia,Central Asia,,Asia,Central-Asia,,Developing,Animalia,0,14106,0,14106,0.0,100.0,True,Upper middle income
 CRI,CR,CR,Costa Rica,FALSE,Americas,Latin America and the Caribbean,Central America,Americas,Latin-America-and-the-Caribbean,Central-America,Developing,Chromista,0,14080,0,14080,0.0,100.0,True,High income
 CHL,CL,CL,Chile,FALSE,Americas,Latin America and the Caribbean,South America,Americas,Latin-America-and-the-Caribbean,South-America,Developing,incertae sedis,886,13112,0,13998,6.33,93.67,True,High income
@@ -1077,8 +1077,8 @@ DZA,DZ,DZ,Algeria,FALSE,Africa,Northern Africa,,Africa,Northern-Africa,,Developi
 GEO,GE,GE,Georgia,FALSE,Asia,Western Asia,,Asia,Western-Asia,,Developing,Bacteria,0,3546,0,3546,0.0,100.0,True,Upper middle income
 CPV,CV,CV,Cabo Verde,FALSE,Africa,Sub-Saharan Africa,Western Africa,Africa,Sub-Saharan-Africa,Western-Africa,Developing,Fungi,0,3523,0,3523,0.0,100.0,True,Upper middle income
 PER,PE,PE,Peru,FALSE,Americas,Latin America and the Caribbean,South America,Americas,Latin-America-and-the-Caribbean,South-America,Developing,Protozoa,0,3519,0,3519,0.0,100.0,True,Upper middle income
-TWN,TW,TW,"Taiwan, Province of China",FALSE,,,,,,,,Protozoa,893,2617,0,3510,25.44,74.56,,
 ,,,,,,,,,,,,Plantae,0,3510,0,3510,0.0,100.0,,
+TWN,TW,TW,"Taiwan, Province of China",FALSE,,,,,,,,Protozoa,893,2617,0,3510,25.44,74.56,,
 NIC,NI,NI,Nicaragua,FALSE,Americas,Latin America and the Caribbean,Central America,Americas,Latin-America-and-the-Caribbean,Central-America,Developing,Fungi,0,3493,0,3493,0.0,100.0,True,Lower middle income
 ,,,,,,,,,,,,Animalia,0,3491,0,3491,0.0,100.0,,
 ARM,AM,AM,Armenia,FALSE,Asia,Western Asia,,Asia,Western-Asia,,Developing,Fungi,128,3285,0,3413,3.75,96.25,True,Upper middle income
@@ -1133,8 +1133,8 @@ KGZ,KG,KG,Kyrgyzstan,FALSE,Asia,Central Asia,,Asia,Central-Asia,,Developing,ince
 SLE,SL,SL,Sierra Leone,FALSE,Africa,Sub-Saharan Africa,Western Africa,Africa,Sub-Saharan-Africa,Western-Africa,Developing,Bacteria,0,2648,0,2648,0.0,100.0,True,Low income
 GUM,GU,GU,Guam,FALSE,Oceania,Micronesia,,Oceania,Micronesia,,Developing,incertae sedis,0,2645,0,2645,0.0,100.0,,
 MMR,MM,MM,Myanmar,FALSE,Asia,South-eastern Asia,,Asia,South-eastern-Asia,,Developing,Fungi,0,2610,0,2610,0.0,100.0,True,Lower middle income
-DMA,DM,DM,Dominica,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Bacteria,0,2560,0,2560,0.0,100.0,True,Upper middle income
 LAO,LA,LA,Lao People's Democratic Republic,FALSE,Asia,South-eastern Asia,,Asia,South-eastern-Asia,,Developing,Fungi,0,2560,0,2560,0.0,100.0,True,Lower middle income
+DMA,DM,DM,Dominica,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Bacteria,0,2560,0,2560,0.0,100.0,True,Upper middle income
 PER,PE,PE,Peru,FALSE,Americas,Latin America and the Caribbean,South America,Americas,Latin-America-and-the-Caribbean,South-America,Developing,Viruses,0,2559,0,2559,0.0,100.0,True,Upper middle income
 ETH,ET,ET,Ethiopia,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,incertae sedis,1,2537,0,2538,0.04,99.96,True,Low income
 PRY,PY,PY,Paraguay,FALSE,Americas,Latin America and the Caribbean,South America,Americas,Latin-America-and-the-Caribbean,South-America,Developing,incertae sedis,0,2535,0,2535,0.0,100.0,True,Upper middle income
@@ -1183,8 +1183,8 @@ NZL,NZ,NZ,New Zealand,FALSE,Oceania,Australia and New Zealand,,Oceania,Australia
 BHS,BS,BS,Bahamas,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Fungi,0,2033,0,2033,0.0,100.0,True,High income
 TJK,TJ,TJ,Tajikistan,FALSE,Asia,Central Asia,,Asia,Central-Asia,,Developing,Fungi,0,2018,0,2018,0.0,100.0,True,Lower middle income
 BGD,BD,BD,Bangladesh,FALSE,Asia,Southern Asia,,Asia,Southern-Asia,,Developing,Fungi,0,1991,0,1991,0.0,100.0,True,Lower middle income
-PAK,PK,PK,Pakistan,FALSE,Asia,Southern Asia,,Asia,Southern-Asia,,Developing,incertae sedis,160,1827,0,1987,8.05,91.95,True,Lower middle income
 BRN,BN,BN,Brunei Darussalam,FALSE,Asia,South-eastern Asia,,Asia,South-eastern-Asia,,Developing,Chromista,0,1987,0,1987,0.0,100.0,True,High income
+PAK,PK,PK,Pakistan,FALSE,Asia,Southern Asia,,Asia,Southern-Asia,,Developing,incertae sedis,160,1827,0,1987,8.05,91.95,True,Lower middle income
 KHM,KH,KH,Cambodia,FALSE,Asia,South-eastern Asia,,Asia,South-eastern-Asia,,Developing,Viruses,0,1975,0,1975,0.0,100.0,True,Lower middle income
 MUS,MU,MU,Mauritius,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,incertae sedis,0,1961,0,1961,0.0,100.0,True,Upper middle income
 ROU,RO,RO,Romania,TRUE,Europe,Eastern Europe,,Europe,Eastern-Europe,,Developed,incertae sedis,0,1946,0,1946,0.0,100.0,True,High income
@@ -1311,8 +1311,8 @@ MHL,MH,MH,Marshall Islands,FALSE,Oceania,Micronesia,,Oceania,Micronesia,,Develop
 HRV,HR,HR,Croatia,TRUE,Europe,Southern Europe,,Europe,Southern-Europe,,Developed,Viruses,0,1169,0,1169,0.0,100.0,True,High income
 PLW,PW,PW,Palau,FALSE,Oceania,Micronesia,,Oceania,Micronesia,,Developing,Chromista,0,1169,0,1169,0.0,100.0,True,High income
 CUW,CW,CW,Curacao,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Chromista,0,1168,0,1168,0.0,100.0,,
-SRB,RS,RS,Serbia,FALSE,Europe,Southern Europe,,Europe,Southern-Europe,,Developed,incertae sedis,0,1167,0,1167,0.0,100.0,True,Upper middle income
 COG,CG,CG,Congo,FALSE,Africa,Sub-Saharan Africa,Middle Africa,Africa,Sub-Saharan-Africa,Middle-Africa,Developing,Fungi,155,1011,1,1167,13.28,86.63,True,Lower middle income
+SRB,RS,RS,Serbia,FALSE,Europe,Southern Europe,,Europe,Southern-Europe,,Developed,incertae sedis,0,1167,0,1167,0.0,100.0,True,Upper middle income
 LTU,LT,LT,Lithuania,TRUE,Europe,Northern Europe,,Europe,Northern-Europe,,Developed,Protozoa,0,1165,0,1165,0.0,100.0,True,High income
 MNP,MP,MP,Northern Mariana Islands,FALSE,Oceania,Micronesia,,Oceania,Micronesia,,Developing,Archaea,0,1165,0,1165,0.0,100.0,,
 MDV,MV,MV,Maldives,FALSE,Asia,Southern Asia,,Asia,Southern-Asia,,Developing,incertae sedis,0,1164,0,1164,0.0,100.0,True,Upper middle income
@@ -1370,8 +1370,8 @@ MMR,MM,MM,Myanmar,FALSE,Asia,South-eastern Asia,,Asia,South-eastern-Asia,,Develo
 GUM,GU,GU,Guam,FALSE,Oceania,Micronesia,,Oceania,Micronesia,,Developing,Chromista,0,942,0,942,0.0,100.0,,
 DMA,DM,DM,Dominica,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,incertae sedis,0,941,0,941,0.0,100.0,True,Upper middle income
 SMR,SM,SM,San Marino,FALSE,Europe,Southern Europe,,Europe,Southern-Europe,,Developed,Animalia,0,940,0,940,0.0,100.0,True,High income
-IDN,ID,ID,Indonesia,FALSE,Asia,South-eastern Asia,,Asia,South-eastern-Asia,,Developing,Protozoa,20,919,0,939,2.13,97.87,True,Upper middle income
 SEN,SN,SN,Senegal,FALSE,Africa,Sub-Saharan Africa,Western Africa,Africa,Sub-Saharan-Africa,Western-Africa,Developing,Viruses,0,939,0,939,0.0,100.0,True,Lower middle income
+IDN,ID,ID,Indonesia,FALSE,Asia,South-eastern Asia,,Asia,South-eastern-Asia,,Developing,Protozoa,20,919,0,939,2.13,97.87,True,Upper middle income
 VGB,VG,VG,"Virgin Islands, British",FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Chromista,0,933,0,933,0.0,100.0,,
 BGR,BG,BG,Bulgaria,TRUE,Europe,Eastern Europe,,Europe,Eastern-Europe,,Developed,Viruses,0,931,0,931,0.0,100.0,True,High income
 CIV,CI,CI,Cote d'Ivoire,FALSE,Africa,Sub-Saharan Africa,Western Africa,Africa,Sub-Saharan-Africa,Western-Africa,Developing,incertae sedis,10,920,0,930,1.08,98.92,True,Lower middle income
@@ -1388,10 +1388,10 @@ ESH,EH,EH,Western Sahara,FALSE,Africa,Northern Africa,,Africa,Northern-Africa,,D
 LBN,LB,LB,Lebanon,FALSE,Asia,Western Asia,,Asia,Western-Asia,,Developing,Fungi,0,876,0,876,0.0,100.0,True,Lower middle income
 AIA,AI,AI,Anguilla,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Chromista,0,874,0,874,0.0,100.0,,
 ZWE,ZW,ZW,Zimbabwe,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Viruses,0,873,0,873,0.0,100.0,True,Lower middle income
-,,,,,,,,,,,,Fungi,0,872,0,872,0.0,100.0,,
 ,,,,,,,,,,,,Archaea,0,872,0,872,0.0,100.0,,
-COK,CK,CK,Cook Islands,FALSE,Oceania,Polynesia,,Oceania,Polynesia,,Developing,incertae sedis,0,861,0,861,0.0,100.0,True,High income
+,,,,,,,,,,,,Fungi,0,872,0,872,0.0,100.0,,
 GIN,GN,GN,Guinea,FALSE,Africa,Sub-Saharan Africa,Western Africa,Africa,Sub-Saharan-Africa,Western-Africa,Developing,Viruses,0,861,0,861,0.0,100.0,True,Lower middle income
+COK,CK,CK,Cook Islands,FALSE,Oceania,Polynesia,,Oceania,Polynesia,,Developing,incertae sedis,0,861,0,861,0.0,100.0,True,High income
 MKD,MK,MK,"Macedonia, the former Yugoslav Republic of",FALSE,Europe,Southern Europe,,Europe,Southern-Europe,,Developed,incertae sedis,0,860,0,860,0.0,100.0,True,Upper middle income
 FRO,FO,FO,Faroe Islands,FALSE,Europe,Northern Europe,,Europe,Northern-Europe,,Developed,Bacteria,0,853,0,853,0.0,100.0,,
 VEN,VE,VE,"Venezuela, Bolivarian Republic of",FALSE,Americas,Latin America and the Caribbean,South America,Americas,Latin-America-and-the-Caribbean,South-America,Developing,Viruses,0,842,0,842,0.0,100.0,True,Lower middle income
@@ -1436,8 +1436,8 @@ CPV,CV,CV,Cabo Verde,FALSE,Africa,Sub-Saharan Africa,Western Africa,Africa,Sub-S
 BGR,BG,BG,Bulgaria,TRUE,Europe,Eastern Europe,,Europe,Eastern-Europe,,Developed,Protozoa,0,675,0,675,0.0,100.0,True,High income
 ALB,AL,AL,Albania,FALSE,Europe,Southern Europe,,Europe,Southern-Europe,,Developed,incertae sedis,0,670,0,670,0.0,100.0,True,Upper middle income
 BTN,BT,BT,Bhutan,FALSE,Asia,Southern Asia,,Asia,Southern-Asia,,Developing,Viruses,0,668,0,668,0.0,100.0,True,Lower middle income
-NPL,NP,NP,Nepal,FALSE,Asia,Southern Asia,,Asia,Southern-Asia,,Developing,Viruses,0,666,0,666,0.0,100.0,True,Lower middle income
 GTM,GT,GT,Guatemala,FALSE,Americas,Latin America and the Caribbean,Central America,Americas,Latin-America-and-the-Caribbean,Central-America,Developing,Protozoa,0,666,0,666,0.0,100.0,True,Upper middle income
+NPL,NP,NP,Nepal,FALSE,Asia,Southern Asia,,Asia,Southern-Asia,,Developing,Viruses,0,666,0,666,0.0,100.0,True,Lower middle income
 MNE,ME,ME,Montenegro,FALSE,Europe,Southern Europe,,Europe,Southern-Europe,,Developed,Chromista,0,665,0,665,0.0,100.0,True,Upper middle income
 MOZ,MZ,MZ,Mozambique,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Viruses,0,664,0,664,0.0,100.0,True,Low income
 NFK,NF,NF,Norfolk Island,FALSE,Oceania,Australia and New Zealand,,Oceania,Australia-and-New-Zealand,,Developed,incertae sedis,0,664,0,664,0.0,100.0,,
@@ -1447,8 +1447,8 @@ SLE,SL,SL,Sierra Leone,FALSE,Africa,Sub-Saharan Africa,Western Africa,Africa,Sub
 BIH,BA,BA,Bosnia and Herzegovina,FALSE,Europe,Southern Europe,,Europe,Southern-Europe,,Developed,Bacteria,0,658,0,658,0.0,100.0,True,Upper middle income
 PRT,PT,PT,Portugal,TRUE,Europe,Southern Europe,,Europe,Southern-Europe,,Developed,Archaea,0,647,0,647,0.0,100.0,True,High income
 LVA,LV,LV,Latvia,TRUE,Europe,Northern Europe,,Europe,Northern-Europe,,Developed,Viruses,0,646,0,646,0.0,100.0,True,High income
-CUB,CU,CU,Cuba,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Viruses,0,643,0,643,0.0,100.0,True,Upper middle income
 MDA,MD,MD,"Moldova, Republic of",FALSE,Europe,Eastern Europe,,Europe,Eastern-Europe,,Developed,incertae sedis,0,643,0,643,0.0,100.0,True,Upper middle income
+CUB,CU,CU,Cuba,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Viruses,0,643,0,643,0.0,100.0,True,Upper middle income
 ARE,AE,AE,United Arab Emirates,FALSE,Asia,Western Asia,,Asia,Western-Asia,,Developing,incertae sedis,0,641,0,641,0.0,100.0,True,High income
 LBR,LR,LR,Liberia,FALSE,Africa,Sub-Saharan Africa,Western Africa,Africa,Sub-Saharan-Africa,Western-Africa,Developing,Chromista,0,634,0,634,0.0,100.0,True,Low income
 GIN,GN,GN,Guinea,FALSE,Africa,Sub-Saharan Africa,Western Africa,Africa,Sub-Saharan-Africa,Western-Africa,Developing,Chromista,0,633,0,633,0.0,100.0,True,Lower middle income
@@ -1475,8 +1475,8 @@ BVT,BV,BV,Bouvet Island,FALSE,Americas,Latin America and the Caribbean,South Ame
 SGS,GS,GS,South Georgia and the South Sandwich Islands,FALSE,Americas,Latin America and the Caribbean,South America,Americas,Latin-America-and-the-Caribbean,South-America,Developing,Protozoa,0,588,0,588,0.0,100.0,,
 MWI,MW,MW,Malawi,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,incertae sedis,8,575,0,583,1.37,98.63,True,Low income
 GGY,GG,GG,Guernsey,FALSE,Europe,Northern Europe,Channel Islands,Europe,Northern-Europe,Channel-Islands,Developed,Fungi,0,582,0,582,0.0,100.0,,
-THA,TH,TH,Thailand,FALSE,Asia,South-eastern Asia,,Asia,South-eastern-Asia,,Developing,Archaea,0,571,0,571,0.0,100.0,True,Upper middle income
 BLR,BY,BY,Belarus,FALSE,Europe,Eastern Europe,,Europe,Eastern-Europe,,Developed,incertae sedis,0,571,0,571,0.0,100.0,True,Upper middle income
+THA,TH,TH,Thailand,FALSE,Asia,South-eastern Asia,,Asia,South-eastern-Asia,,Developing,Archaea,0,571,0,571,0.0,100.0,True,Upper middle income
 UZB,UZ,UZ,Uzbekistan,FALSE,Asia,Central Asia,,Asia,Central-Asia,,Developing,Bacteria,462,107,0,569,81.2,18.8,True,Lower middle income
 ATG,AG,AG,Antigua and Barbuda,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Chromista,0,569,0,569,0.0,100.0,True,High income
 MYS,MY,MY,Malaysia,FALSE,Asia,South-eastern Asia,,Asia,South-eastern-Asia,,Developing,Protozoa,0,566,0,566,0.0,100.0,True,Upper middle income
@@ -1489,23 +1489,23 @@ TTO,TT,TT,Trinidad and Tobago,FALSE,Americas,Latin America and the Caribbean,Car
 SVK,SK,SK,Slovakia,TRUE,Europe,Eastern Europe,,Europe,Eastern-Europe,,Developed,Viruses,0,547,0,547,0.0,100.0,True,High income
 NAM,NA,,Namibia,FALSE,Africa,Sub-Saharan Africa,Southern Africa,Africa,Sub-Saharan-Africa,Southern-Africa,Developing,Viruses,0,541,0,541,0.0,100.0,True,Lower middle income
 BIH,BA,BA,Bosnia and Herzegovina,FALSE,Europe,Southern Europe,,Europe,Southern-Europe,,Developed,incertae sedis,0,540,0,540,0.0,100.0,True,Upper middle income
-AFG,AF,AF,Afghanistan,FALSE,Asia,Southern Asia,,Asia,Southern-Asia,,Developing,Viruses,0,538,0,538,0.0,100.0,True,Low income
 PAK,PK,PK,Pakistan,FALSE,Asia,Southern Asia,,Asia,Southern-Asia,,Developing,Protozoa,0,538,0,538,0.0,100.0,True,Lower middle income
+AFG,AF,AF,Afghanistan,FALSE,Asia,Southern Asia,,Asia,Southern-Asia,,Developing,Viruses,0,538,0,538,0.0,100.0,True,Low income
 SLE,SL,SL,Sierra Leone,FALSE,Africa,Sub-Saharan Africa,Western Africa,Africa,Sub-Saharan-Africa,Western-Africa,Developing,incertae sedis,0,536,0,536,0.0,100.0,True,Low income
 ARM,AM,AM,Armenia,FALSE,Asia,Western Asia,,Asia,Western-Asia,,Developing,Chromista,0,532,0,532,0.0,100.0,True,Upper middle income
 VGB,VG,VG,"Virgin Islands, British",FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,incertae sedis,0,526,0,526,0.0,100.0,,
 IMN,IM,IM,Isle of Man,FALSE,Europe,Northern Europe,,Europe,Northern-Europe,,Developed,Protozoa,377,148,0,525,71.81,28.19,,
 MYT,YT,YT,Mayotte,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,incertae sedis,0,521,0,521,0.0,100.0,,
 MUS,MU,MU,Mauritius,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Viruses,0,517,0,517,0.0,100.0,True,Upper middle income
-PHL,PH,PH,Philippines,FALSE,Asia,South-eastern Asia,,Asia,South-eastern-Asia,,Developing,Archaea,0,516,0,516,0.0,100.0,True,Lower middle income
 ERI,ER,ER,Eritrea,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Fungi,0,516,0,516,0.0,100.0,True,Low income
+PHL,PH,PH,Philippines,FALSE,Asia,South-eastern Asia,,Asia,South-eastern-Asia,,Developing,Archaea,0,516,0,516,0.0,100.0,True,Lower middle income
 AGO,AO,AO,Angola,FALSE,Africa,Sub-Saharan Africa,Middle Africa,Africa,Sub-Saharan-Africa,Middle-Africa,Developing,incertae sedis,48,467,0,515,9.32,90.68,True,Lower middle income
-MNE,ME,ME,Montenegro,FALSE,Europe,Southern Europe,,Europe,Southern-Europe,,Developed,incertae sedis,0,512,0,512,0.0,100.0,True,Upper middle income
 OMN,OM,OM,Oman,FALSE,Asia,Western Asia,,Asia,Western-Asia,,Developing,Protozoa,0,512,0,512,0.0,100.0,True,High income
+MNE,ME,ME,Montenegro,FALSE,Europe,Southern Europe,,Europe,Southern-Europe,,Developed,incertae sedis,0,512,0,512,0.0,100.0,True,Upper middle income
 PCN,PN,PN,Pitcairn,FALSE,Oceania,Polynesia,,Oceania,Polynesia,,Developing,incertae sedis,0,511,0,511,0.0,100.0,,
 ALB,AL,AL,Albania,FALSE,Europe,Southern Europe,,Europe,Southern-Europe,,Developed,Chromista,0,508,0,508,0.0,100.0,True,Upper middle income
-MLT,MT,MT,Malta,TRUE,Europe,Southern Europe,,Europe,Southern-Europe,,Developed,Protozoa,0,507,0,507,0.0,100.0,True,High income
 SVN,SI,SI,Slovenia,TRUE,Europe,Southern Europe,,Europe,Southern-Europe,,Developed,Protozoa,373,134,0,507,73.57,26.43,True,High income
+MLT,MT,MT,Malta,TRUE,Europe,Southern Europe,,Europe,Southern-Europe,,Developed,Protozoa,0,507,0,507,0.0,100.0,True,High income
 TZA,TZ,TZ,"Tanzania, United Republic of",FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Archaea,0,506,0,506,0.0,100.0,True,Lower middle income
 CYP,CY,CY,Cyprus,TRUE,Asia,Western Asia,,Asia,Western-Asia,,Developing,Protozoa,0,504,0,504,0.0,100.0,True,High income
 MAR,MA,MA,Morocco,FALSE,Africa,Northern Africa,,Africa,Northern-Africa,,Developing,Archaea,0,495,0,495,0.0,100.0,True,Lower middle income
@@ -1522,8 +1522,8 @@ HTI,HT,HT,Haiti,FALSE,Americas,Latin America and the Caribbean,Caribbean,America
 BFA,BF,BF,Burkina Faso,FALSE,Africa,Sub-Saharan Africa,Western Africa,Africa,Sub-Saharan-Africa,Western-Africa,Developing,incertae sedis,10,461,0,471,2.12,97.88,True,Low income
 KIR,KI,KI,Kiribati,FALSE,Oceania,Micronesia,,Oceania,Micronesia,,Developing,Archaea,0,466,0,466,0.0,100.0,True,Lower middle income
 NIC,NI,NI,Nicaragua,FALSE,Americas,Latin America and the Caribbean,Central America,Americas,Latin-America-and-the-Caribbean,Central-America,Developing,Protozoa,0,465,0,465,0.0,100.0,True,Lower middle income
-NER,NE,NE,Niger,FALSE,Africa,Sub-Saharan Africa,Western Africa,Africa,Sub-Saharan-Africa,Western-Africa,Developing,Fungi,0,464,0,464,0.0,100.0,True,Low income
 MWI,MW,MW,Malawi,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Viruses,0,464,0,464,0.0,100.0,True,Low income
+NER,NE,NE,Niger,FALSE,Africa,Sub-Saharan Africa,Western Africa,Africa,Sub-Saharan-Africa,Western-Africa,Developing,Fungi,0,464,0,464,0.0,100.0,True,Low income
 CYM,KY,KY,Cayman Islands,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Fungi,0,464,0,464,0.0,100.0,,
 RWA,RW,RW,Rwanda,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Protozoa,0,463,0,463,0.0,100.0,True,Low income
 ALA,AX,AX,Aland Islands,FALSE,Europe,Northern Europe,,Europe,Northern-Europe,,Developed,Bacteria,0,462,0,462,0.0,100.0,,
@@ -1576,8 +1576,8 @@ HMD,HM,HM,Heard Island and McDonald Islands,FALSE,Oceania,Australia and New Zeal
 PLW,PW,PW,Palau,FALSE,Oceania,Micronesia,,Oceania,Micronesia,,Developing,incertae sedis,1,364,0,365,0.27,99.73,True,High income
 ASM,AS,AS,American Samoa,FALSE,Oceania,Polynesia,,Oceania,Polynesia,,Developing,Archaea,0,362,0,362,0.0,100.0,,
 PAK,PK,PK,Pakistan,FALSE,Asia,Southern Asia,,Asia,Southern-Asia,,Developing,Archaea,0,361,0,361,0.0,100.0,True,Lower middle income
-ZMB,ZM,ZM,Zambia,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Protozoa,0,359,0,359,0.0,100.0,True,Lower middle income
 AZE,AZ,AZ,Azerbaijan,FALSE,Asia,Western Asia,,Asia,Western-Asia,,Developing,Viruses,0,359,0,359,0.0,100.0,True,Upper middle income
+ZMB,ZM,ZM,Zambia,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Protozoa,0,359,0,359,0.0,100.0,True,Lower middle income
 TTO,TT,TT,Trinidad and Tobago,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Viruses,0,358,0,358,0.0,100.0,True,High income
 TKM,TM,TM,Turkmenistan,FALSE,Asia,Central Asia,,Asia,Central-Asia,,Developing,incertae sedis,0,356,0,356,0.0,100.0,True,Upper middle income
 URY,UY,UY,Uruguay,FALSE,Americas,Latin America and the Caribbean,South America,Americas,Latin-America-and-the-Caribbean,South-America,Developing,Protozoa,0,351,0,351,0.0,100.0,True,High income
@@ -1593,8 +1593,8 @@ KNA,KN,KN,Saint Kitts and Nevis,FALSE,Americas,Latin America and the Caribbean,C
 SDN,SD,SD,Sudan,FALSE,Africa,Northern Africa,,Africa,Northern-Africa,,Developing,Protozoa,0,332,0,332,0.0,100.0,True,Low income
 PRI,PR,PR,Puerto Rico,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Viruses,0,332,0,332,0.0,100.0,,
 COG,CG,CG,Congo,FALSE,Africa,Sub-Saharan Africa,Middle Africa,Africa,Sub-Saharan-Africa,Middle-Africa,Developing,Viruses,0,328,0,328,0.0,100.0,True,Lower middle income
-HND,HN,HN,Honduras,FALSE,Americas,Latin America and the Caribbean,Central America,Americas,Latin-America-and-the-Caribbean,Central-America,Developing,Protozoa,0,325,0,325,0.0,100.0,True,Lower middle income
 IRN,IR,IR,"Iran, Islamic Republic of",FALSE,Asia,Southern Asia,,Asia,Southern-Asia,,Developing,Archaea,0,325,0,325,0.0,100.0,True,Upper middle income
+HND,HN,HN,Honduras,FALSE,Americas,Latin America and the Caribbean,Central America,Americas,Latin-America-and-the-Caribbean,Central-America,Developing,Protozoa,0,325,0,325,0.0,100.0,True,Lower middle income
 PSE,PS,PS,"Palestine, State of",FALSE,Asia,Western Asia,,Asia,Western-Asia,,Developing,Fungi,0,321,0,321,0.0,100.0,True,Lower middle income
 PAN,PA,PA,Panama,FALSE,Americas,Latin America and the Caribbean,Central America,Americas,Latin-America-and-the-Caribbean,Central-America,Developing,Viruses,0,320,0,320,0.0,100.0,True,High income
 MNG,MN,MN,Mongolia,FALSE,Asia,Eastern Asia,,Asia,Eastern-Asia,,Developing,Chromista,0,317,0,317,0.0,100.0,True,Upper middle income
@@ -1607,11 +1607,11 @@ DOM,DO,DO,Dominican Republic,FALSE,Americas,Latin America and the Caribbean,Cari
 PLW,PW,PW,Palau,FALSE,Oceania,Micronesia,,Oceania,Micronesia,,Developing,Fungi,0,302,0,302,0.0,100.0,True,High income
 BRN,BN,BN,Brunei Darussalam,FALSE,Asia,South-eastern Asia,,Asia,South-eastern-Asia,,Developing,Bacteria,0,298,0,298,0.0,100.0,True,High income
 BLR,BY,BY,Belarus,FALSE,Europe,Eastern Europe,,Europe,Eastern-Europe,,Developed,Chromista,0,297,0,297,0.0,100.0,True,Upper middle income
-JOR,JO,JO,Jordan,FALSE,Asia,Western Asia,,Asia,Western-Asia,,Developing,incertae sedis,0,296,0,296,0.0,100.0,True,Lower middle income
 AND,AD,AD,Andorra,FALSE,Europe,Southern Europe,,Europe,Southern-Europe,,Developed,Protozoa,167,129,0,296,56.42,43.58,True,High income
+JOR,JO,JO,Jordan,FALSE,Asia,Western Asia,,Asia,Western-Asia,,Developing,incertae sedis,0,296,0,296,0.0,100.0,True,Lower middle income
 RWA,RW,RW,Rwanda,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Viruses,0,296,0,296,0.0,100.0,True,Low income
-PRK,KP,KP,"Korea, Democratic People's Republic of",FALSE,Asia,Eastern Asia,,Asia,Eastern-Asia,,Developing,incertae sedis,0,294,0,294,0.0,100.0,True,Low income
 LBN,LB,LB,Lebanon,FALSE,Asia,Western Asia,,Asia,Western-Asia,,Developing,Viruses,0,294,0,294,0.0,100.0,True,Lower middle income
+PRK,KP,KP,"Korea, Democratic People's Republic of",FALSE,Asia,Eastern Asia,,Asia,Eastern-Asia,,Developing,incertae sedis,0,294,0,294,0.0,100.0,True,Low income
 MUS,MU,MU,Mauritius,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Protozoa,0,293,0,293,0.0,100.0,True,Upper middle income
 REU,RE,RE,Reunion,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Viruses,0,293,0,293,0.0,100.0,,
 NGA,NG,NG,Nigeria,FALSE,Africa,Sub-Saharan Africa,Western Africa,Africa,Sub-Saharan-Africa,Western-Africa,Developing,Archaea,0,290,0,290,0.0,100.0,True,Lower middle income
@@ -1630,28 +1630,28 @@ CXR,CX,CX,Christmas Island,FALSE,Oceania,Australia and New Zealand,,Oceania,Aust
 TUR,TR,TR,Turkey,FALSE,Asia,Western Asia,,Asia,Western-Asia,,Developing,Archaea,0,271,0,271,0.0,100.0,True,Upper middle income
 CAF,CF,CF,Central African Republic,FALSE,Africa,Sub-Saharan Africa,Middle Africa,Africa,Sub-Saharan-Africa,Middle-Africa,Developing,incertae sedis,0,268,0,268,0.0,100.0,True,Low income
 TTO,TT,TT,Trinidad and Tobago,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Bacteria,21,247,0,268,7.84,92.16,True,High income
+NER,NE,NE,Niger,FALSE,Africa,Sub-Saharan Africa,Western Africa,Africa,Sub-Saharan-Africa,Western-Africa,Developing,Chromista,0,267,0,267,0.0,100.0,True,Low income
 MKD,MK,MK,"Macedonia, the former Yugoslav Republic of",FALSE,Europe,Southern Europe,,Europe,Southern-Europe,,Developed,Chromista,0,267,0,267,0.0,100.0,True,Upper middle income
 GRC,GR,GR,Greece,TRUE,Europe,Southern Europe,,Europe,Southern-Europe,,Developed,Archaea,40,227,0,267,14.98,85.02,True,High income
-NER,NE,NE,Niger,FALSE,Africa,Sub-Saharan Africa,Western Africa,Africa,Sub-Saharan-Africa,Western-Africa,Developing,Chromista,0,267,0,267,0.0,100.0,True,Low income
 FRO,FO,FO,Faroe Islands,FALSE,Europe,Northern Europe,,Europe,Northern-Europe,,Developed,Viruses,0,262,0,262,0.0,100.0,,
 BDI,BI,BI,Burundi,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,incertae sedis,0,261,0,261,0.0,100.0,True,Low income
+VNM,VN,VN,Viet Nam,FALSE,Asia,South-eastern Asia,,Asia,South-eastern-Asia,,Developing,Protozoa,0,259,0,259,0.0,100.0,True,Lower middle income
 BRN,BN,BN,Brunei Darussalam,FALSE,Asia,South-eastern Asia,,Asia,South-eastern-Asia,,Developing,incertae sedis,0,259,0,259,0.0,100.0,True,High income
 EGY,EG,EG,Egypt,FALSE,Africa,Northern Africa,,Africa,Northern-Africa,,Developing,Protozoa,0,259,0,259,0.0,100.0,True,Lower middle income
-VNM,VN,VN,Viet Nam,FALSE,Asia,South-eastern Asia,,Asia,South-eastern-Asia,,Developing,Protozoa,0,259,0,259,0.0,100.0,True,Lower middle income
 LAO,LA,LA,Lao People's Democratic Republic,FALSE,Asia,South-eastern Asia,,Asia,South-eastern-Asia,,Developing,Chromista,0,253,0,253,0.0,100.0,True,Lower middle income
 KNA,KN,KN,Saint Kitts and Nevis,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Viruses,0,252,0,252,0.0,100.0,True,High income
-LSO,LS,LS,Lesotho,FALSE,Africa,Sub-Saharan Africa,Southern Africa,Africa,Sub-Saharan-Africa,Southern-Africa,Developing,incertae sedis,0,248,0,248,0.0,100.0,True,Lower middle income
 PAN,PA,PA,Panama,FALSE,Americas,Latin America and the Caribbean,Central America,Americas,Latin-America-and-the-Caribbean,Central-America,Developing,Archaea,0,248,0,248,0.0,100.0,True,High income
-KNA,KN,KN,Saint Kitts and Nevis,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Chromista,0,247,0,247,0.0,100.0,True,High income
+LSO,LS,LS,Lesotho,FALSE,Africa,Sub-Saharan Africa,Southern Africa,Africa,Sub-Saharan-Africa,Southern-Africa,Developing,incertae sedis,0,248,0,248,0.0,100.0,True,Lower middle income
 GMB,GM,GM,Gambia,FALSE,Africa,Sub-Saharan Africa,Western Africa,Africa,Sub-Saharan-Africa,Western-Africa,Developing,incertae sedis,0,247,0,247,0.0,100.0,True,Low income
+KNA,KN,KN,Saint Kitts and Nevis,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Chromista,0,247,0,247,0.0,100.0,True,High income
 UMI,UM,UM,United States Minor Outlying Islands,FALSE,Oceania,Micronesia,,Oceania,Micronesia,,Developing,Protozoa,0,247,0,247,0.0,100.0,,
 CPV,CV,CV,Cabo Verde,FALSE,Africa,Sub-Saharan Africa,Western Africa,Africa,Sub-Saharan-Africa,Western-Africa,Developing,Protozoa,0,244,0,244,0.0,100.0,True,Upper middle income
 SHN,SH,SH,"Saint Helena, Ascension and Tristan da Cunha",FALSE,Africa,Sub-Saharan Africa,Western Africa,Africa,Sub-Saharan-Africa,Western-Africa,Developing,incertae sedis,0,243,0,243,0.0,100.0,,
 MWI,MW,MW,Malawi,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Chromista,3,239,0,242,1.24,98.76,True,Low income
 LSO,LS,LS,Lesotho,FALSE,Africa,Sub-Saharan Africa,Southern Africa,Africa,Sub-Saharan-Africa,Southern-Africa,Developing,Chromista,0,237,0,237,0.0,100.0,True,Lower middle income
 NAM,NA,,Namibia,FALSE,Africa,Sub-Saharan Africa,Southern Africa,Africa,Sub-Saharan-Africa,Southern-Africa,Developing,Protozoa,0,237,0,237,0.0,100.0,True,Lower middle income
-EGY,EG,EG,Egypt,FALSE,Africa,Northern Africa,,Africa,Northern-Africa,,Developing,Archaea,0,235,0,235,0.0,100.0,True,Lower middle income
 NRU,NR,NR,Nauru,FALSE,Oceania,Micronesia,,Oceania,Micronesia,,Developing,Chromista,0,235,0,235,0.0,100.0,True,High income
+EGY,EG,EG,Egypt,FALSE,Africa,Northern Africa,,Africa,Northern-Africa,,Developing,Archaea,0,235,0,235,0.0,100.0,True,Lower middle income
 GLP,GP,GP,Guadeloupe,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Viruses,0,235,0,235,0.0,100.0,,
 CCK,CC,CC,Cocos (Keeling) Islands,FALSE,Oceania,Australia and New Zealand,,Oceania,Australia-and-New-Zealand,,Developed,incertae sedis,0,231,0,231,0.0,100.0,,
 ABW,AW,AW,Aruba,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Bacteria,0,230,0,230,0.0,100.0,,
@@ -1661,8 +1661,8 @@ CAF,CF,CF,Central African Republic,FALSE,Africa,Sub-Saharan Africa,Middle Africa
 COM,KM,KM,Comoros,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,incertae sedis,0,225,0,225,0.0,100.0,True,Lower middle income
 TJK,TJ,TJ,Tajikistan,FALSE,Asia,Central Asia,,Asia,Central-Asia,,Developing,Bacteria,0,224,0,224,0.0,100.0,True,Lower middle income
 GUF,GF,GF,French Guiana,FALSE,Americas,Latin America and the Caribbean,South America,Americas,Latin-America-and-the-Caribbean,South-America,Developing,Viruses,0,218,0,218,0.0,100.0,,
-IMN,IM,IM,Isle of Man,FALSE,Europe,Northern Europe,,Europe,Northern-Europe,,Developed,incertae sedis,0,217,0,217,0.0,100.0,,
 MAC,MO,MO,Macao,FALSE,Asia,Eastern Asia,,Asia,Eastern-Asia,,Developing,Fungi,0,217,0,217,0.0,100.0,,
+IMN,IM,IM,Isle of Man,FALSE,Europe,Northern Europe,,Europe,Northern-Europe,,Developed,incertae sedis,0,217,0,217,0.0,100.0,,
 GNQ,GQ,GQ,Equatorial Guinea,FALSE,Africa,Sub-Saharan Africa,Middle Africa,Africa,Sub-Saharan-Africa,Middle-Africa,Developing,incertae sedis,0,215,0,215,0.0,100.0,True,Upper middle income
 SYR,SY,SY,Syrian Arab Republic,FALSE,Asia,Western Asia,,Asia,Western-Asia,,Developing,Viruses,0,214,0,214,0.0,100.0,True,Low income
 MTQ,MQ,MQ,Martinique,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Protozoa,0,213,0,213,0.0,100.0,,
@@ -1677,16 +1677,16 @@ COM,KM,KM,Comoros,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saha
 NER,NE,NE,Niger,FALSE,Africa,Sub-Saharan Africa,Western Africa,Africa,Sub-Saharan-Africa,Western-Africa,Developing,Viruses,0,201,0,201,0.0,100.0,True,Low income
 SVK,SK,SK,Slovakia,TRUE,Europe,Eastern Europe,,Europe,Eastern-Europe,,Developed,Protozoa,0,199,0,199,0.0,100.0,True,High income
 CYP,CY,CY,Cyprus,TRUE,Asia,Western Asia,,Asia,Western-Asia,,Developing,Archaea,0,197,0,197,0.0,100.0,True,High income
-GNQ,GQ,GQ,Equatorial Guinea,FALSE,Africa,Sub-Saharan Africa,Middle Africa,Africa,Sub-Saharan-Africa,Middle-Africa,Developing,Protozoa,0,190,0,190,0.0,100.0,True,Upper middle income
 VCT,VC,VC,Saint Vincent and the Grenadines,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Chromista,0,190,0,190,0.0,100.0,True,Upper middle income
+GNQ,GQ,GQ,Equatorial Guinea,FALSE,Africa,Sub-Saharan Africa,Middle Africa,Africa,Sub-Saharan-Africa,Middle-Africa,Developing,Protozoa,0,190,0,190,0.0,100.0,True,Upper middle income
 FSM,FM,FM,"Micronesia, Federated States of",FALSE,Oceania,Micronesia,,Oceania,Micronesia,,Developing,Protozoa,0,189,0,189,0.0,100.0,True,Lower middle income
 CXR,CX,CX,Christmas Island,FALSE,Oceania,Australia and New Zealand,,Oceania,Australia-and-New-Zealand,,Developed,Chromista,0,189,0,189,0.0,100.0,,
 LBR,LR,LR,Liberia,FALSE,Africa,Sub-Saharan Africa,Western Africa,Africa,Sub-Saharan-Africa,Western-Africa,Developing,Archaea,0,188,0,188,0.0,100.0,True,Low income
 BLM,BL,BL,Saint Barthelemy,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Chromista,0,188,0,188,0.0,100.0,,
 BGR,BG,BG,Bulgaria,TRUE,Europe,Eastern Europe,,Europe,Eastern-Europe,,Developed,Archaea,0,186,0,186,0.0,100.0,True,High income
 GIN,GN,GN,Guinea,FALSE,Africa,Sub-Saharan Africa,Western Africa,Africa,Sub-Saharan-Africa,Western-Africa,Developing,Archaea,0,186,0,186,0.0,100.0,True,Lower middle income
-GNB,GW,GW,Guinea-Bissau,FALSE,Africa,Sub-Saharan Africa,Western Africa,Africa,Sub-Saharan-Africa,Western-Africa,Developing,Fungi,0,186,0,186,0.0,100.0,True,Low income
 AGO,AO,AO,Angola,FALSE,Africa,Sub-Saharan Africa,Middle Africa,Africa,Sub-Saharan-Africa,Middle-Africa,Developing,Bacteria,0,186,0,186,0.0,100.0,True,Lower middle income
+GNB,GW,GW,Guinea-Bissau,FALSE,Africa,Sub-Saharan Africa,Western Africa,Africa,Sub-Saharan-Africa,Western-Africa,Developing,Fungi,0,186,0,186,0.0,100.0,True,Low income
 GNQ,GQ,GQ,Equatorial Guinea,FALSE,Africa,Sub-Saharan Africa,Middle Africa,Africa,Sub-Saharan-Africa,Middle-Africa,Developing,Fungi,0,185,0,185,0.0,100.0,True,Upper middle income
 ERI,ER,ER,Eritrea,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Chromista,0,184,0,184,0.0,100.0,True,Low income
 GRL,GL,GL,Greenland,FALSE,Americas,Northern America,,Americas,Northern-America,,Developed,Archaea,0,183,0,183,0.0,100.0,,
@@ -1694,9 +1694,9 @@ SRB,RS,RS,Serbia,FALSE,Europe,Southern Europe,,Europe,Southern-Europe,,Developed
 SYC,SC,SC,Seychelles,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Bacteria,0,178,0,178,0.0,100.0,True,High income
 JEY,JE,JE,Jersey,FALSE,Europe,Northern Europe,Channel Islands,Europe,Northern-Europe,Channel-Islands,Developed,Bacteria,0,175,0,175,0.0,100.0,,
 OMN,OM,OM,Oman,FALSE,Asia,Western Asia,,Asia,Western-Asia,,Developing,Archaea,0,172,0,172,0.0,100.0,True,High income
-LKA,LK,LK,Sri Lanka,FALSE,Asia,Southern Asia,,Asia,Southern-Asia,,Developing,Protozoa,0,170,0,170,0.0,100.0,True,Lower middle income
-GUY,GY,GY,Guyana,FALSE,Americas,Latin America and the Caribbean,South America,Americas,Latin-America-and-the-Caribbean,South-America,Developing,Protozoa,0,170,0,170,0.0,100.0,True,High income
 COD,CD,CD,"Congo, the Democratic Republic of the",FALSE,Africa,Sub-Saharan Africa,Middle Africa,Africa,Sub-Saharan-Africa,Middle-Africa,Developing,Archaea,0,170,0,170,0.0,100.0,True,Low income
+GUY,GY,GY,Guyana,FALSE,Americas,Latin America and the Caribbean,South America,Americas,Latin-America-and-the-Caribbean,South-America,Developing,Protozoa,0,170,0,170,0.0,100.0,True,High income
+LKA,LK,LK,Sri Lanka,FALSE,Asia,Southern Asia,,Asia,Southern-Asia,,Developing,Protozoa,0,170,0,170,0.0,100.0,True,Lower middle income
 BOL,BO,BO,"Bolivia, Plurinational State of",FALSE,Americas,Latin America and the Caribbean,South America,Americas,Latin-America-and-the-Caribbean,South-America,Developing,Viruses,0,166,0,166,0.0,100.0,True,Lower middle income
 GRD,GD,GD,Grenada,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Bacteria,0,164,0,164,0.0,100.0,True,Upper middle income
 STP,ST,ST,Sao Tome and Principe,FALSE,Africa,Sub-Saharan Africa,Middle Africa,Africa,Sub-Saharan-Africa,Middle-Africa,Developing,incertae sedis,1,162,0,163,0.61,99.39,True,Lower middle income
@@ -1707,35 +1707,35 @@ CRI,CR,CR,Costa Rica,FALSE,Americas,Latin America and the Caribbean,Central Amer
 BLZ,BZ,BZ,Belize,FALSE,Americas,Latin America and the Caribbean,Central America,Americas,Latin-America-and-the-Caribbean,Central-America,Developing,Protozoa,0,157,0,157,0.0,100.0,True,Upper middle income
 SXM,SX,SX,Sint Maarten (Dutch part),FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Chromista,0,155,0,155,0.0,100.0,,
 MNG,MN,MN,Mongolia,FALSE,Asia,Eastern Asia,,Asia,Eastern-Asia,,Developing,Protozoa,0,154,0,154,0.0,100.0,True,Upper middle income
-UZB,UZ,UZ,Uzbekistan,FALSE,Asia,Central Asia,,Asia,Central-Asia,,Developing,Viruses,0,153,0,153,0.0,100.0,True,Lower middle income
-PRY,PY,PY,Paraguay,FALSE,Americas,Latin America and the Caribbean,South America,Americas,Latin-America-and-the-Caribbean,South-America,Developing,Viruses,0,153,0,153,0.0,100.0,True,Upper middle income
-AGO,AO,AO,Angola,FALSE,Africa,Sub-Saharan Africa,Middle Africa,Africa,Sub-Saharan-Africa,Middle-Africa,Developing,Viruses,0,153,0,153,0.0,100.0,True,Lower middle income
 NPL,NP,NP,Nepal,FALSE,Asia,Southern Asia,,Asia,Southern-Asia,,Developing,Chromista,0,153,0,153,0.0,100.0,True,Lower middle income
+PRY,PY,PY,Paraguay,FALSE,Americas,Latin America and the Caribbean,South America,Americas,Latin-America-and-the-Caribbean,South-America,Developing,Viruses,0,153,0,153,0.0,100.0,True,Upper middle income
+UZB,UZ,UZ,Uzbekistan,FALSE,Asia,Central Asia,,Asia,Central-Asia,,Developing,Viruses,0,153,0,153,0.0,100.0,True,Lower middle income
+AGO,AO,AO,Angola,FALSE,Africa,Sub-Saharan Africa,Middle Africa,Africa,Sub-Saharan-Africa,Middle-Africa,Developing,Viruses,0,153,0,153,0.0,100.0,True,Lower middle income
 MTQ,MQ,MQ,Martinique,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Viruses,0,153,0,153,0.0,100.0,,
 UKR,UA,UA,Ukraine,FALSE,Europe,Eastern Europe,,Europe,Eastern-Europe,,Developed,Archaea,0,152,0,152,0.0,100.0,True,Upper middle income
 TUV,TV,TV,Tuvalu,FALSE,Oceania,Polynesia,,Oceania,Polynesia,,Developing,Fungi,0,152,0,152,0.0,100.0,True,Upper middle income
 BHS,BS,BS,Bahamas,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Protozoa,0,151,0,151,0.0,100.0,True,High income
 ZWE,ZW,ZW,Zimbabwe,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Protozoa,0,151,0,151,0.0,100.0,True,Lower middle income
 CYM,KY,KY,Cayman Islands,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,incertae sedis,0,151,0,151,0.0,100.0,,
-TJK,TJ,TJ,Tajikistan,FALSE,Asia,Central Asia,,Asia,Central-Asia,,Developing,Viruses,0,150,0,150,0.0,100.0,True,Lower middle income
 VCT,VC,VC,Saint Vincent and the Grenadines,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,incertae sedis,0,150,0,150,0.0,100.0,True,Upper middle income
-HTI,HT,HT,Haiti,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Bacteria,0,149,0,149,0.0,100.0,True,Lower middle income
+TJK,TJ,TJ,Tajikistan,FALSE,Asia,Central Asia,,Asia,Central-Asia,,Developing,Viruses,0,150,0,150,0.0,100.0,True,Lower middle income
 COM,KM,KM,Comoros,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Chromista,0,149,0,149,0.0,100.0,True,Lower middle income
+HTI,HT,HT,Haiti,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Bacteria,0,149,0,149,0.0,100.0,True,Lower middle income
 MRT,MR,MR,Mauritania,FALSE,Africa,Sub-Saharan Africa,Western Africa,Africa,Sub-Saharan-Africa,Western-Africa,Developing,Viruses,0,144,0,144,0.0,100.0,True,Lower middle income
 COG,CG,CG,Congo,FALSE,Africa,Sub-Saharan Africa,Middle Africa,Africa,Sub-Saharan-Africa,Middle-Africa,Developing,Bacteria,0,143,0,143,0.0,100.0,True,Lower middle income
-TCD,TD,TD,Chad,FALSE,Africa,Sub-Saharan Africa,Middle Africa,Africa,Sub-Saharan-Africa,Middle-Africa,Developing,Chromista,0,142,0,142,0.0,100.0,True,Low income
 URY,UY,UY,Uruguay,FALSE,Americas,Latin America and the Caribbean,South America,Americas,Latin-America-and-the-Caribbean,South-America,Developing,Archaea,0,142,0,142,0.0,100.0,True,High income
+TCD,TD,TD,Chad,FALSE,Africa,Sub-Saharan Africa,Middle Africa,Africa,Sub-Saharan-Africa,Middle-Africa,Developing,Chromista,0,142,0,142,0.0,100.0,True,Low income
 GRD,GD,GD,Grenada,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Protozoa,0,139,0,139,0.0,100.0,True,Upper middle income
 MHL,MH,MH,Marshall Islands,FALSE,Oceania,Micronesia,,Oceania,Micronesia,,Developing,Protozoa,0,139,0,139,0.0,100.0,True,Upper middle income
 SLV,SV,SV,El Salvador,FALSE,Americas,Latin America and the Caribbean,Central America,Americas,Latin-America-and-the-Caribbean,Central-America,Developing,Protozoa,0,138,0,138,0.0,100.0,True,Upper middle income
 BLM,BL,BL,Saint Barthelemy,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Fungi,0,138,0,138,0.0,100.0,,
-UGA,UG,UG,Uganda,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Protozoa,0,137,0,137,0.0,100.0,True,Low income
-ATG,AG,AG,Antigua and Barbuda,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Fungi,0,137,0,137,0.0,100.0,True,High income
 LBY,LY,LY,Libya,FALSE,Africa,Northern Africa,,Africa,Northern-Africa,,Developing,Viruses,0,137,0,137,0.0,100.0,True,Upper middle income
 ARM,AM,AM,Armenia,FALSE,Asia,Western Asia,,Asia,Western-Asia,,Developing,Bacteria,0,137,0,137,0.0,100.0,True,Upper middle income
+UGA,UG,UG,Uganda,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Protozoa,0,137,0,137,0.0,100.0,True,Low income
+ATG,AG,AG,Antigua and Barbuda,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Fungi,0,137,0,137,0.0,100.0,True,High income
 HKG,HK,HK,Hong Kong,FALSE,Asia,Eastern Asia,,Asia,Eastern-Asia,,Developing,Protozoa,0,136,0,136,0.0,100.0,,
-BHR,BH,BH,Bahrain,FALSE,Asia,Western Asia,,Asia,Western-Asia,,Developing,incertae sedis,0,133,0,133,0.0,100.0,True,High income
 IRL,IE,IE,Ireland,TRUE,Europe,Northern Europe,,Europe,Northern-Europe,,Developed,Archaea,0,133,0,133,0.0,100.0,True,High income
+BHR,BH,BH,Bahrain,FALSE,Asia,Western Asia,,Asia,Western-Asia,,Developing,incertae sedis,0,133,0,133,0.0,100.0,True,High income
 SGP,SG,SG,Singapore,FALSE,Asia,South-eastern Asia,,Asia,South-eastern-Asia,,Developing,Protozoa,0,132,0,132,0.0,100.0,True,High income
 ATG,AG,AG,Antigua and Barbuda,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,incertae sedis,0,132,0,132,0.0,100.0,True,High income
 KGZ,KG,KG,Kyrgyzstan,FALSE,Asia,Central Asia,,Asia,Central-Asia,,Developing,Protozoa,0,131,0,131,0.0,100.0,True,Lower middle income
@@ -1758,16 +1758,16 @@ CMR,CM,CM,Cameroon,FALSE,Africa,Sub-Saharan Africa,Middle Africa,Africa,Sub-Saha
 VEN,VE,VE,"Venezuela, Bolivarian Republic of",FALSE,Americas,Latin America and the Caribbean,South America,Americas,Latin-America-and-the-Caribbean,South-America,Developing,Archaea,0,119,0,119,0.0,100.0,True,Lower middle income
 PCN,PN,PN,Pitcairn,FALSE,Oceania,Polynesia,,Oceania,Polynesia,,Developing,Archaea,0,118,0,118,0.0,100.0,,
 PRI,PR,PR,Puerto Rico,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Archaea,0,116,0,116,0.0,100.0,,
-RWA,RW,RW,Rwanda,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Archaea,0,115,0,115,0.0,100.0,True,Low income
 MRT,MR,MR,Mauritania,FALSE,Africa,Sub-Saharan Africa,Western Africa,Africa,Sub-Saharan-Africa,Western-Africa,Developing,Bacteria,0,115,0,115,0.0,100.0,True,Lower middle income
+RWA,RW,RW,Rwanda,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Archaea,0,115,0,115,0.0,100.0,True,Low income
 GMB,GM,GM,Gambia,FALSE,Africa,Sub-Saharan Africa,Western Africa,Africa,Sub-Saharan-Africa,Western-Africa,Developing,Bacteria,0,113,0,113,0.0,100.0,True,Low income
 GMB,GM,GM,Gambia,FALSE,Africa,Sub-Saharan Africa,Western Africa,Africa,Sub-Saharan-Africa,Western-Africa,Developing,Viruses,0,112,0,112,0.0,100.0,True,Low income
-MRT,MR,MR,Mauritania,FALSE,Africa,Sub-Saharan Africa,Western Africa,Africa,Sub-Saharan-Africa,Western-Africa,Developing,incertae sedis,0,111,0,111,0.0,100.0,True,Lower middle income
 SLE,SL,SL,Sierra Leone,FALSE,Africa,Sub-Saharan Africa,Western Africa,Africa,Sub-Saharan-Africa,Western-Africa,Developing,Protozoa,0,111,0,111,0.0,100.0,True,Low income
+MRT,MR,MR,Mauritania,FALSE,Africa,Sub-Saharan Africa,Western Africa,Africa,Sub-Saharan-Africa,Western-Africa,Developing,incertae sedis,0,111,0,111,0.0,100.0,True,Lower middle income
 BHR,BH,BH,Bahrain,FALSE,Asia,Western Asia,,Asia,Western-Asia,,Developing,Chromista,0,110,0,110,0.0,100.0,True,High income
 BDI,BI,BI,Burundi,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Chromista,0,110,0,110,0.0,100.0,True,Low income
-GUM,GU,GU,Guam,FALSE,Oceania,Micronesia,,Oceania,Micronesia,,Developing,Protozoa,0,110,0,110,0.0,100.0,,
 BVT,BV,BV,Bouvet Island,FALSE,Americas,Latin America and the Caribbean,South America,Americas,Latin-America-and-the-Caribbean,South-America,Developing,Plantae,0,110,0,110,0.0,100.0,,
+GUM,GU,GU,Guam,FALSE,Oceania,Micronesia,,Oceania,Micronesia,,Developing,Protozoa,0,110,0,110,0.0,100.0,,
 DZA,DZ,DZ,Algeria,FALSE,Africa,Northern Africa,,Africa,Northern-Africa,,Developing,Archaea,0,109,0,109,0.0,100.0,True,Upper middle income
 PNG,PG,PG,Papua New Guinea,FALSE,Oceania,Melanesia,,Oceania,Melanesia,,Developing,Viruses,0,108,0,108,0.0,100.0,True,Lower middle income
 NFK,NF,NF,Norfolk Island,FALSE,Oceania,Australia and New Zealand,,Oceania,Australia-and-New-Zealand,,Developed,Archaea,0,106,0,106,0.0,100.0,,
@@ -1786,54 +1786,54 @@ ISL,IS,IS,Iceland,FALSE,Europe,Northern Europe,,Europe,Northern-Europe,,Develope
 REU,RE,RE,Reunion,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Archaea,0,93,0,93,0.0,100.0,,
 MDA,MD,MD,"Moldova, Republic of",FALSE,Europe,Eastern Europe,,Europe,Eastern-Europe,,Developed,Viruses,0,92,0,92,0.0,100.0,True,Upper middle income
 BDI,BI,BI,Burundi,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Protozoa,0,91,0,91,0.0,100.0,True,Low income
-YEM,YE,YE,Yemen,FALSE,Asia,Western Asia,,Asia,Western-Asia,,Developing,Protozoa,0,90,0,90,0.0,100.0,True,Low income
 SRB,RS,RS,Serbia,FALSE,Europe,Southern Europe,,Europe,Southern-Europe,,Developed,Protozoa,0,90,0,90,0.0,100.0,True,Upper middle income
 JAM,JM,JM,Jamaica,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Viruses,0,90,0,90,0.0,100.0,True,Upper middle income
-TCD,TD,TD,Chad,FALSE,Africa,Sub-Saharan Africa,Middle Africa,Africa,Sub-Saharan-Africa,Middle-Africa,Developing,Fungi,0,89,0,89,0.0,100.0,True,Low income
+YEM,YE,YE,Yemen,FALSE,Asia,Western Asia,,Asia,Western-Asia,,Developing,Protozoa,0,90,0,90,0.0,100.0,True,Low income
 LCA,LC,LC,Saint Lucia,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,incertae sedis,0,89,0,89,0.0,100.0,True,Upper middle income
+TCD,TD,TD,Chad,FALSE,Africa,Sub-Saharan Africa,Middle Africa,Africa,Sub-Saharan-Africa,Middle-Africa,Developing,Fungi,0,89,0,89,0.0,100.0,True,Low income
 EST,EE,EE,Estonia,TRUE,Europe,Northern Europe,,Europe,Northern-Europe,,Developed,Archaea,80,7,0,87,91.95,8.05,True,High income
 ETH,ET,ET,Ethiopia,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Protozoa,0,86,0,86,0.0,100.0,True,Low income
-GIB,GI,GI,Gibraltar,FALSE,Europe,Southern Europe,,Europe,Southern-Europe,,Developed,Chromista,0,85,0,85,0.0,100.0,,
-TCA,TC,TC,Turks and Caicos Islands,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Chromista,0,85,0,85,0.0,100.0,,
 JEY,JE,JE,Jersey,FALSE,Europe,Northern Europe,Channel Islands,Europe,Northern-Europe,Channel-Islands,Developed,Viruses,0,85,0,85,0.0,100.0,,
+TCA,TC,TC,Turks and Caicos Islands,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Chromista,0,85,0,85,0.0,100.0,,
+GIB,GI,GI,Gibraltar,FALSE,Europe,Southern Europe,,Europe,Southern-Europe,,Developed,Chromista,0,85,0,85,0.0,100.0,,
 TUN,TN,TN,Tunisia,FALSE,Africa,Northern Africa,,Africa,Northern-Africa,,Developing,Protozoa,0,84,0,84,0.0,100.0,True,Lower middle income
 IOT,IO,IO,British Indian Ocean Territory,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Fungi,0,84,0,84,0.0,100.0,,
 TCD,TD,TD,Chad,FALSE,Africa,Sub-Saharan Africa,Middle Africa,Africa,Sub-Saharan-Africa,Middle-Africa,Developing,Viruses,0,83,0,83,0.0,100.0,True,Low income
 ATF,TF,TF,French Southern Territories,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Archaea,0,83,0,83,0.0,100.0,,
-QAT,QA,QA,Qatar,FALSE,Asia,Western Asia,,Asia,Western-Asia,,Developing,Protozoa,0,82,0,82,0.0,100.0,True,High income
 JOR,JO,JO,Jordan,FALSE,Asia,Western Asia,,Asia,Western-Asia,,Developing,Archaea,0,82,0,82,0.0,100.0,True,Lower middle income
-MSR,MS,MS,Montserrat,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Fungi,0,82,0,82,0.0,100.0,,
+QAT,QA,QA,Qatar,FALSE,Asia,Western Asia,,Asia,Western-Asia,,Developing,Protozoa,0,82,0,82,0.0,100.0,True,High income
 CCK,CC,CC,Cocos (Keeling) Islands,FALSE,Oceania,Australia and New Zealand,,Oceania,Australia-and-New-Zealand,,Developed,Fungi,0,82,0,82,0.0,100.0,,
+MSR,MS,MS,Montserrat,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Fungi,0,82,0,82,0.0,100.0,,
 SYC,SC,SC,Seychelles,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Protozoa,1,79,0,80,1.25,98.75,True,High income
 FJI,FJ,FJ,Fiji,FALSE,Oceania,Melanesia,,Oceania,Melanesia,,Developing,Protozoa,14,66,0,80,17.5,82.5,True,Upper middle income
 ALA,AX,AX,Aland Islands,FALSE,Europe,Northern Europe,,Europe,Northern-Europe,,Developed,Protozoa,0,79,0,79,0.0,100.0,,
-KGZ,KG,KG,Kyrgyzstan,FALSE,Asia,Central Asia,,Asia,Central-Asia,,Developing,Viruses,0,78,0,78,0.0,100.0,True,Lower middle income
-TCD,TD,TD,Chad,FALSE,Africa,Sub-Saharan Africa,Middle Africa,Africa,Sub-Saharan-Africa,Middle-Africa,Developing,Bacteria,0,78,0,78,0.0,100.0,True,Low income
 GMB,GM,GM,Gambia,FALSE,Africa,Sub-Saharan Africa,Western Africa,Africa,Sub-Saharan-Africa,Western-Africa,Developing,Chromista,0,78,0,78,0.0,100.0,True,Low income
 GNB,GW,GW,Guinea-Bissau,FALSE,Africa,Sub-Saharan Africa,Western Africa,Africa,Sub-Saharan-Africa,Western-Africa,Developing,Bacteria,0,78,0,78,0.0,100.0,True,Low income
+TCD,TD,TD,Chad,FALSE,Africa,Sub-Saharan Africa,Middle Africa,Africa,Sub-Saharan-Africa,Middle-Africa,Developing,Bacteria,0,78,0,78,0.0,100.0,True,Low income
+KGZ,KG,KG,Kyrgyzstan,FALSE,Asia,Central Asia,,Asia,Central-Asia,,Developing,Viruses,0,78,0,78,0.0,100.0,True,Lower middle income
 VAT,VA,VA,Holy See (Vatican City State),FALSE,Europe,Southern Europe,,Europe,Southern-Europe,,Developed,Plantae,0,77,0,77,0.0,100.0,,
-ROU,RO,RO,Romania,TRUE,Europe,Eastern Europe,,Europe,Eastern-Europe,,Developed,Archaea,0,76,0,76,0.0,100.0,True,High income
-MMR,MM,MM,Myanmar,FALSE,Asia,South-eastern Asia,,Asia,South-eastern-Asia,,Developing,Protozoa,0,76,0,76,0.0,100.0,True,Lower middle income
 MKD,MK,MK,"Macedonia, the former Yugoslav Republic of",FALSE,Europe,Southern Europe,,Europe,Southern-Europe,,Developed,Protozoa,0,76,0,76,0.0,100.0,True,Upper middle income
-QAT,QA,QA,Qatar,FALSE,Asia,Western Asia,,Asia,Western-Asia,,Developing,Bacteria,0,76,0,76,0.0,100.0,True,High income
+ROU,RO,RO,Romania,TRUE,Europe,Eastern Europe,,Europe,Eastern-Europe,,Developed,Archaea,0,76,0,76,0.0,100.0,True,High income
 ECU,EC,EC,Ecuador,FALSE,Americas,Latin America and the Caribbean,South America,Americas,Latin-America-and-the-Caribbean,South-America,Developing,Archaea,0,76,0,76,0.0,100.0,True,Upper middle income
+MMR,MM,MM,Myanmar,FALSE,Asia,South-eastern Asia,,Asia,South-eastern-Asia,,Developing,Protozoa,0,76,0,76,0.0,100.0,True,Lower middle income
+QAT,QA,QA,Qatar,FALSE,Asia,Western Asia,,Asia,Western-Asia,,Developing,Bacteria,0,76,0,76,0.0,100.0,True,High income
 BES,BQ,BQ,"Bonaire, Sint Eustatius and Saba",FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,incertae sedis,0,76,0,76,0.0,100.0,,
 COM,KM,KM,Comoros,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Fungi,0,75,0,75,0.0,100.0,True,Lower middle income
 ZWE,ZW,ZW,Zimbabwe,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Archaea,0,75,0,75,0.0,100.0,True,Lower middle income
 BES,BQ,BQ,"Bonaire, Sint Eustatius and Saba",FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Fungi,0,74,0,74,0.0,100.0,,
 DJI,DJ,DJ,Djibouti,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Bacteria,0,73,0,73,0.0,100.0,True,Lower middle income
 KGZ,KG,KG,Kyrgyzstan,FALSE,Asia,Central Asia,,Asia,Central-Asia,,Developing,Archaea,0,73,0,73,0.0,100.0,True,Lower middle income
-HRV,HR,HR,Croatia,TRUE,Europe,Southern Europe,,Europe,Southern-Europe,,Developed,Archaea,0,72,0,72,0.0,100.0,True,High income
-CZE,CZ,CZ,Czech Republic,TRUE,Europe,Eastern Europe,,Europe,Eastern-Europe,,Developed,Archaea,0,72,0,72,0.0,100.0,True,High income
 LCA,LC,LC,Saint Lucia,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Protozoa,0,72,0,72,0.0,100.0,True,Upper middle income
+CZE,CZ,CZ,Czech Republic,TRUE,Europe,Eastern Europe,,Europe,Eastern-Europe,,Developed,Archaea,0,72,0,72,0.0,100.0,True,High income
+HRV,HR,HR,Croatia,TRUE,Europe,Southern Europe,,Europe,Southern-Europe,,Developed,Archaea,0,72,0,72,0.0,100.0,True,High income
 KNA,KN,KN,Saint Kitts and Nevis,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Bacteria,0,70,0,70,0.0,100.0,True,High income
-BIH,BA,BA,Bosnia and Herzegovina,FALSE,Europe,Southern Europe,,Europe,Southern-Europe,,Developed,Chromista,0,70,0,70,0.0,100.0,True,Upper middle income
 MUS,MU,MU,Mauritius,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Archaea,0,70,0,70,0.0,100.0,True,Upper middle income
+BIH,BA,BA,Bosnia and Herzegovina,FALSE,Europe,Southern Europe,,Europe,Southern-Europe,,Developed,Chromista,0,70,0,70,0.0,100.0,True,Upper middle income
 IOT,IO,IO,British Indian Ocean Territory,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,incertae sedis,0,69,0,69,0.0,100.0,,
 AZE,AZ,AZ,Azerbaijan,FALSE,Asia,Western Asia,,Asia,Western-Asia,,Developing,Chromista,0,68,0,68,0.0,100.0,True,Upper middle income
-TGO,TG,TG,Togo,FALSE,Africa,Sub-Saharan Africa,Western Africa,Africa,Sub-Saharan-Africa,Western-Africa,Developing,Chromista,0,68,0,68,0.0,100.0,True,Low income
 TKM,TM,TM,Turkmenistan,FALSE,Asia,Central Asia,,Asia,Central-Asia,,Developing,Chromista,0,68,0,68,0.0,100.0,True,Upper middle income
 NIC,NI,NI,Nicaragua,FALSE,Americas,Latin America and the Caribbean,Central America,Americas,Latin-America-and-the-Caribbean,Central-America,Developing,Viruses,0,68,0,68,0.0,100.0,True,Lower middle income
+TGO,TG,TG,Togo,FALSE,Africa,Sub-Saharan Africa,Western Africa,Africa,Sub-Saharan-Africa,Western-Africa,Developing,Chromista,0,68,0,68,0.0,100.0,True,Low income
 BVT,BV,BV,Bouvet Island,FALSE,Americas,Latin America and the Caribbean,South America,Americas,Latin-America-and-the-Caribbean,South-America,Developing,Fungi,0,68,0,68,0.0,100.0,,
 GHA,GH,GH,Ghana,FALSE,Africa,Sub-Saharan Africa,Western Africa,Africa,Sub-Saharan-Africa,Western-Africa,Developing,Protozoa,0,67,0,67,0.0,100.0,True,Lower middle income
 MRT,MR,MR,Mauritania,FALSE,Africa,Sub-Saharan Africa,Western Africa,Africa,Sub-Saharan-Africa,Western-Africa,Developing,Fungi,0,66,0,66,0.0,100.0,True,Lower middle income
@@ -1841,30 +1841,30 @@ VCT,VC,VC,Saint Vincent and the Grenadines,FALSE,Americas,Latin America and the 
 MAC,MO,MO,Macao,FALSE,Asia,Eastern Asia,,Asia,Eastern-Asia,,Developing,Viruses,0,66,0,66,0.0,100.0,,
 BHR,BH,BH,Bahrain,FALSE,Asia,Western Asia,,Asia,Western-Asia,,Developing,Bacteria,0,65,0,65,0.0,100.0,True,High income
 ALB,AL,AL,Albania,FALSE,Europe,Southern Europe,,Europe,Southern-Europe,,Developed,Viruses,0,64,0,64,0.0,100.0,True,Upper middle income
-IOT,IO,IO,British Indian Ocean Territory,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Bacteria,0,64,0,64,0.0,100.0,,
-GGY,GG,GG,Guernsey,FALSE,Europe,Northern Europe,Channel Islands,Europe,Northern-Europe,Channel-Islands,Developed,Viruses,0,64,0,64,0.0,100.0,,
 TCA,TC,TC,Turks and Caicos Islands,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,incertae sedis,0,64,0,64,0.0,100.0,,
+GGY,GG,GG,Guernsey,FALSE,Europe,Northern Europe,Channel Islands,Europe,Northern-Europe,Channel-Islands,Developed,Viruses,0,64,0,64,0.0,100.0,,
+IOT,IO,IO,British Indian Ocean Territory,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Bacteria,0,64,0,64,0.0,100.0,,
 GIB,GI,GI,Gibraltar,FALSE,Europe,Southern Europe,,Europe,Southern-Europe,,Developed,Fungi,0,63,0,63,0.0,100.0,,
 COK,CK,CK,Cook Islands,FALSE,Oceania,Polynesia,,Oceania,Polynesia,,Developing,Bacteria,0,62,0,62,0.0,100.0,True,High income
 MDA,MD,MD,"Moldova, Republic of",FALSE,Europe,Eastern Europe,,Europe,Eastern-Europe,,Developed,Protozoa,0,62,0,62,0.0,100.0,True,Upper middle income
 SUR,SR,SR,Suriname,FALSE,Americas,Latin America and the Caribbean,South America,Americas,Latin-America-and-the-Caribbean,South-America,Developing,Protozoa,0,61,0,61,0.0,100.0,True,Upper middle income
 SXM,SX,SX,Sint Maarten (Dutch part),FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Bacteria,0,61,0,61,0.0,100.0,,
-TKM,TM,TM,Turkmenistan,FALSE,Asia,Central Asia,,Asia,Central-Asia,,Developing,Bacteria,0,60,0,60,0.0,100.0,True,Upper middle income
-ETH,ET,ET,Ethiopia,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Archaea,0,60,0,60,0.0,100.0,True,Low income
-SSD,SS,SS,South Sudan,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,incertae sedis,0,60,0,60,0.0,100.0,True,Low income
 NER,NE,NE,Niger,FALSE,Africa,Sub-Saharan Africa,Western Africa,Africa,Sub-Saharan-Africa,Western-Africa,Developing,Bacteria,0,60,0,60,0.0,100.0,True,Low income
+TKM,TM,TM,Turkmenistan,FALSE,Asia,Central Asia,,Asia,Central-Asia,,Developing,Bacteria,0,60,0,60,0.0,100.0,True,Upper middle income
+SSD,SS,SS,South Sudan,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,incertae sedis,0,60,0,60,0.0,100.0,True,Low income
+ETH,ET,ET,Ethiopia,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Archaea,0,60,0,60,0.0,100.0,True,Low income
 BMU,BM,BM,Bermuda,FALSE,Americas,Northern America,,Americas,Northern-America,,Developed,Viruses,0,60,0,60,0.0,100.0,,
-COK,CK,CK,Cook Islands,FALSE,Oceania,Polynesia,,Oceania,Polynesia,,Developing,Protozoa,0,59,0,59,0.0,100.0,True,High income
 AND,AD,AD,Andorra,FALSE,Europe,Southern Europe,,Europe,Southern-Europe,,Developed,Chromista,26,33,0,59,44.07,55.93,True,High income
+COK,CK,CK,Cook Islands,FALSE,Oceania,Polynesia,,Oceania,Polynesia,,Developing,Protozoa,0,59,0,59,0.0,100.0,True,High income
 GIB,GI,GI,Gibraltar,FALSE,Europe,Southern Europe,,Europe,Southern-Europe,,Developed,incertae sedis,0,59,0,59,0.0,100.0,,
 PSE,PS,PS,"Palestine, State of",FALSE,Asia,Western Asia,,Asia,Western-Asia,,Developing,Chromista,0,58,0,58,0.0,100.0,True,Lower middle income
 BHR,BH,BH,Bahrain,FALSE,Asia,Western Asia,,Asia,Western-Asia,,Developing,Fungi,0,58,0,58,0.0,100.0,True,High income
 WLF,WF,WF,Wallis and Futuna,FALSE,Oceania,Polynesia,,Oceania,Polynesia,,Developing,incertae sedis,0,58,0,58,0.0,100.0,,
-BEN,BJ,BJ,Benin,FALSE,Africa,Sub-Saharan Africa,Western Africa,Africa,Sub-Saharan-Africa,Western-Africa,Developing,Archaea,0,57,0,57,0.0,100.0,True,Lower middle income
 ARM,AM,AM,Armenia,FALSE,Asia,Western Asia,,Asia,Western-Asia,,Developing,Viruses,0,57,0,57,0.0,100.0,True,Upper middle income
+BEN,BJ,BJ,Benin,FALSE,Africa,Sub-Saharan Africa,Western Africa,Africa,Sub-Saharan-Africa,Western-Africa,Developing,Archaea,0,57,0,57,0.0,100.0,True,Lower middle income
 NCL,NC,NC,New Caledonia,FALSE,Oceania,Melanesia,,Oceania,Melanesia,,Developing,Viruses,0,55,0,55,0.0,100.0,,
-PNG,PG,PG,Papua New Guinea,FALSE,Oceania,Melanesia,,Oceania,Melanesia,,Developing,Archaea,0,54,0,54,0.0,100.0,True,Lower middle income
 UGA,UG,UG,Uganda,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Archaea,0,54,0,54,0.0,100.0,True,Low income
+PNG,PG,PG,Papua New Guinea,FALSE,Oceania,Melanesia,,Oceania,Melanesia,,Developing,Archaea,0,54,0,54,0.0,100.0,True,Lower middle income
 VUT,VU,VU,Vanuatu,FALSE,Oceania,Melanesia,,Oceania,Melanesia,,Developing,Bacteria,0,53,0,53,0.0,100.0,True,Lower middle income
 HTI,HT,HT,Haiti,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Viruses,0,52,0,52,0.0,100.0,True,Lower middle income
 VUT,VU,VU,Vanuatu,FALSE,Oceania,Melanesia,,Oceania,Melanesia,,Developing,Viruses,0,51,0,51,0.0,100.0,True,Lower middle income
@@ -1872,22 +1872,22 @@ GRD,GD,GD,Grenada,FALSE,Americas,Latin America and the Caribbean,Caribbean,Ameri
 ALB,AL,AL,Albania,FALSE,Europe,Southern Europe,,Europe,Southern-Europe,,Developed,Protozoa,0,50,0,50,0.0,100.0,True,Upper middle income
 PLW,PW,PW,Palau,FALSE,Oceania,Micronesia,,Oceania,Micronesia,,Developing,Protozoa,0,49,0,49,0.0,100.0,True,High income
 LVA,LV,LV,Latvia,TRUE,Europe,Northern Europe,,Europe,Northern-Europe,,Developed,Archaea,0,49,0,49,0.0,100.0,True,High income
+SVK,SK,SK,Slovakia,TRUE,Europe,Eastern Europe,,Europe,Eastern-Europe,,Developed,Archaea,0,47,0,47,0.0,100.0,True,High income
 AND,AD,AD,Andorra,FALSE,Europe,Southern Europe,,Europe,Southern-Europe,,Developed,incertae sedis,0,47,0,47,0.0,100.0,True,High income
 BRN,BN,BN,Brunei Darussalam,FALSE,Asia,South-eastern Asia,,Asia,South-eastern-Asia,,Developing,Protozoa,0,47,0,47,0.0,100.0,True,High income
-SVK,SK,SK,Slovakia,TRUE,Europe,Eastern Europe,,Europe,Eastern-Europe,,Developed,Archaea,0,47,0,47,0.0,100.0,True,High income
 TLS,TL,TL,Timor-Leste,FALSE,Asia,South-eastern Asia,,Asia,South-eastern-Asia,,Developing,Fungi,0,46,0,46,0.0,100.0,True,Lower middle income
-GAB,GA,GA,Gabon,FALSE,Africa,Sub-Saharan Africa,Middle Africa,Africa,Sub-Saharan-Africa,Middle-Africa,Developing,Protozoa,0,45,0,45,0.0,100.0,True,Upper middle income
-BWA,BW,BW,Botswana,FALSE,Africa,Sub-Saharan Africa,Southern Africa,Africa,Sub-Saharan-Africa,Southern-Africa,Developing,Viruses,0,45,0,45,0.0,100.0,True,Upper middle income
 SLV,SV,SV,El Salvador,FALSE,Americas,Latin America and the Caribbean,Central America,Americas,Latin-America-and-the-Caribbean,Central-America,Developing,Viruses,0,45,0,45,0.0,100.0,True,Upper middle income
-KNA,KN,KN,Saint Kitts and Nevis,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,incertae sedis,0,44,0,44,0.0,100.0,True,High income
+BWA,BW,BW,Botswana,FALSE,Africa,Sub-Saharan Africa,Southern Africa,Africa,Sub-Saharan-Africa,Southern-Africa,Developing,Viruses,0,45,0,45,0.0,100.0,True,Upper middle income
+GAB,GA,GA,Gabon,FALSE,Africa,Sub-Saharan Africa,Middle Africa,Africa,Sub-Saharan-Africa,Middle-Africa,Developing,Protozoa,0,45,0,45,0.0,100.0,True,Upper middle income
 WSM,WS,WS,Samoa,FALSE,Oceania,Polynesia,,Oceania,Polynesia,,Developing,Protozoa,0,44,0,44,0.0,100.0,True,Upper middle income
-BTN,BT,BT,Bhutan,FALSE,Asia,Southern Asia,,Asia,Southern-Asia,,Developing,Archaea,0,43,0,43,0.0,100.0,True,Lower middle income
-ERI,ER,ER,Eritrea,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Viruses,0,43,0,43,0.0,100.0,True,Low income
+KNA,KN,KN,Saint Kitts and Nevis,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,incertae sedis,0,44,0,44,0.0,100.0,True,High income
 TUV,TV,TV,Tuvalu,FALSE,Oceania,Polynesia,,Oceania,Polynesia,,Developing,incertae sedis,0,43,0,43,0.0,100.0,True,Upper middle income
 MDA,MD,MD,"Moldova, Republic of",FALSE,Europe,Eastern Europe,,Europe,Eastern-Europe,,Developed,Bacteria,0,43,0,43,0.0,100.0,True,Upper middle income
+BTN,BT,BT,Bhutan,FALSE,Asia,Southern Asia,,Asia,Southern-Asia,,Developing,Archaea,0,43,0,43,0.0,100.0,True,Lower middle income
+ERI,ER,ER,Eritrea,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Viruses,0,43,0,43,0.0,100.0,True,Low income
 PRK,KP,KP,"Korea, Democratic People's Republic of",FALSE,Asia,Eastern Asia,,Asia,Eastern-Asia,,Developing,Chromista,0,42,0,42,0.0,100.0,True,Low income
-SOM,SO,SO,Somalia,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Bacteria,0,41,0,41,0.0,100.0,True,Low income
 BHR,BH,BH,Bahrain,FALSE,Asia,Western Asia,,Asia,Western-Asia,,Developing,Viruses,0,41,0,41,0.0,100.0,True,High income
+SOM,SO,SO,Somalia,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Bacteria,0,41,0,41,0.0,100.0,True,Low income
 PSE,PS,PS,"Palestine, State of",FALSE,Asia,Western Asia,,Asia,Western-Asia,,Developing,Bacteria,0,40,0,40,0.0,100.0,True,Lower middle income
 CAF,CF,CF,Central African Republic,FALSE,Africa,Sub-Saharan Africa,Middle Africa,Africa,Sub-Saharan-Africa,Middle-Africa,Developing,Protozoa,0,39,0,39,0.0,100.0,True,Low income
 FJI,FJ,FJ,Fiji,FALSE,Oceania,Melanesia,,Oceania,Melanesia,,Developing,Archaea,0,39,0,39,0.0,100.0,True,Upper middle income
@@ -1896,15 +1896,15 @@ ATG,AG,AG,Antigua and Barbuda,FALSE,Americas,Latin America and the Caribbean,Car
 TKM,TM,TM,Turkmenistan,FALSE,Asia,Central Asia,,Asia,Central-Asia,,Developing,Viruses,0,37,0,37,0.0,100.0,True,Upper middle income
 SUR,SR,SR,Suriname,FALSE,Americas,Latin America and the Caribbean,South America,Americas,Latin-America-and-the-Caribbean,South-America,Developing,Bacteria,0,37,0,37,0.0,100.0,True,Upper middle income
 MAF,MF,MF,Saint Martin (French part),FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Bacteria,0,37,0,37,0.0,100.0,,
-BWA,BW,BW,Botswana,FALSE,Africa,Sub-Saharan Africa,Southern Africa,Africa,Sub-Saharan-Africa,Southern-Africa,Developing,Bacteria,0,36,0,36,0.0,100.0,True,Upper middle income
 WSM,WS,WS,Samoa,FALSE,Oceania,Polynesia,,Oceania,Polynesia,,Developing,Viruses,0,36,0,36,0.0,100.0,True,Upper middle income
-BLM,BL,BL,Saint Barthelemy,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,incertae sedis,0,36,0,36,0.0,100.0,,
+BWA,BW,BW,Botswana,FALSE,Africa,Sub-Saharan Africa,Southern Africa,Africa,Sub-Saharan-Africa,Southern-Africa,Developing,Bacteria,0,36,0,36,0.0,100.0,True,Upper middle income
 ABW,AW,AW,Aruba,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Fungi,0,36,0,36,0.0,100.0,,
+BLM,BL,BL,Saint Barthelemy,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,incertae sedis,0,36,0,36,0.0,100.0,,
 IMN,IM,IM,Isle of Man,FALSE,Europe,Northern Europe,,Europe,Northern-Europe,,Developed,Viruses,0,35,0,35,0.0,100.0,,
 TCA,TC,TC,Turks and Caicos Islands,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Bacteria,0,35,0,35,0.0,100.0,,
-FJI,FJ,FJ,Fiji,FALSE,Oceania,Melanesia,,Oceania,Melanesia,,Developing,Viruses,0,34,0,34,0.0,100.0,True,Upper middle income
 PRY,PY,PY,Paraguay,FALSE,Americas,Latin America and the Caribbean,South America,Americas,Latin-America-and-the-Caribbean,South-America,Developing,Chromista,0,34,0,34,0.0,100.0,True,Upper middle income
 LBR,LR,LR,Liberia,FALSE,Africa,Sub-Saharan Africa,Western Africa,Africa,Sub-Saharan-Africa,Western-Africa,Developing,Viruses,0,34,0,34,0.0,100.0,True,Low income
+FJI,FJ,FJ,Fiji,FALSE,Oceania,Melanesia,,Oceania,Melanesia,,Developing,Viruses,0,34,0,34,0.0,100.0,True,Upper middle income
 MSR,MS,MS,Montserrat,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,incertae sedis,0,33,0,33,0.0,100.0,,
 SLE,SL,SL,Sierra Leone,FALSE,Africa,Sub-Saharan Africa,Western Africa,Africa,Sub-Saharan-Africa,Western-Africa,Developing,Archaea,0,32,0,32,0.0,100.0,True,Low income
 HND,HN,HN,Honduras,FALSE,Americas,Latin America and the Caribbean,Central America,Americas,Latin-America-and-the-Caribbean,Central-America,Developing,Viruses,0,32,0,32,0.0,100.0,True,Lower middle income
@@ -1913,39 +1913,39 @@ AIA,AI,AI,Anguilla,FALSE,Americas,Latin America and the Caribbean,Caribbean,Amer
 BVT,BV,BV,Bouvet Island,FALSE,Americas,Latin America and the Caribbean,South America,Americas,Latin-America-and-the-Caribbean,South-America,Developing,incertae sedis,0,31,0,31,0.0,100.0,,
 COG,CG,CG,Congo,FALSE,Africa,Sub-Saharan Africa,Middle Africa,Africa,Sub-Saharan-Africa,Middle-Africa,Developing,Protozoa,0,30,0,30,0.0,100.0,True,Lower middle income
 GUF,GF,GF,French Guiana,FALSE,Americas,Latin America and the Caribbean,South America,Americas,Latin-America-and-the-Caribbean,South-America,Developing,Archaea,0,30,0,30,0.0,100.0,,
+MCO,MC,MC,Monaco,FALSE,Europe,Western Europe,,Europe,Western-Europe,,Developed,Chromista,0,28,0,28,0.0,100.0,True,High income
 LBY,LY,LY,Libya,FALSE,Africa,Northern Africa,,Africa,Northern-Africa,,Developing,Archaea,0,28,0,28,0.0,100.0,True,Upper middle income
 MNE,ME,ME,Montenegro,FALSE,Europe,Southern Europe,,Europe,Southern-Europe,,Developed,Protozoa,0,28,0,28,0.0,100.0,True,Upper middle income
 SGP,SG,SG,Singapore,FALSE,Asia,South-eastern Asia,,Asia,South-eastern-Asia,,Developing,Archaea,0,28,0,28,0.0,100.0,True,High income
-MCO,MC,MC,Monaco,FALSE,Europe,Western Europe,,Europe,Western-Europe,,Developed,Chromista,0,28,0,28,0.0,100.0,True,High income
 TLS,TL,TL,Timor-Leste,FALSE,Asia,South-eastern Asia,,Asia,South-eastern-Asia,,Developing,Viruses,0,28,0,28,0.0,100.0,True,Lower middle income
-GMB,GM,GM,Gambia,FALSE,Africa,Sub-Saharan Africa,Western Africa,Africa,Sub-Saharan-Africa,Western-Africa,Developing,Protozoa,0,27,0,27,0.0,100.0,True,Low income
 DJI,DJ,DJ,Djibouti,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,incertae sedis,0,27,0,27,0.0,100.0,True,Lower middle income
-QAT,QA,QA,Qatar,FALSE,Asia,Western Asia,,Asia,Western-Asia,,Developing,Viruses,0,26,0,26,0.0,100.0,True,High income
+GMB,GM,GM,Gambia,FALSE,Africa,Sub-Saharan Africa,Western Africa,Africa,Sub-Saharan-Africa,Western-Africa,Developing,Protozoa,0,27,0,27,0.0,100.0,True,Low income
 MYS,MY,MY,Malaysia,FALSE,Asia,South-eastern Asia,,Asia,South-eastern-Asia,,Developing,Archaea,0,26,0,26,0.0,100.0,True,Upper middle income
+QAT,QA,QA,Qatar,FALSE,Asia,Western Asia,,Asia,Western-Asia,,Developing,Viruses,0,26,0,26,0.0,100.0,True,High income
 SEN,SN,SN,Senegal,FALSE,Africa,Sub-Saharan Africa,Western Africa,Africa,Sub-Saharan-Africa,Western-Africa,Developing,Protozoa,3,23,0,26,11.54,88.46,True,Lower middle income
 ABW,AW,AW,Aruba,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,incertae sedis,0,26,0,26,0.0,100.0,,
-CUW,CW,CW,Curacao,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Protozoa,0,26,0,26,0.0,100.0,,
 CYM,KY,KY,Cayman Islands,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Bacteria,0,26,0,26,0.0,100.0,,
+CUW,CW,CW,Curacao,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Protozoa,0,26,0,26,0.0,100.0,,
 TCD,TD,TD,Chad,FALSE,Africa,Sub-Saharan Africa,Middle Africa,Africa,Sub-Saharan-Africa,Middle-Africa,Developing,Protozoa,0,25,0,25,0.0,100.0,True,Low income
 SGS,GS,GS,South Georgia and the South Sandwich Islands,FALSE,Americas,Latin America and the Caribbean,South America,Americas,Latin-America-and-the-Caribbean,South-America,Developing,Viruses,0,25,0,25,0.0,100.0,,
 LSO,LS,LS,Lesotho,FALSE,Africa,Sub-Saharan Africa,Southern Africa,Africa,Sub-Saharan-Africa,Southern-Africa,Developing,Viruses,0,24,0,24,0.0,100.0,True,Lower middle income
 SSD,SS,SS,South Sudan,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Chromista,0,24,0,24,0.0,100.0,True,Low income
 LBN,LB,LB,Lebanon,FALSE,Asia,Western Asia,,Asia,Western-Asia,,Developing,Archaea,0,24,0,24,0.0,100.0,True,Lower middle income
-MAF,MF,MF,Saint Martin (French part),FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Fungi,0,24,0,24,0.0,100.0,,
 TCA,TC,TC,Turks and Caicos Islands,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Fungi,0,24,0,24,0.0,100.0,,
+MAF,MF,MF,Saint Martin (French part),FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Fungi,0,24,0,24,0.0,100.0,,
 DJI,DJ,DJ,Djibouti,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Chromista,0,23,0,23,0.0,100.0,True,Lower middle income
 LIE,LI,LI,Liechtenstein,FALSE,Europe,Western Europe,,Europe,Western-Europe,,Developed,Protozoa,0,23,0,23,0.0,100.0,True,High income
-LCA,LC,LC,Saint Lucia,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Bacteria,0,22,0,22,0.0,100.0,True,Upper middle income
-GNQ,GQ,GQ,Equatorial Guinea,FALSE,Africa,Sub-Saharan Africa,Middle Africa,Africa,Sub-Saharan-Africa,Middle-Africa,Developing,Viruses,0,22,0,22,0.0,100.0,True,Upper middle income
 BLZ,BZ,BZ,Belize,FALSE,Americas,Latin America and the Caribbean,Central America,Americas,Latin-America-and-the-Caribbean,Central-America,Developing,Viruses,0,22,0,22,0.0,100.0,True,Upper middle income
-MHL,MH,MH,Marshall Islands,FALSE,Oceania,Micronesia,,Oceania,Micronesia,,Developing,Viruses,0,22,0,22,0.0,100.0,True,Upper middle income
 AUT,AT,AT,Austria,TRUE,Europe,Western Europe,,Europe,Western-Europe,,Developed,Archaea,0,22,0,22,0.0,100.0,True,High income
 ERI,ER,ER,Eritrea,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Bacteria,0,22,0,22,0.0,100.0,True,Low income
-STP,ST,ST,Sao Tome and Principe,FALSE,Africa,Sub-Saharan Africa,Middle Africa,Africa,Sub-Saharan-Africa,Middle-Africa,Developing,Viruses,0,21,0,21,0.0,100.0,True,Lower middle income
+LCA,LC,LC,Saint Lucia,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Bacteria,0,22,0,22,0.0,100.0,True,Upper middle income
+GNQ,GQ,GQ,Equatorial Guinea,FALSE,Africa,Sub-Saharan Africa,Middle Africa,Africa,Sub-Saharan-Africa,Middle-Africa,Developing,Viruses,0,22,0,22,0.0,100.0,True,Upper middle income
+MHL,MH,MH,Marshall Islands,FALSE,Oceania,Micronesia,,Oceania,Micronesia,,Developing,Viruses,0,22,0,22,0.0,100.0,True,Upper middle income
 SMR,SM,SM,San Marino,FALSE,Europe,Southern Europe,,Europe,Southern-Europe,,Developed,Fungi,0,21,0,21,0.0,100.0,True,High income
-SYR,SY,SY,Syrian Arab Republic,FALSE,Asia,Western Asia,,Asia,Western-Asia,,Developing,Protozoa,0,21,0,21,0.0,100.0,True,Low income
-SEN,SN,SN,Senegal,FALSE,Africa,Sub-Saharan Africa,Western Africa,Africa,Sub-Saharan-Africa,Western-Africa,Developing,Archaea,0,21,0,21,0.0,100.0,True,Lower middle income
 NRU,NR,NR,Nauru,FALSE,Oceania,Micronesia,,Oceania,Micronesia,,Developing,Fungi,0,21,0,21,0.0,100.0,True,High income
+SYR,SY,SY,Syrian Arab Republic,FALSE,Asia,Western Asia,,Asia,Western-Asia,,Developing,Protozoa,0,21,0,21,0.0,100.0,True,Low income
+STP,ST,ST,Sao Tome and Principe,FALSE,Africa,Sub-Saharan Africa,Middle Africa,Africa,Sub-Saharan-Africa,Middle-Africa,Developing,Viruses,0,21,0,21,0.0,100.0,True,Lower middle income
+SEN,SN,SN,Senegal,FALSE,Africa,Sub-Saharan Africa,Western Africa,Africa,Sub-Saharan-Africa,Western-Africa,Developing,Archaea,0,21,0,21,0.0,100.0,True,Lower middle income
 WLF,WF,WF,Wallis and Futuna,FALSE,Oceania,Polynesia,,Oceania,Polynesia,,Developing,Archaea,0,21,0,21,0.0,100.0,,
 CUB,CU,CU,Cuba,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Archaea,0,20,0,20,0.0,100.0,True,Upper middle income
 MDG,MG,MG,Madagascar,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Archaea,0,20,0,20,0.0,100.0,True,Low income
@@ -1954,169 +1954,169 @@ ABW,AW,AW,Aruba,FALSE,Americas,Latin America and the Caribbean,Caribbean,America
 MDA,MD,MD,"Moldova, Republic of",FALSE,Europe,Eastern Europe,,Europe,Eastern-Europe,,Developed,Chromista,0,19,0,19,0.0,100.0,True,Upper middle income
 SLB,SB,SB,Solomon Islands,FALSE,Oceania,Melanesia,,Oceania,Melanesia,,Developing,Protozoa,0,19,0,19,0.0,100.0,True,Lower middle income
 NER,NE,NE,Niger,FALSE,Africa,Sub-Saharan Africa,Western Africa,Africa,Sub-Saharan-Africa,Western-Africa,Developing,Protozoa,0,19,0,19,0.0,100.0,True,Low income
-GNB,GW,GW,Guinea-Bissau,FALSE,Africa,Sub-Saharan Africa,Western Africa,Africa,Sub-Saharan-Africa,Western-Africa,Developing,Viruses,0,18,0,18,0.0,100.0,True,Low income
 LIE,LI,LI,Liechtenstein,FALSE,Europe,Western Europe,,Europe,Western-Europe,,Developed,Bacteria,0,18,0,18,0.0,100.0,True,High income
+GNB,GW,GW,Guinea-Bissau,FALSE,Africa,Sub-Saharan Africa,Western Africa,Africa,Sub-Saharan-Africa,Western-Africa,Developing,Viruses,0,18,0,18,0.0,100.0,True,Low income
 CCK,CC,CC,Cocos (Keeling) Islands,FALSE,Oceania,Australia and New Zealand,,Oceania,Australia-and-New-Zealand,,Developed,Protozoa,0,18,0,18,0.0,100.0,,
-CMR,CM,CM,Cameroon,FALSE,Africa,Sub-Saharan Africa,Middle Africa,Africa,Sub-Saharan-Africa,Middle-Africa,Developing,Archaea,0,17,0,17,0.0,100.0,True,Lower middle income
 BDI,BI,BI,Burundi,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Bacteria,0,17,0,17,0.0,100.0,True,Low income
+CMR,CM,CM,Cameroon,FALSE,Africa,Sub-Saharan Africa,Middle Africa,Africa,Sub-Saharan-Africa,Middle-Africa,Developing,Archaea,0,17,0,17,0.0,100.0,True,Lower middle income
 CXR,CX,CX,Christmas Island,FALSE,Oceania,Australia and New Zealand,,Oceania,Australia-and-New-Zealand,,Developed,Bacteria,0,17,0,17,0.0,100.0,,
 CAF,CF,CF,Central African Republic,FALSE,Africa,Sub-Saharan Africa,Middle Africa,Africa,Sub-Saharan-Africa,Middle-Africa,Developing,Bacteria,0,16,0,16,0.0,100.0,True,Low income
-BRB,BB,BB,Barbados,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Protozoa,0,16,0,16,0.0,100.0,True,High income
 SSD,SS,SS,South Sudan,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Fungi,0,16,0,16,0.0,100.0,True,Low income
+BRB,BB,BB,Barbados,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Protozoa,0,16,0,16,0.0,100.0,True,High income
 LIE,LI,LI,Liechtenstein,FALSE,Europe,Western Europe,,Europe,Western-Europe,,Developed,Viruses,0,16,0,16,0.0,100.0,True,High income
-BES,BQ,BQ,"Bonaire, Sint Eustatius and Saba",FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Bacteria,0,16,0,16,0.0,100.0,,
 ,,,,,,,,,,,,incertae sedis,0,16,0,16,0.0,100.0,,
-SOM,SO,SO,Somalia,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Viruses,0,15,0,15,0.0,100.0,True,Low income
-SOM,SO,SO,Somalia,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Protozoa,0,15,0,15,0.0,100.0,True,Low income
-ARE,AE,AE,United Arab Emirates,FALSE,Asia,Western Asia,,Asia,Western-Asia,,Developing,Protozoa,0,15,0,15,0.0,100.0,True,High income
+BES,BQ,BQ,"Bonaire, Sint Eustatius and Saba",FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Bacteria,0,16,0,16,0.0,100.0,,
 DJI,DJ,DJ,Djibouti,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Fungi,0,15,0,15,0.0,100.0,True,Lower middle income
-GAB,GA,GA,Gabon,FALSE,Africa,Sub-Saharan Africa,Middle Africa,Africa,Sub-Saharan-Africa,Middle-Africa,Developing,Archaea,0,14,0,14,0.0,100.0,True,Upper middle income
+SOM,SO,SO,Somalia,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Viruses,0,15,0,15,0.0,100.0,True,Low income
+ARE,AE,AE,United Arab Emirates,FALSE,Asia,Western Asia,,Asia,Western-Asia,,Developing,Protozoa,0,15,0,15,0.0,100.0,True,High income
+SOM,SO,SO,Somalia,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Protozoa,0,15,0,15,0.0,100.0,True,Low income
 TON,TO,TO,Tonga,FALSE,Oceania,Polynesia,,Oceania,Polynesia,,Developing,Protozoa,0,14,0,14,0.0,100.0,True,Upper middle income
+GAB,GA,GA,Gabon,FALSE,Africa,Sub-Saharan Africa,Middle Africa,Africa,Sub-Saharan-Africa,Middle-Africa,Developing,Archaea,0,14,0,14,0.0,100.0,True,Upper middle income
 SXM,SX,SX,Sint Maarten (Dutch part),FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,incertae sedis,0,14,0,14,0.0,100.0,,
-CPV,CV,CV,Cabo Verde,FALSE,Africa,Sub-Saharan Africa,Western Africa,Africa,Sub-Saharan-Africa,Western-Africa,Developing,Viruses,0,13,0,13,0.0,100.0,True,Upper middle income
 MKD,MK,MK,"Macedonia, the former Yugoslav Republic of",FALSE,Europe,Southern Europe,,Europe,Southern-Europe,,Developed,Bacteria,0,13,0,13,0.0,100.0,True,Upper middle income
+CPV,CV,CV,Cabo Verde,FALSE,Africa,Sub-Saharan Africa,Western Africa,Africa,Sub-Saharan-Africa,Western-Africa,Developing,Viruses,0,13,0,13,0.0,100.0,True,Upper middle income
 SGS,GS,GS,South Georgia and the South Sandwich Islands,FALSE,Americas,Latin America and the Caribbean,South America,Americas,Latin-America-and-the-Caribbean,South-America,Developing,Archaea,0,13,0,13,0.0,100.0,,
 MAF,MF,MF,Saint Martin (French part),FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,incertae sedis,0,13,0,13,0.0,100.0,,
-GUY,GY,GY,Guyana,FALSE,Americas,Latin America and the Caribbean,South America,Americas,Latin-America-and-the-Caribbean,South-America,Developing,Viruses,0,12,0,12,0.0,100.0,True,High income
 BFA,BF,BF,Burkina Faso,FALSE,Africa,Sub-Saharan Africa,Western Africa,Africa,Sub-Saharan-Africa,Western-Africa,Developing,Protozoa,0,12,0,12,0.0,100.0,True,Low income
-AZE,AZ,AZ,Azerbaijan,FALSE,Asia,Western Asia,,Asia,Western-Asia,,Developing,Protozoa,0,12,0,12,0.0,100.0,True,Upper middle income
-SLB,SB,SB,Solomon Islands,FALSE,Oceania,Melanesia,,Oceania,Melanesia,,Developing,Viruses,1,11,0,12,8.33,91.67,True,Lower middle income
-MOZ,MZ,MZ,Mozambique,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Protozoa,0,12,0,12,0.0,100.0,True,Low income
 AGO,AO,AO,Angola,FALSE,Africa,Sub-Saharan Africa,Middle Africa,Africa,Sub-Saharan-Africa,Middle-Africa,Developing,Protozoa,0,12,0,12,0.0,100.0,True,Lower middle income
 LKA,LK,LK,Sri Lanka,FALSE,Asia,Southern Asia,,Asia,Southern-Asia,,Developing,Archaea,0,12,0,12,0.0,100.0,True,Lower middle income
+SLB,SB,SB,Solomon Islands,FALSE,Oceania,Melanesia,,Oceania,Melanesia,,Developing,Viruses,1,11,0,12,8.33,91.67,True,Lower middle income
+GUY,GY,GY,Guyana,FALSE,Americas,Latin America and the Caribbean,South America,Americas,Latin-America-and-the-Caribbean,South-America,Developing,Viruses,0,12,0,12,0.0,100.0,True,High income
+MOZ,MZ,MZ,Mozambique,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Protozoa,0,12,0,12,0.0,100.0,True,Low income
+AZE,AZ,AZ,Azerbaijan,FALSE,Asia,Western Asia,,Asia,Western-Asia,,Developing,Protozoa,0,12,0,12,0.0,100.0,True,Upper middle income
 COK,CK,CK,Cook Islands,FALSE,Oceania,Polynesia,,Oceania,Polynesia,,Developing,Viruses,0,11,0,11,0.0,100.0,True,High income
-TTO,TT,TT,Trinidad and Tobago,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Archaea,0,11,0,11,0.0,100.0,True,High income
 FSM,FM,FM,"Micronesia, Federated States of",FALSE,Oceania,Micronesia,,Oceania,Micronesia,,Developing,Viruses,0,11,0,11,0.0,100.0,True,Lower middle income
+TTO,TT,TT,Trinidad and Tobago,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Archaea,0,11,0,11,0.0,100.0,True,High income
 VAT,VA,VA,Holy See (Vatican City State),FALSE,Europe,Southern Europe,,Europe,Southern-Europe,,Developed,Animalia,0,11,0,11,0.0,100.0,,
 GGY,GG,GG,Guernsey,FALSE,Europe,Northern Europe,Channel Islands,Europe,Northern-Europe,Channel-Islands,Developed,Bacteria,0,11,0,11,0.0,100.0,,
-VCT,VC,VC,Saint Vincent and the Grenadines,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Viruses,0,10,0,10,0.0,100.0,True,Upper middle income
 CIV,CI,CI,Cote d'Ivoire,FALSE,Africa,Sub-Saharan Africa,Western Africa,Africa,Sub-Saharan-Africa,Western-Africa,Developing,Archaea,0,10,0,10,0.0,100.0,True,Lower middle income
-DJI,DJ,DJ,Djibouti,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Protozoa,0,10,0,10,0.0,100.0,True,Lower middle income
-PRK,KP,KP,"Korea, Democratic People's Republic of",FALSE,Asia,Eastern Asia,,Asia,Eastern-Asia,,Developing,Bacteria,0,10,0,10,0.0,100.0,True,Low income
-SMR,SM,SM,San Marino,FALSE,Europe,Southern Europe,,Europe,Southern-Europe,,Developed,incertae sedis,0,10,0,10,0.0,100.0,True,High income
 LIE,LI,LI,Liechtenstein,FALSE,Europe,Western Europe,,Europe,Western-Europe,,Developed,incertae sedis,0,10,0,10,0.0,100.0,True,High income
+DJI,DJ,DJ,Djibouti,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Protozoa,0,10,0,10,0.0,100.0,True,Lower middle income
+VCT,VC,VC,Saint Vincent and the Grenadines,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Viruses,0,10,0,10,0.0,100.0,True,Upper middle income
 BRN,BN,BN,Brunei Darussalam,FALSE,Asia,South-eastern Asia,,Asia,South-eastern-Asia,,Developing,Viruses,0,10,0,10,0.0,100.0,True,High income
-ESH,EH,EH,Western Sahara,FALSE,Africa,Northern Africa,,Africa,Northern-Africa,,Developing,Fungi,0,10,0,10,0.0,100.0,,
+SMR,SM,SM,San Marino,FALSE,Europe,Southern Europe,,Europe,Southern-Europe,,Developed,incertae sedis,0,10,0,10,0.0,100.0,True,High income
+PRK,KP,KP,"Korea, Democratic People's Republic of",FALSE,Asia,Eastern Asia,,Asia,Eastern-Asia,,Developing,Bacteria,0,10,0,10,0.0,100.0,True,Low income
 AIA,AI,AI,Anguilla,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Bacteria,0,10,0,10,0.0,100.0,,
+VIR,VI,VI,"Virgin Islands, U.S.",FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Protozoa,0,10,0,10,0.0,100.0,,
+ESH,EH,EH,Western Sahara,FALSE,Africa,Northern Africa,,Africa,Northern-Africa,,Developing,Fungi,0,10,0,10,0.0,100.0,,
 MYT,YT,YT,Mayotte,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Archaea,0,10,0,10,0.0,100.0,,
 CCK,CC,CC,Cocos (Keeling) Islands,FALSE,Oceania,Australia and New Zealand,,Oceania,Australia-and-New-Zealand,,Developed,Archaea,0,10,0,10,0.0,100.0,,
 GIB,GI,GI,Gibraltar,FALSE,Europe,Southern Europe,,Europe,Southern-Europe,,Developed,Viruses,0,10,0,10,0.0,100.0,,
-VIR,VI,VI,"Virgin Islands, U.S.",FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Protozoa,0,10,0,10,0.0,100.0,,
+COG,CG,CG,Congo,FALSE,Africa,Sub-Saharan Africa,Middle Africa,Africa,Sub-Saharan-Africa,Middle-Africa,Developing,Archaea,0,9,0,9,0.0,100.0,True,Lower middle income
 SUR,SR,SR,Suriname,FALSE,Americas,Latin America and the Caribbean,South America,Americas,Latin-America-and-the-Caribbean,South-America,Developing,Viruses,0,9,0,9,0.0,100.0,True,Upper middle income
+BWA,BW,BW,Botswana,FALSE,Africa,Sub-Saharan Africa,Southern Africa,Africa,Sub-Saharan-Africa,Southern-Africa,Developing,Protozoa,0,9,0,9,0.0,100.0,True,Upper middle income
+DJI,DJ,DJ,Djibouti,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Viruses,0,9,0,9,0.0,100.0,True,Lower middle income
+MNE,ME,ME,Montenegro,FALSE,Europe,Southern Europe,,Europe,Southern-Europe,,Developed,Archaea,0,9,0,9,0.0,100.0,True,Upper middle income
 SSD,SS,SS,South Sudan,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Viruses,0,9,0,9,0.0,100.0,True,Low income
 MLT,MT,MT,Malta,TRUE,Europe,Southern Europe,,Europe,Southern-Europe,,Developed,Viruses,0,9,0,9,0.0,100.0,True,High income
-BWA,BW,BW,Botswana,FALSE,Africa,Sub-Saharan Africa,Southern Africa,Africa,Sub-Saharan-Africa,Southern-Africa,Developing,Protozoa,0,9,0,9,0.0,100.0,True,Upper middle income
-COG,CG,CG,Congo,FALSE,Africa,Sub-Saharan Africa,Middle Africa,Africa,Sub-Saharan-Africa,Middle-Africa,Developing,Archaea,0,9,0,9,0.0,100.0,True,Lower middle income
-MNE,ME,ME,Montenegro,FALSE,Europe,Southern Europe,,Europe,Southern-Europe,,Developed,Archaea,0,9,0,9,0.0,100.0,True,Upper middle income
-DJI,DJ,DJ,Djibouti,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Viruses,0,9,0,9,0.0,100.0,True,Lower middle income
-VGB,VG,VG,"Virgin Islands, British",FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Protozoa,0,9,0,9,0.0,100.0,,
-UMI,UM,UM,United States Minor Outlying Islands,FALSE,Oceania,Micronesia,,Oceania,Micronesia,,Developing,Archaea,0,9,0,9,0.0,100.0,,
-ABW,AW,AW,Aruba,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Viruses,0,9,0,9,0.0,100.0,,
 FRO,FO,FO,Faroe Islands,FALSE,Europe,Northern Europe,,Europe,Northern-Europe,,Developed,Protozoa,0,9,0,9,0.0,100.0,,
+ABW,AW,AW,Aruba,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Viruses,0,9,0,9,0.0,100.0,,
+VGB,VG,VG,"Virgin Islands, British",FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Protozoa,0,9,0,9,0.0,100.0,,
 ,,,,,,,,,,,,Bacteria,0,9,0,9,0.0,100.0,,
-LSO,LS,LS,Lesotho,FALSE,Africa,Sub-Saharan Africa,Southern Africa,Africa,Sub-Saharan-Africa,Southern-Africa,Developing,Bacteria,0,8,0,8,0.0,100.0,True,Lower middle income
-ARM,AM,AM,Armenia,FALSE,Asia,Western Asia,,Asia,Western-Asia,,Developing,Protozoa,0,8,0,8,0.0,100.0,True,Upper middle income
+UMI,UM,UM,United States Minor Outlying Islands,FALSE,Oceania,Micronesia,,Oceania,Micronesia,,Developing,Archaea,0,9,0,9,0.0,100.0,,
 MLI,ML,ML,Mali,FALSE,Africa,Sub-Saharan Africa,Western Africa,Africa,Sub-Saharan-Africa,Western-Africa,Developing,Protozoa,0,8,0,8,0.0,100.0,True,Low income
+ARM,AM,AM,Armenia,FALSE,Asia,Western Asia,,Asia,Western-Asia,,Developing,Protozoa,0,8,0,8,0.0,100.0,True,Upper middle income
+LSO,LS,LS,Lesotho,FALSE,Africa,Sub-Saharan Africa,Southern Africa,Africa,Sub-Saharan-Africa,Southern-Africa,Developing,Bacteria,0,8,0,8,0.0,100.0,True,Lower middle income
 NRU,NR,NR,Nauru,FALSE,Oceania,Micronesia,,Oceania,Micronesia,,Developing,incertae sedis,0,8,0,8,0.0,100.0,True,High income
 MAF,MF,MF,Saint Martin (French part),FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Protozoa,0,8,0,8,0.0,100.0,,
-SPM,PM,PM,Saint Pierre and Miquelon,FALSE,Americas,Northern America,,Americas,Northern-America,,Developed,Protozoa,0,8,0,8,0.0,100.0,,
 SPM,PM,PM,Saint Pierre and Miquelon,FALSE,Americas,Northern America,,Americas,Northern-America,,Developed,Bacteria,0,8,0,8,0.0,100.0,,
-PSE,PS,PS,"Palestine, State of",FALSE,Asia,Western Asia,,Asia,Western-Asia,,Developing,Protozoa,0,7,0,7,0.0,100.0,True,Lower middle income
-KAZ,KZ,KZ,Kazakhstan,FALSE,Asia,Central Asia,,Asia,Central-Asia,,Developing,Archaea,0,7,0,7,0.0,100.0,True,Upper middle income
+SPM,PM,PM,Saint Pierre and Miquelon,FALSE,Americas,Northern America,,Americas,Northern-America,,Developed,Protozoa,0,8,0,8,0.0,100.0,,
 PLW,PW,PW,Palau,FALSE,Oceania,Micronesia,,Oceania,Micronesia,,Developing,Archaea,0,7,0,7,0.0,100.0,True,High income
 BIH,BA,BA,Bosnia and Herzegovina,FALSE,Europe,Southern Europe,,Europe,Southern-Europe,,Developed,Protozoa,0,7,0,7,0.0,100.0,True,Upper middle income
 GIN,GN,GN,Guinea,FALSE,Africa,Sub-Saharan Africa,Western Africa,Africa,Sub-Saharan-Africa,Western-Africa,Developing,Protozoa,0,7,0,7,0.0,100.0,True,Lower middle income
+KAZ,KZ,KZ,Kazakhstan,FALSE,Asia,Central Asia,,Asia,Central-Asia,,Developing,Archaea,0,7,0,7,0.0,100.0,True,Upper middle income
+PSE,PS,PS,"Palestine, State of",FALSE,Asia,Western Asia,,Asia,Western-Asia,,Developing,Protozoa,0,7,0,7,0.0,100.0,True,Lower middle income
 JOR,JO,JO,Jordan,FALSE,Asia,Western Asia,,Asia,Western-Asia,,Developing,Protozoa,0,7,0,7,0.0,100.0,True,Lower middle income
 SJM,SJ,SJ,Svalbard and Jan Mayen,FALSE,Europe,Northern Europe,,Europe,Northern-Europe,,Developed,Viruses,0,7,0,7,0.0,100.0,,
+SWZ,SZ,SZ,Swaziland,FALSE,Africa,Sub-Saharan Africa,Southern Africa,Africa,Sub-Saharan-Africa,Southern-Africa,Developing,Protozoa,0,6,0,6,0.0,100.0,True,Lower middle income
+MLT,MT,MT,Malta,TRUE,Europe,Southern Europe,,Europe,Southern-Europe,,Developed,Archaea,0,6,0,6,0.0,100.0,True,High income
+TLS,TL,TL,Timor-Leste,FALSE,Asia,South-eastern Asia,,Asia,South-eastern-Asia,,Developing,Protozoa,0,6,0,6,0.0,100.0,True,Lower middle income
+BHS,BS,BS,Bahamas,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Viruses,0,6,0,6,0.0,100.0,True,High income
+MRT,MR,MR,Mauritania,FALSE,Africa,Sub-Saharan Africa,Western Africa,Africa,Sub-Saharan-Africa,Western-Africa,Developing,Protozoa,0,6,0,6,0.0,100.0,True,Lower middle income
+IRQ,IQ,IQ,Iraq,FALSE,Asia,Western Asia,,Asia,Western-Asia,,Developing,Archaea,0,6,0,6,0.0,100.0,True,Upper middle income
+PRK,KP,KP,"Korea, Democratic People's Republic of",FALSE,Asia,Eastern Asia,,Asia,Eastern-Asia,,Developing,Viruses,0,6,0,6,0.0,100.0,True,Low income
 MCO,MC,MC,Monaco,FALSE,Europe,Western Europe,,Europe,Western-Europe,,Developed,incertae sedis,0,6,0,6,0.0,100.0,True,High income
 TLS,TL,TL,Timor-Leste,FALSE,Asia,South-eastern Asia,,Asia,South-eastern-Asia,,Developing,Bacteria,0,6,0,6,0.0,100.0,True,Lower middle income
-BHS,BS,BS,Bahamas,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Viruses,0,6,0,6,0.0,100.0,True,High income
-TLS,TL,TL,Timor-Leste,FALSE,Asia,South-eastern Asia,,Asia,South-eastern-Asia,,Developing,Protozoa,0,6,0,6,0.0,100.0,True,Lower middle income
-MRT,MR,MR,Mauritania,FALSE,Africa,Sub-Saharan Africa,Western Africa,Africa,Sub-Saharan-Africa,Western-Africa,Developing,Protozoa,0,6,0,6,0.0,100.0,True,Lower middle income
-SWZ,SZ,SZ,Swaziland,FALSE,Africa,Sub-Saharan Africa,Southern Africa,Africa,Sub-Saharan-Africa,Southern-Africa,Developing,Protozoa,0,6,0,6,0.0,100.0,True,Lower middle income
 TUV,TV,TV,Tuvalu,FALSE,Oceania,Polynesia,,Oceania,Polynesia,,Developing,Bacteria,0,6,0,6,0.0,100.0,True,Upper middle income
-MLT,MT,MT,Malta,TRUE,Europe,Southern Europe,,Europe,Southern-Europe,,Developed,Archaea,0,6,0,6,0.0,100.0,True,High income
-PRK,KP,KP,"Korea, Democratic People's Republic of",FALSE,Asia,Eastern Asia,,Asia,Eastern-Asia,,Developing,Viruses,0,6,0,6,0.0,100.0,True,Low income
-IRQ,IQ,IQ,Iraq,FALSE,Asia,Western Asia,,Asia,Western-Asia,,Developing,Archaea,0,6,0,6,0.0,100.0,True,Upper middle income
-AIA,AI,AI,Anguilla,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Fungi,0,6,0,6,0.0,100.0,,
 BLM,BL,BL,Saint Barthelemy,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Bacteria,0,6,0,6,0.0,100.0,,
-IMN,IM,IM,Isle of Man,FALSE,Europe,Northern Europe,,Europe,Northern-Europe,,Developed,Bacteria,5,1,0,6,83.33,16.67,,
+AIA,AI,AI,Anguilla,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Fungi,0,6,0,6,0.0,100.0,,
 GLP,GP,GP,Guadeloupe,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Archaea,0,6,0,6,0.0,100.0,,
-SVN,SI,SI,Slovenia,TRUE,Europe,Southern Europe,,Europe,Southern-Europe,,Developed,Archaea,0,5,0,5,0.0,100.0,True,High income
-TJK,TJ,TJ,Tajikistan,FALSE,Asia,Central Asia,,Asia,Central-Asia,,Developing,Protozoa,0,5,0,5,0.0,100.0,True,Lower middle income
+IMN,IM,IM,Isle of Man,FALSE,Europe,Northern Europe,,Europe,Northern-Europe,,Developed,Bacteria,5,1,0,6,83.33,16.67,,
 LAO,LA,LA,Lao People's Democratic Republic,FALSE,Asia,South-eastern Asia,,Asia,South-eastern-Asia,,Developing,Protozoa,0,5,0,5,0.0,100.0,True,Lower middle income
-JEY,JE,JE,Jersey,FALSE,Europe,Northern Europe,Channel Islands,Europe,Northern-Europe,Channel-Islands,Developed,Protozoa,0,5,0,5,0.0,100.0,,
-VIR,VI,VI,"Virgin Islands, U.S.",FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Viruses,0,5,0,5,0.0,100.0,,
+TJK,TJ,TJ,Tajikistan,FALSE,Asia,Central Asia,,Asia,Central-Asia,,Developing,Protozoa,0,5,0,5,0.0,100.0,True,Lower middle income
 SHN,SH,SH,"Saint Helena, Ascension and Tristan da Cunha",FALSE,Africa,Sub-Saharan Africa,Western Africa,Africa,Sub-Saharan-Africa,Western-Africa,Developing,Bacteria,0,5,0,5,0.0,100.0,,
+JEY,JE,JE,Jersey,FALSE,Europe,Northern Europe,Channel Islands,Europe,Northern-Europe,Channel-Islands,Developed,Protozoa,0,5,0,5,0.0,100.0,,
 FLK,FK,FK,Falkland Islands (Malvinas),FALSE,Americas,Latin America and the Caribbean,South America,Americas,Latin-America-and-the-Caribbean,South-America,Developing,Protozoa,0,5,0,5,0.0,100.0,,
-BGD,BD,BD,Bangladesh,FALSE,Asia,Southern Asia,,Asia,Southern-Asia,,Developing,Protozoa,0,4,0,4,0.0,100.0,True,Lower middle income
-SSD,SS,SS,South Sudan,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Protozoa,0,4,0,4,0.0,100.0,True,Low income
-MNG,MN,MN,Mongolia,FALSE,Asia,Eastern Asia,,Asia,Eastern-Asia,,Developing,Archaea,0,4,0,4,0.0,100.0,True,Upper middle income
-BTN,BT,BT,Bhutan,FALSE,Asia,Southern Asia,,Asia,Southern-Asia,,Developing,Protozoa,0,4,0,4,0.0,100.0,True,Lower middle income
-GEO,GE,GE,Georgia,FALSE,Asia,Western Asia,,Asia,Western-Asia,,Developing,Archaea,0,4,0,4,0.0,100.0,True,Upper middle income
+SVN,SI,SI,Slovenia,TRUE,Europe,Southern Europe,,Europe,Southern-Europe,,Developed,Archaea,0,5,0,5,0.0,100.0,True,High income
+VIR,VI,VI,"Virgin Islands, U.S.",FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Viruses,0,5,0,5,0.0,100.0,,
 SWZ,SZ,SZ,Swaziland,FALSE,Africa,Sub-Saharan Africa,Southern Africa,Africa,Sub-Saharan-Africa,Southern-Africa,Developing,Bacteria,0,4,0,4,0.0,100.0,True,Lower middle income
+MNG,MN,MN,Mongolia,FALSE,Asia,Eastern Asia,,Asia,Eastern-Asia,,Developing,Archaea,0,4,0,4,0.0,100.0,True,Upper middle income
+BGD,BD,BD,Bangladesh,FALSE,Asia,Southern Asia,,Asia,Southern-Asia,,Developing,Protozoa,0,4,0,4,0.0,100.0,True,Lower middle income
+BTN,BT,BT,Bhutan,FALSE,Asia,Southern Asia,,Asia,Southern-Asia,,Developing,Protozoa,0,4,0,4,0.0,100.0,True,Lower middle income
+SSD,SS,SS,South Sudan,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Protozoa,0,4,0,4,0.0,100.0,True,Low income
 AND,AD,AD,Andorra,FALSE,Europe,Southern Europe,,Europe,Southern-Europe,,Developed,Viruses,0,4,0,4,0.0,100.0,True,High income
-MSR,MS,MS,Montserrat,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Bacteria,0,4,0,4,0.0,100.0,,
+GEO,GE,GE,Georgia,FALSE,Asia,Western Asia,,Asia,Western-Asia,,Developing,Archaea,0,4,0,4,0.0,100.0,True,Upper middle income
 WLF,WF,WF,Wallis and Futuna,FALSE,Oceania,Polynesia,,Oceania,Polynesia,,Developing,Viruses,0,4,0,4,0.0,100.0,,
+MSR,MS,MS,Montserrat,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Bacteria,0,4,0,4,0.0,100.0,,
+MAC,MO,MO,Macao,FALSE,Asia,Eastern Asia,,Asia,Eastern-Asia,,Developing,Protozoa,0,4,0,4,0.0,100.0,,
 CYM,KY,KY,Cayman Islands,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Archaea,0,4,0,4,0.0,100.0,,
 ASM,AS,AS,American Samoa,FALSE,Oceania,Polynesia,,Oceania,Polynesia,,Developing,Viruses,0,4,0,4,0.0,100.0,,
 MAC,MO,MO,Macao,FALSE,Asia,Eastern Asia,,Asia,Eastern-Asia,,Developing,Bacteria,0,4,0,4,0.0,100.0,,
-MAC,MO,MO,Macao,FALSE,Asia,Eastern Asia,,Asia,Eastern-Asia,,Developing,Protozoa,0,4,0,4,0.0,100.0,,
-MWI,MW,MW,Malawi,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Archaea,0,3,0,3,0.0,100.0,True,Low income
-SWZ,SZ,SZ,Swaziland,FALSE,Africa,Sub-Saharan Africa,Southern Africa,Africa,Sub-Saharan-Africa,Southern-Africa,Developing,Viruses,0,3,0,3,0.0,100.0,True,Lower middle income
-PRK,KP,KP,"Korea, Democratic People's Republic of",FALSE,Asia,Eastern Asia,,Asia,Eastern-Asia,,Developing,Protozoa,0,3,0,3,0.0,100.0,True,Low income
-WSM,WS,WS,Samoa,FALSE,Oceania,Polynesia,,Oceania,Polynesia,,Developing,Archaea,0,3,0,3,0.0,100.0,True,Upper middle income
 BRB,BB,BB,Barbados,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Viruses,0,3,0,3,0.0,100.0,True,High income
+PRK,KP,KP,"Korea, Democratic People's Republic of",FALSE,Asia,Eastern Asia,,Asia,Eastern-Asia,,Developing,Protozoa,0,3,0,3,0.0,100.0,True,Low income
+SWZ,SZ,SZ,Swaziland,FALSE,Africa,Sub-Saharan Africa,Southern Africa,Africa,Sub-Saharan-Africa,Southern-Africa,Developing,Viruses,0,3,0,3,0.0,100.0,True,Lower middle income
+WSM,WS,WS,Samoa,FALSE,Oceania,Polynesia,,Oceania,Polynesia,,Developing,Archaea,0,3,0,3,0.0,100.0,True,Upper middle income
+MWI,MW,MW,Malawi,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Archaea,0,3,0,3,0.0,100.0,True,Low income
 CYM,KY,KY,Cayman Islands,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Viruses,0,3,0,3,0.0,100.0,,
-MAC,MO,MO,Macao,FALSE,Asia,Eastern Asia,,Asia,Eastern-Asia,,Developing,Chromista,0,3,0,3,0.0,100.0,,
-SXM,SX,SX,Sint Maarten (Dutch part),FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Fungi,0,3,0,3,0.0,100.0,,
-ABW,AW,AW,Aruba,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Archaea,0,3,0,3,0.0,100.0,,
 GGY,GG,GG,Guernsey,FALSE,Europe,Northern Europe,Channel Islands,Europe,Northern-Europe,Channel-Islands,Developed,Protozoa,0,3,0,3,0.0,100.0,,
+SXM,SX,SX,Sint Maarten (Dutch part),FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Fungi,0,3,0,3,0.0,100.0,,
+MAC,MO,MO,Macao,FALSE,Asia,Eastern Asia,,Asia,Eastern-Asia,,Developing,Chromista,0,3,0,3,0.0,100.0,,
+ABW,AW,AW,Aruba,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Archaea,0,3,0,3,0.0,100.0,,
 MNP,MP,MP,Northern Mariana Islands,FALSE,Oceania,Micronesia,,Oceania,Micronesia,,Developing,Protozoa,0,3,0,3,0.0,100.0,,
-LUX,LU,LU,Luxembourg,TRUE,Europe,Western Europe,,Europe,Western-Europe,,Developed,Archaea,0,2,0,2,0.0,100.0,True,High income
-PLW,PW,PW,Palau,FALSE,Oceania,Micronesia,,Oceania,Micronesia,,Developing,Viruses,0,2,0,2,0.0,100.0,True,High income
 GNQ,GQ,GQ,Equatorial Guinea,FALSE,Africa,Sub-Saharan Africa,Middle Africa,Africa,Sub-Saharan-Africa,Middle-Africa,Developing,Bacteria,0,2,0,2,0.0,100.0,True,Upper middle income
-MMR,MM,MM,Myanmar,FALSE,Asia,South-eastern Asia,,Asia,South-eastern-Asia,,Developing,Archaea,0,2,0,2,0.0,100.0,True,Lower middle income
-TKM,TM,TM,Turkmenistan,FALSE,Asia,Central Asia,,Asia,Central-Asia,,Developing,Protozoa,0,2,0,2,0.0,100.0,True,Upper middle income
 GUY,GY,GY,Guyana,FALSE,Americas,Latin America and the Caribbean,South America,Americas,Latin-America-and-the-Caribbean,South-America,Developing,Archaea,0,2,0,2,0.0,100.0,True,High income
 SMR,SM,SM,San Marino,FALSE,Europe,Southern Europe,,Europe,Southern-Europe,,Developed,Viruses,0,2,0,2,0.0,100.0,True,High income
 TUV,TV,TV,Tuvalu,FALSE,Oceania,Polynesia,,Oceania,Polynesia,,Developing,Protozoa,0,2,0,2,0.0,100.0,True,Upper middle income
-VGB,VG,VG,"Virgin Islands, British",FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Archaea,0,2,0,2,0.0,100.0,,
-CXR,CX,CX,Christmas Island,FALSE,Oceania,Australia and New Zealand,,Oceania,Australia-and-New-Zealand,,Developed,Viruses,0,2,0,2,0.0,100.0,,
-WLF,WF,WF,Wallis and Futuna,FALSE,Oceania,Polynesia,,Oceania,Polynesia,,Developing,Protozoa,0,2,0,2,0.0,100.0,,
-GIB,GI,GI,Gibraltar,FALSE,Europe,Southern Europe,,Europe,Southern-Europe,,Developed,Bacteria,0,2,0,2,0.0,100.0,,
-ALA,AX,AX,Aland Islands,FALSE,Europe,Northern Europe,,Europe,Northern-Europe,,Developed,Viruses,0,2,0,2,0.0,100.0,,
+PLW,PW,PW,Palau,FALSE,Oceania,Micronesia,,Oceania,Micronesia,,Developing,Viruses,0,2,0,2,0.0,100.0,True,High income
+TKM,TM,TM,Turkmenistan,FALSE,Asia,Central Asia,,Asia,Central-Asia,,Developing,Protozoa,0,2,0,2,0.0,100.0,True,Upper middle income
+MMR,MM,MM,Myanmar,FALSE,Asia,South-eastern Asia,,Asia,South-eastern-Asia,,Developing,Archaea,0,2,0,2,0.0,100.0,True,Lower middle income
+LUX,LU,LU,Luxembourg,TRUE,Europe,Western Europe,,Europe,Western-Europe,,Developed,Archaea,0,2,0,2,0.0,100.0,True,High income
 BLM,BL,BL,Saint Barthelemy,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Viruses,0,2,0,2,0.0,100.0,,
-CYM,KY,KY,Cayman Islands,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Protozoa,0,2,0,2,0.0,100.0,,
+GIB,GI,GI,Gibraltar,FALSE,Europe,Southern Europe,,Europe,Southern-Europe,,Developed,Bacteria,0,2,0,2,0.0,100.0,,
+CXR,CX,CX,Christmas Island,FALSE,Oceania,Australia and New Zealand,,Oceania,Australia-and-New-Zealand,,Developed,Viruses,0,2,0,2,0.0,100.0,,
 ESH,EH,EH,Western Sahara,FALSE,Africa,Northern Africa,,Africa,Northern-Africa,,Developing,Protozoa,0,2,0,2,0.0,100.0,,
-FLK,FK,FK,Falkland Islands (Malvinas),FALSE,Americas,Latin America and the Caribbean,South America,Americas,Latin-America-and-the-Caribbean,South-America,Developing,Archaea,0,2,0,2,0.0,100.0,,
+ALA,AX,AX,Aland Islands,FALSE,Europe,Northern Europe,,Europe,Northern-Europe,,Developed,Viruses,0,2,0,2,0.0,100.0,,
 ,,,,,,,,,,,,Chromista,0,2,0,2,0.0,100.0,,
-KHM,KH,KH,Cambodia,FALSE,Asia,South-eastern Asia,,Asia,South-eastern-Asia,,Developing,Archaea,0,1,0,1,0.0,100.0,True,Lower middle income
-KHM,KH,KH,Cambodia,FALSE,Asia,South-eastern Asia,,Asia,South-eastern-Asia,,Developing,Protozoa,0,1,0,1,0.0,100.0,True,Lower middle income
-YEM,YE,YE,Yemen,FALSE,Asia,Western Asia,,Asia,Western-Asia,,Developing,Archaea,0,1,0,1,0.0,100.0,True,Low income
-COM,KM,KM,Comoros,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Protozoa,0,1,0,1,0.0,100.0,True,Lower middle income
-TKM,TM,TM,Turkmenistan,FALSE,Asia,Central Asia,,Asia,Central-Asia,,Developing,Archaea,0,1,0,1,0.0,100.0,True,Upper middle income
-SMR,SM,SM,San Marino,FALSE,Europe,Southern Europe,,Europe,Southern-Europe,,Developed,Chromista,0,1,0,1,0.0,100.0,True,High income
+CYM,KY,KY,Cayman Islands,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Protozoa,0,2,0,2,0.0,100.0,,
+FLK,FK,FK,Falkland Islands (Malvinas),FALSE,Americas,Latin America and the Caribbean,South America,Americas,Latin-America-and-the-Caribbean,South-America,Developing,Archaea,0,2,0,2,0.0,100.0,,
+WLF,WF,WF,Wallis and Futuna,FALSE,Oceania,Polynesia,,Oceania,Polynesia,,Developing,Protozoa,0,2,0,2,0.0,100.0,,
+VGB,VG,VG,"Virgin Islands, British",FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Archaea,0,2,0,2,0.0,100.0,,
 NRU,NR,NR,Nauru,FALSE,Oceania,Micronesia,,Oceania,Micronesia,,Developing,Bacteria,0,1,0,1,0.0,100.0,True,High income
+KHM,KH,KH,Cambodia,FALSE,Asia,South-eastern Asia,,Asia,South-eastern-Asia,,Developing,Archaea,0,1,0,1,0.0,100.0,True,Lower middle income
+SMR,SM,SM,San Marino,FALSE,Europe,Southern Europe,,Europe,Southern-Europe,,Developed,Chromista,0,1,0,1,0.0,100.0,True,High income
 VCT,VC,VC,Saint Vincent and the Grenadines,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Protozoa,0,1,0,1,0.0,100.0,True,Upper middle income
+TKM,TM,TM,Turkmenistan,FALSE,Asia,Central Asia,,Asia,Central-Asia,,Developing,Archaea,0,1,0,1,0.0,100.0,True,Upper middle income
 NIU,NU,NU,Niue,FALSE,Oceania,Polynesia,,Oceania,Polynesia,,Developing,Viruses,0,1,0,1,0.0,100.0,True,High income
+ERI,ER,ER,Eritrea,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Protozoa,0,1,0,1,0.0,100.0,True,Low income
+STP,ST,ST,Sao Tome and Principe,FALSE,Africa,Sub-Saharan Africa,Middle Africa,Africa,Sub-Saharan-Africa,Middle-Africa,Developing,Protozoa,0,1,0,1,0.0,100.0,True,Lower middle income
+LCA,LC,LC,Saint Lucia,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Viruses,0,1,0,1,0.0,100.0,True,Upper middle income
+COM,KM,KM,Comoros,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Protozoa,0,1,0,1,0.0,100.0,True,Lower middle income
+MDV,MV,MV,Maldives,FALSE,Asia,Southern Asia,,Asia,Southern-Asia,,Developing,Viruses,0,1,0,1,0.0,100.0,True,Upper middle income
+KIR,KI,KI,Kiribati,FALSE,Oceania,Micronesia,,Oceania,Micronesia,,Developing,Viruses,0,1,0,1,0.0,100.0,True,Lower middle income
+YEM,YE,YE,Yemen,FALSE,Asia,Western Asia,,Asia,Western-Asia,,Developing,Archaea,0,1,0,1,0.0,100.0,True,Low income
+KHM,KH,KH,Cambodia,FALSE,Asia,South-eastern Asia,,Asia,South-eastern-Asia,,Developing,Protozoa,0,1,0,1,0.0,100.0,True,Lower middle income
 LBN,LB,LB,Lebanon,FALSE,Asia,Western Asia,,Asia,Western-Asia,,Developing,Protozoa,0,1,0,1,0.0,100.0,True,Lower middle income
 VUT,VU,VU,Vanuatu,FALSE,Oceania,Melanesia,,Oceania,Melanesia,,Developing,Protozoa,0,1,0,1,0.0,100.0,True,Lower middle income
-MCO,MC,MC,Monaco,FALSE,Europe,Western Europe,,Europe,Western-Europe,,Developed,Bacteria,0,1,0,1,0.0,100.0,True,High income
-KIR,KI,KI,Kiribati,FALSE,Oceania,Micronesia,,Oceania,Micronesia,,Developing,Viruses,0,1,0,1,0.0,100.0,True,Lower middle income
-STP,ST,ST,Sao Tome and Principe,FALSE,Africa,Sub-Saharan Africa,Middle Africa,Africa,Sub-Saharan-Africa,Middle-Africa,Developing,Protozoa,0,1,0,1,0.0,100.0,True,Lower middle income
-MDV,MV,MV,Maldives,FALSE,Asia,Southern Asia,,Asia,Southern-Asia,,Developing,Viruses,0,1,0,1,0.0,100.0,True,Upper middle income
-SMR,SM,SM,San Marino,FALSE,Europe,Southern Europe,,Europe,Southern-Europe,,Developed,Bacteria,0,1,0,1,0.0,100.0,True,High income
-LCA,LC,LC,Saint Lucia,FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Viruses,0,1,0,1,0.0,100.0,True,Upper middle income
-ERI,ER,ER,Eritrea,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Protozoa,0,1,0,1,0.0,100.0,True,Low income
 ARM,AM,AM,Armenia,FALSE,Asia,Western Asia,,Asia,Western-Asia,,Developing,Archaea,0,1,0,1,0.0,100.0,True,Upper middle income
+SMR,SM,SM,San Marino,FALSE,Europe,Southern Europe,,Europe,Southern-Europe,,Developed,Bacteria,0,1,0,1,0.0,100.0,True,High income
+MCO,MC,MC,Monaco,FALSE,Europe,Western Europe,,Europe,Western-Europe,,Developed,Bacteria,0,1,0,1,0.0,100.0,True,High income
 NFK,NF,NF,Norfolk Island,FALSE,Oceania,Australia and New Zealand,,Oceania,Australia-and-New-Zealand,,Developed,Viruses,0,1,0,1,0.0,100.0,,
 MAC,MO,MO,Macao,FALSE,Asia,Eastern Asia,,Asia,Eastern-Asia,,Developing,incertae sedis,0,1,0,1,0.0,100.0,,
-VAT,VA,VA,Holy See (Vatican City State),FALSE,Europe,Southern Europe,,Europe,Southern-Europe,,Developed,Chromista,0,1,0,1,0.0,100.0,,
-VGB,VG,VG,"Virgin Islands, British",FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Viruses,0,1,0,1,0.0,100.0,,
-IOT,IO,IO,British Indian Ocean Territory,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Protozoa,0,1,0,1,0.0,100.0,,
-BES,BQ,BQ,"Bonaire, Sint Eustatius and Saba",FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Viruses,0,1,0,1,0.0,100.0,,
 UMI,UM,UM,United States Minor Outlying Islands,FALSE,Oceania,Micronesia,,Oceania,Micronesia,,Developing,Viruses,0,1,0,1,0.0,100.0,,
 GUM,GU,GU,Guam,FALSE,Oceania,Micronesia,,Oceania,Micronesia,,Developing,Viruses,0,1,0,1,0.0,100.0,,
-,,,,,,,,,,,,Protozoa,0,1,0,1,0.0,100.0,,
 ,,,,,,,,,,,,Chromista,0,1,0,1,0.0,100.0,,
+VAT,VA,VA,Holy See (Vatican City State),FALSE,Europe,Southern Europe,,Europe,Southern-Europe,,Developed,Chromista,0,1,0,1,0.0,100.0,,
+BES,BQ,BQ,"Bonaire, Sint Eustatius and Saba",FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Viruses,0,1,0,1,0.0,100.0,,
+IOT,IO,IO,British Indian Ocean Territory,FALSE,Africa,Sub-Saharan Africa,Eastern Africa,Africa,Sub-Saharan-Africa,Eastern-Africa,Developing,Protozoa,0,1,0,1,0.0,100.0,,
+VGB,VG,VG,"Virgin Islands, British",FALSE,Americas,Latin America and the Caribbean,Caribbean,Americas,Latin-America-and-the-Caribbean,Caribbean,Developing,Viruses,0,1,0,1,0.0,100.0,,
+,,,,,,,,,,,,Protozoa,0,1,0,1,0.0,100.0,,
