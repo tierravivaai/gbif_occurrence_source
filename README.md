@@ -78,3 +78,8 @@ Filtered the enriched data for CBD Parties and generated weighted summary statis
 - **Engine**: DuckDB (for high-performance Parquet processing)
 - **Language**: Python 3.9
 - **Libraries**: pandas, requests, pyarrow, duckdb
+
+## Note on the use of AI
+
+The analysis in this repository was designed by Paul Oldham and implemented in Droid from Factory AI. The main models used in code 
+generation and testing were Gemini 3 Flash with planning performed in GPT-5.4 Codex.
