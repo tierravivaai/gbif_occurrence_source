@@ -1,13 +1,13 @@
 # AGENTS.md - GBIF Species Occurrence Source Analysis
 
 ## Project Overview
-This project analyzes the geographic distribution of data publishing for the GBIF 2026 occurrence dataset (3.7 billion records). It classifies records as **Internal** (published by an organization in the same country as the occurrence) or **External** (published from a different country) and segments the results by taxon, UN region, and CBD status.
+This project analyzes the geographic distribution of data publishing for the GBIF 2025 occurrence dataset (3.7 billion records). It classifies records as **Internal** (published by an organization in the same country as the occurrence) or **External** (published from a different country) and segments the results by taxon, UN region, and CBD status.
 
 ## Source Data & Locations
-- **GBIF Occurrence Data (2026-01-01)**: `/Volumes/Mybook18/TAXONOMY_ARCHIVE/gbifdump_20260101/occurrence.parquet/`
+- **GBIF Occurrence Data (2025-06-01)**: `/Volumes/Mybook18/TAXONOMY_ARCHIVE/gbifdump_20260101/occurrence.parquet/`
 - **GBIF Registry Lookup**: `data/gbif_registry_lookup.parquet` (Generated from GBIF API)
 - **Country Metadata**: `data-raw/countrycode.csv` and `data-raw/country_code.parquet`
-- **Citation**: GBIF.org (1 January 2026) GBIF Occurrence Download https://doi.org/10.15468/dl.vp6jpz
+- **Citation**: GBIF.org (1 June 2025) GBIF Occurrence Download https://doi.org/10.15468/dl.jsevhc, downloaded 1 January 2026.
 
 ## Key Scripts & Workflow
 1.  **Registry Reconciliation**:
