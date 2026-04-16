@@ -21,7 +21,7 @@ def generate_summaries(df, prefix):
     
     for group in groups:
         # Weighted aggregation
-        summary = df.groupby(group).agg({
+        summary = df.groupby(group, dropna=False).agg({
             'internal_count': 'sum',
             'external_count': 'sum',
             'unknown_count': 'sum',
@@ -53,7 +53,7 @@ def run_cbd_analysis():
     print("Analyzing CBD Parties (Excluding Aves)...")
     df_no_aves = pd.read_parquet(f"{PROCESSED_DIR}/source_by_country_kingdom_no_aves.parquet")
     # Aggregate kingdom-level records back to country level for this summary
-    df_no_aves_country = df_no_aves.groupby(['iso2c', 'iso3c', 'country_name', 'un_region_name', 'un_intermediate_region_name', 'un_developed_or_developing_countries', 'wb_income_group', 'is_cbd_party']).agg({
+    df_no_aves_country = df_no_aves.groupby(['iso2c', 'iso3c', 'country_name', 'un_region_name', 'un_intermediate_region_name', 'un_developed_or_developing_countries', 'wb_income_group', 'is_cbd_party'], dropna=False).agg({
         'internal_count': 'sum',
         'external_count': 'sum',
         'unknown_count': 'sum',
