@@ -72,5 +72,7 @@
    - No domestic publisher found (`internal_count = 0`)
 
 **Missing data to flag**:
-- [ ] LDC classification — needs sourcing
-- [ ] SIDS classification — needs sourcing
+- [x] LDC classification — sourced from UN DESA (44 countries, December 2024 list)
+- [x] SIDS classification — sourced from UN-OHRLLS (39 countries)
+
+**SIDS coverage note**: The official UN SIDS list has 39 member states, but only 36 appear in the Excluding Aves country table. Three Caribbean SIDS — Saint Kitts and Nevis (KNA), Saint Lucia (LCA), and Saint Vincent and the Grenadines (VCT) — have insufficient GBIF records in the no-aves dataset to produce a row. These countries do appear in the all-taxa source data with very small counts. The country table should note that 3 SIDS are absent due to low record counts rather than misclassification.
