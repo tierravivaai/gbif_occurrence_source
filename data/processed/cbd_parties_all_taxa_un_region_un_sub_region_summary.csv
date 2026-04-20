@@ -1,0 +1,18 @@
+un_region_name,un_sub_region_name,internal_count,external_count,unknown_count,total_count,internal_percentage,external_percentage
+Africa,Northern Africa,3712,3436517,6,3440235,0.11,99.89
+Africa,Sub-Saharan Africa,34680671,41596704,4370,76281745,45.46,54.53
+Americas,Latin America and the Caribbean,44338339,189174880,489,233513708,18.99,81.01
+Americas,Northern America,16922531,164645782,36,181568349,9.32,90.68
+Asia,Central Asia,66369,1105188,1,1171558,5.67,94.33
+Asia,Eastern Asia,22227547,14013011,63,36240621,61.33,38.67
+Asia,South-eastern Asia,196162,22786686,54,22982902,0.85,99.15
+Asia,Southern Asia,895918,59225985,670,60122573,1.49,98.51
+Asia,Western Asia,1952098,17248227,275,19200600,10.17,89.83
+Europe,Eastern Europe,22088212,26421044,105985,48615241,45.43,54.35
+Europe,Northern Europe,459001512,63862640,24119,522888271,87.78,12.21
+Europe,Southern Europe,49994934,65879551,337,115874822,43.15,56.85
+Europe,Western Europe,433620166,51320473,6682,484947321,89.42,10.58
+Oceania,Australia and New Zealand,87435348,70103851,38,157539237,55.5,44.5
+Oceania,Melanesia,238457,3026013,9,3264479,7.3,92.7
+Oceania,Micronesia,30,831559,2,831591,0.0,100.0
+Oceania,Polynesia,11219,413738,0,424957,2.64,97.36
