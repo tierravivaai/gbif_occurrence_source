@@ -121,9 +121,8 @@ def compute_publisher_country_share(
         registry_base_url=registry_base_url,
     )
 
-    grouped["org_country_explicit"] = (
-        grouped["publishingorgkey"].map(org_country_map).str.upper()
-    )
+    mapped = grouped["publishingorgkey"].map(org_country_map)
+    grouped["org_country_explicit"] = mapped.apply(lambda v: v.upper() if isinstance(v, str) else v)
 
     grouped["lookup_text"] = grouped.apply(
         lambda row: " ".join(

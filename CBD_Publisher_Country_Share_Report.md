@@ -7,7 +7,8 @@ _Generated: 2026-04-20 | Snapshot: 2026_
 This report examines the geographic origin of data publishing for countries that are Parties to the Convention on Biological Diversity (CBD). Each occurrence record in the GBIF dataset is classified as:
 
 - **Internal**: The record was published by an organisation based in the same country as the occurrence.
-- **External**: The record was published by an organisation based in a different country.
+- **Regional**: The record was published by an organisation in a different country within the same UN region (e.g. a US-published record for Canada is Regional, not External, because both are in the Americas).
+- **External**: The record was published by an organisation in a different UN region from the occurrence.
 - **Unknown**: The publisher's country could not be resolved from the GBIF registry.
 
 **Note on coverage:** Approximately 43 million records in the GBIF dataset (roughly 1.2% of 3.7 billion) have no occurrence country code and therefore cannot be assigned to any CBD Party. These records are excluded from the analysis.
@@ -28,88 +29,290 @@ For this reason, **the primary analysis in this report excludes Class Aves**. An
 
 ### 2.1 By UN Region
 
-| Un Region Name | Internal Count | External Count | Unknown Count | Total Count | Internal % | External % |
-| --- | --- | --- | --- | --- | --- | --- |
-| Africa | 4,729,996 | 20,773,432 | 4,376 | 25,507,804 | 18.54% | 81.44% |
-| Americas | 57,376,999 | 55,130,966 | 525 | 112,508,490 | 51.00% | 49.00% |
-| Asia | 23,015,653 | 26,720,883 | 1,063 | 49,737,599 | 46.27% | 53.72% |
-| Europe | 620,197,243 | 72,921,411 | 128,844 | 693,247,498 | 89.46% | 10.52% |
-| Oceania | 52,741,952 | 18,383,778 | 49 | 71,125,779 | 74.15% | 25.85% |
+| Un Region Name | Internal Count | Regional Count | External Count | Unknown Count | Total Count | Internal % | Regional % | External % |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Africa | 4,729,996 | 870,048 | 19,903,384 | 4,376 | 25,507,804 | 18.54% | 3.41% | 78.03% |
+| Americas | 57,376,999 | 34,306,838 | 20,824,128 | 525 | 112,508,490 | 51.00% | 30.49% | 18.51% |
+| Asia | 23,015,653 | 1,328,170 | 25,392,713 | 1,063 | 49,737,599 | 46.27% | 2.67% | 51.05% |
+| Europe | 620,197,243 | 42,383,594 | 30,537,817 | 128,844 | 693,247,498 | 89.46% | 6.11% | 4.41% |
+| Oceania | 52,741,952 | 1,089,356 | 17,294,422 | 49 | 71,125,779 | 74.15% | 1.53% | 24.32% |
 
 Europe dominates internal publishing, while Africa and the Americas have the majority of their biodiversity data published by organisations based elsewhere.
 
 ### 2.2 By UN Sub-region
 
-| UN Region | UN Sub-region | Internal Count | External Count | Unknown Count | Total Count | Internal % | External % |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| Africa | Northern Africa | 3,712 | 1,670,105 | 6 | 1,673,823 | 0.22% | 99.78% |
-| Africa | Sub-Saharan Africa | 4,726,284 | 19,103,327 | 4,370 | 23,833,981 | 19.83% | 80.15% |
-| Americas | Latin America and the Caribbean | 41,428,483 | 39,360,863 | 489 | 80,789,835 | 51.28% | 48.72% |
-| Americas | Northern America | 15,948,516 | 15,770,103 | 36 | 31,718,655 | 50.28% | 49.72% |
-| Asia | Central Asia | 66,066 | 660,131 | 1 | 726,198 | 9.10% | 90.90% |
-| Asia | Eastern Asia | 20,483,556 | 7,285,488 | 63 | 27,769,107 | 73.76% | 26.24% |
-| Asia | South-eastern Asia | 189,933 | 9,222,796 | 54 | 9,412,783 | 2.02% | 97.98% |
-| Asia | Southern Asia | 803,400 | 5,305,824 | 670 | 6,109,894 | 13.15% | 86.84% |
-| Asia | Western Asia | 1,472,698 | 4,246,644 | 275 | 5,719,617 | 25.75% | 74.25% |
-| Europe | Eastern Europe | 16,921,553 | 13,592,071 | 97,706 | 30,611,330 | 55.28% | 44.40% |
-| Europe | Northern Europe | 266,185,804 | 15,266,893 | 24,119 | 281,476,816 | 94.57% | 5.42% |
-| Europe | Southern Europe | 35,591,058 | 16,776,804 | 337 | 52,368,199 | 67.96% | 32.04% |
-| Europe | Western Europe | 301,498,828 | 27,285,643 | 6,682 | 328,791,153 | 91.70% | 8.30% |
-| Oceania | Australia and New Zealand | 52,493,413 | 15,003,294 | 38 | 67,496,745 | 77.77% | 22.23% |
-| Oceania | Melanesia | 238,456 | 2,290,596 | 9 | 2,529,061 | 9.43% | 90.57% |
-| Oceania | Micronesia | 30 | 708,889 | 2 | 708,921 | 0.00% | 100.00% |
-| Oceania | Polynesia | 10,053 | 380,999 | 0 | 391,052 | 2.57% | 97.43% |
+| UN Region | UN Sub-region | Internal Count | Regional Count | External Count | Unknown Count | Total Count | Internal % | Regional % | External % |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Africa | Northern Africa | 3,712 | 1,832 | 1,668,273 | 6 | 1,673,823 | 0.22% | 0.11% | 99.67% |
+| Africa | Sub-Saharan Africa | 4,726,284 | 868,216 | 18,235,111 | 4,370 | 23,833,981 | 19.83% | 3.64% | 76.51% |
+| Americas | Latin America and the Caribbean | 41,428,483 | 24,811,964 | 14,548,899 | 489 | 80,789,835 | 51.28% | 30.71% | 18.01% |
+| Americas | Northern America | 15,948,516 | 9,494,874 | 6,275,229 | 36 | 31,718,655 | 50.28% | 29.93% | 19.78% |
+| Asia | Central Asia | 66,066 | 53,871 | 606,260 | 1 | 726,198 | 9.10% | 7.42% | 83.48% |
+| Asia | Eastern Asia | 20,483,556 | 275,358 | 7,010,130 | 63 | 27,769,107 | 73.76% | 0.99% | 25.24% |
+| Asia | South-eastern Asia | 189,933 | 522,551 | 8,700,245 | 54 | 9,412,783 | 2.02% | 5.55% | 92.43% |
+| Asia | Southern Asia | 803,400 | 90,128 | 5,215,696 | 670 | 6,109,894 | 13.15% | 1.48% | 85.36% |
+| Asia | Western Asia | 1,472,698 | 386,262 | 3,860,382 | 275 | 5,719,617 | 25.75% | 6.75% | 67.49% |
+| Europe | Eastern Europe | 16,921,553 | 4,553,269 | 9,038,802 | 97,706 | 30,611,330 | 55.28% | 14.87% | 29.53% |
+| Europe | Northern Europe | 266,185,804 | 8,573,363 | 6,693,530 | 24,119 | 281,476,816 | 94.57% | 3.05% | 2.38% |
+| Europe | Southern Europe | 35,591,058 | 10,853,719 | 5,923,085 | 337 | 52,368,199 | 67.96% | 20.73% | 11.31% |
+| Europe | Western Europe | 301,498,828 | 18,403,243 | 8,882,400 | 6,682 | 328,791,153 | 91.70% | 5.60% | 2.70% |
+| Oceania | Australia and New Zealand | 52,493,413 | 272,753 | 14,730,541 | 38 | 67,496,745 | 77.77% | 0.40% | 21.82% |
+| Oceania | Melanesia | 238,456 | 598,082 | 1,692,514 | 9 | 2,529,061 | 9.43% | 23.65% | 66.92% |
+| Oceania | Micronesia | 30 | 60,237 | 648,652 | 2 | 708,921 | 0.00% | 8.50% | 91.50% |
+| Oceania | Polynesia | 10,053 | 158,284 | 222,715 | 0 | 391,052 | 2.57% | 40.48% | 56.95% |
 
 Sub-Saharan Africa shows a markedly different pattern from Northern Africa. In the Americas, Latin America and the Caribbean has near-parity internal/external publishing, while Northern America is close to even.
 
 ### 2.3 By UN Intermediate Region
 
-| UN Region | UN Sub-region | Intermediate Region | Internal Count | External Count | Unknown Count | Total Count | Internal % | External % |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Africa | Northern Africa | — | 3,712 | 1,670,105 | 6 | 1,673,823 | 0.22% | 99.78% |
-| Africa | Sub-Saharan Africa | Eastern Africa | 763,277 | 7,412,098 | 4,317 | 8,179,692 | 9.33% | 90.62% |
-| Africa | Sub-Saharan Africa | Middle Africa | 230,871 | 3,340,934 | 43 | 3,571,848 | 6.46% | 93.54% |
-| Africa | Sub-Saharan Africa | Southern Africa | 2,509,962 | 5,461,985 | 3 | 7,971,950 | 31.48% | 68.52% |
-| Africa | Sub-Saharan Africa | Western Africa | 1,222,174 | 2,888,310 | 7 | 4,110,491 | 29.73% | 70.27% |
-| Americas | Latin America and the Caribbean | Caribbean | 143,267 | 2,523,813 | 6 | 2,667,086 | 5.37% | 94.63% |
-| Americas | Latin America and the Caribbean | Central America | 11,351,234 | 18,281,927 | 33 | 29,633,194 | 38.31% | 61.69% |
-| Americas | Latin America and the Caribbean | South America | 29,933,982 | 18,555,123 | 450 | 48,489,555 | 61.73% | 38.27% |
-| Americas | Northern America | — | 15,948,516 | 15,770,103 | 36 | 31,718,655 | 50.28% | 49.72% |
-| Asia | Central Asia | — | 66,066 | 660,131 | 1 | 726,198 | 9.10% | 90.90% |
-| Asia | Eastern Asia | — | 20,483,556 | 7,285,488 | 63 | 27,769,107 | 73.76% | 26.24% |
-| Asia | South-eastern Asia | — | 189,933 | 9,222,796 | 54 | 9,412,783 | 2.02% | 97.98% |
-| Asia | Southern Asia | — | 803,400 | 5,305,824 | 670 | 6,109,894 | 13.15% | 86.84% |
-| Asia | Western Asia | — | 1,472,698 | 4,246,644 | 275 | 5,719,617 | 25.75% | 74.25% |
-| Europe | Eastern Europe | — | 16,921,553 | 13,592,071 | 97,706 | 30,611,330 | 55.28% | 44.40% |
-| Europe | Northern Europe | — | 266,185,804 | 15,266,893 | 24,119 | 281,476,816 | 94.57% | 5.42% |
-| Europe | Southern Europe | — | 35,591,058 | 16,776,804 | 337 | 52,368,199 | 67.96% | 32.04% |
-| Europe | Western Europe | — | 301,498,828 | 27,285,643 | 6,682 | 328,791,153 | 91.70% | 8.30% |
-| Oceania | Australia and New Zealand | — | 52,493,413 | 15,003,294 | 38 | 67,496,745 | 77.77% | 22.23% |
-| Oceania | Melanesia | — | 238,456 | 2,290,596 | 9 | 2,529,061 | 9.43% | 90.57% |
-| Oceania | Micronesia | — | 30 | 708,889 | 2 | 708,921 | 0.00% | 100.00% |
-| Oceania | Polynesia | — | 10,053 | 380,999 | 0 | 391,052 | 2.57% | 97.43% |
+| UN Region | UN Sub-region | Intermediate Region | Internal Count | Regional Count | External Count | Unknown Count | Total Count | Internal % | Regional % | External % |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Africa | Northern Africa | — | 3,712 | 1,832 | 1,668,273 | 6 | 1,673,823 | 0.22% | 0.11% | 99.67% |
+| Africa | Sub-Saharan Africa | Eastern Africa | 763,277 | 293,982 | 7,118,116 | 4,317 | 8,179,692 | 9.33% | 3.59% | 87.02% |
+| Africa | Sub-Saharan Africa | Middle Africa | 230,871 | 173,247 | 3,167,687 | 43 | 3,571,848 | 6.46% | 4.85% | 88.68% |
+| Africa | Sub-Saharan Africa | Southern Africa | 2,509,962 | 253,952 | 5,208,033 | 3 | 7,971,950 | 31.48% | 3.19% | 65.33% |
+| Africa | Sub-Saharan Africa | Western Africa | 1,222,174 | 147,035 | 2,741,275 | 7 | 4,110,491 | 29.73% | 3.58% | 66.69% |
+| Americas | Latin America and the Caribbean | Caribbean | 143,267 | 1,951,140 | 572,673 | 6 | 2,667,086 | 5.37% | 73.16% | 21.47% |
+| Americas | Latin America and the Caribbean | Central America | 11,351,234 | 10,929,383 | 7,352,544 | 33 | 29,633,194 | 38.31% | 36.88% | 24.81% |
+| Americas | Latin America and the Caribbean | South America | 29,933,982 | 11,931,441 | 6,623,682 | 450 | 48,489,555 | 61.73% | 24.61% | 13.66% |
+| Americas | Northern America | — | 15,948,516 | 9,494,874 | 6,275,229 | 36 | 31,718,655 | 50.28% | 29.93% | 19.78% |
+| Asia | Central Asia | — | 66,066 | 53,871 | 606,260 | 1 | 726,198 | 9.10% | 7.42% | 83.48% |
+| Asia | Eastern Asia | — | 20,483,556 | 275,358 | 7,010,130 | 63 | 27,769,107 | 73.76% | 0.99% | 25.24% |
+| Asia | South-eastern Asia | — | 189,933 | 522,551 | 8,700,245 | 54 | 9,412,783 | 2.02% | 5.55% | 92.43% |
+| Asia | Southern Asia | — | 803,400 | 90,128 | 5,215,696 | 670 | 6,109,894 | 13.15% | 1.48% | 85.36% |
+| Asia | Western Asia | — | 1,472,698 | 386,262 | 3,860,382 | 275 | 5,719,617 | 25.75% | 6.75% | 67.49% |
+| Europe | Eastern Europe | — | 16,921,553 | 4,553,269 | 9,038,802 | 97,706 | 30,611,330 | 55.28% | 14.87% | 29.53% |
+| Europe | Northern Europe | — | 266,185,804 | 8,573,363 | 6,693,530 | 24,119 | 281,476,816 | 94.57% | 3.05% | 2.38% |
+| Europe | Southern Europe | — | 35,591,058 | 10,853,719 | 5,923,085 | 337 | 52,368,199 | 67.96% | 20.73% | 11.31% |
+| Europe | Western Europe | — | 301,498,828 | 18,403,243 | 8,882,400 | 6,682 | 328,791,153 | 91.70% | 5.60% | 2.70% |
+| Oceania | Australia and New Zealand | — | 52,493,413 | 272,753 | 14,730,541 | 38 | 67,496,745 | 77.77% | 0.40% | 21.82% |
+| Oceania | Melanesia | — | 238,456 | 598,082 | 1,692,514 | 9 | 2,529,061 | 9.43% | 23.65% | 66.92% |
+| Oceania | Micronesia | — | 30 | 60,237 | 648,652 | 2 | 708,921 | 0.00% | 8.50% | 91.50% |
+| Oceania | Polynesia | — | 10,053 | 158,284 | 222,715 | 0 | 391,052 | 2.57% | 40.48% | 56.95% |
 
 At the intermediate region level, Eastern Africa and Middle Africa remain heavily dependent on external publishers. Southern Africa is the exception within Africa, driven by South African publishing organisations. In the Americas, the Caribbean stands out for high external dependence.
 
 ### 2.4 By Development Status
 
-| Development Status | Internal Count | External Count | Unknown Count | Total Count | Internal % | External % |
-| --- | --- | --- | --- | --- | --- | --- |
-| Developed | 704,875,875 | 106,529,834 | 128,938 | 811,534,647 | 86.86% | 13.13% |
-| Developing | 53,185,968 | 87,400,636 | 5,919 | 140,592,523 | 37.83% | 62.17% |
+| Development Status | Internal Count | Regional Count | External Count | Unknown Count | Total Count | Internal % | Regional % | External % |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Developed | 704,875,875 | 52,318,807 | 54,211,027 | 128,938 | 811,534,647 | 86.86% | 6.45% | 6.68% |
+| Developing | 53,185,968 | 27,659,199 | 59,741,437 | 5,919 | 140,592,523 | 37.83% | 19.67% | 42.49% |
 
 Developing countries publish a substantially smaller share of their own biodiversity data internally compared to developed countries.
 
 ### 2.5 By World Bank Income Group
 
-| Income Group | Internal Count | External Count | Unknown Count | Total Count | Internal % | External % |
-| --- | --- | --- | --- | --- | --- | --- |
-| High income | 713,056,746 | 118,191,717 | 129,090 | 831,377,553 | 85.77% | 14.22% |
-| Low income | 479,246 | 7,937,884 | 4,345 | 8,421,475 | 5.69% | 94.26% |
-| Lower middle income | 3,087,738 | 21,115,420 | 292 | 24,203,450 | 12.76% | 87.24% |
-| Upper middle income | 41,438,113 | 46,685,449 | 1,130 | 88,124,692 | 47.02% | 52.98% |
+| Income Group | Internal Count | Regional Count | External Count | Unknown Count | Total Count | Internal % | Regional % | External % |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| High income | 713,056,746 | 56,207,422 | 61,984,295 | 129,090 | 831,377,553 | 85.77% | 6.76% | 7.46% |
+| Low income | 479,246 | 444,475 | 7,493,409 | 4,345 | 8,421,475 | 5.69% | 5.28% | 88.98% |
+| Lower middle income | 3,087,738 | 4,437,797 | 16,677,623 | 292 | 24,203,450 | 12.76% | 18.34% | 68.91% |
+| Upper middle income | 41,438,113 | 18,888,312 | 27,797,137 | 1,130 | 88,124,692 | 47.02% | 21.43% | 31.54% |
 
 There is a steep gradient: low and lower-middle income countries are almost entirely dependent on external publishers. Upper middle income countries show improved internal publishing shares when Aves is excluded.
+
+### 2.6 Per-Country Table (Alphabetical)
+
+LDC = Least Developed Country. SIDS = Small Island Developing State. Int % = Internal publishing percentage (same country). Reg % = Regional publishing percentage (same UN region, different country). Ext % = External publishing percentage (different UN region). Flags indicate data quality concerns.
+
+| Country | ISO3 | UN Region | Income Group | LDC | SIDS | Internal | Regional | External | Total | Int % | Reg % | Ext % | Flags |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Afghanistan | AFG | Asia | Low income | Yes | — | 0 | 2,001 | 723,385 | 725,386 | 0.00% | 0.28% | 99.72% | No domestic publisher |
+| Albania | ALB | Europe | Upper middle income | — | — | 2 | 46,152 | 38,344 | 84,498 | 0.00% | 54.62% | 45.38% | — |
+| Algeria | DZA | Africa | Upper middle income | — | — | 0 | 229 | 299,660 | 299,893 | 0.00% | 0.08% | 99.92% | No domestic publisher |
+| Andorra | AND | Europe | High income | — | — | 90,182 | 34,511 | 4,818 | 129,514 | 69.63% | 26.65% | 3.72% | — |
+| Angola | AGO | Africa | Lower middle income | Yes | — | 43,426 | 14,554 | 230,868 | 288,848 | 15.03% | 5.04% | 79.93% | — |
+| Antigua and Barbuda | ATG | Americas | High income | — | Yes | 0 | 23,914 | 4,616 | 28,530 | 0.00% | 83.82% | 16.18% | — |
+| Argentina | ARG | Americas | Upper middle income | — | — | 1,108,476 | 1,156,837 | 665,982 | 2,931,339 | 37.81% | 39.46% | 22.72% | — |
+| Armenia | ARM | Asia | Upper middle income | — | — | 23,868 | 2,084 | 144,572 | 170,524 | 14.00% | 1.22% | 84.78% | — |
+| Australia | AUS | Oceania | High income | — | — | 47,363,575 | 98,087 | 11,230,957 | 58,692,642 | 80.70% | 0.17% | 19.14% | — |
+| Austria | AUT | Europe | High income | — | — | 7,532,463 | 1,896,653 | 1,540,434 | 10,969,573 | 68.67% | 17.29% | 14.04% | — |
+| Azerbaijan | AZE | Asia | Upper middle income | — | — | 16,704 | 2,082 | 105,279 | 124,066 | 13.46% | 1.68% | 84.86% | — |
+| Bahamas | BHS | Americas | High income | — | Yes | 0 | 323,942 | 70,995 | 394,937 | 0.00% | 82.02% | 17.98% | No domestic publisher |
+| Bahrain | BHR | Asia | High income | — | — | 0 | 85 | 5,300 | 5,385 | 0.00% | 1.58% | 98.42% | — |
+| Bangladesh | BGD | Asia | Lower middle income | Yes | — | 71 | 314 | 170,187 | 170,572 | 0.04% | 0.18% | 99.77% | — |
+| Barbados | BRB | Americas | High income | — | Yes | 2,955 | 37,755 | 12,936 | 53,646 | 5.51% | 70.38% | 24.11% | — |
+| Belarus | BLR | Europe | Upper middle income | — | — | 2,419 | 57,384 | 175,945 | 235,748 | 1.03% | 24.34% | 74.63% | — |
+| Belgium | BEL | Europe | High income | — | — | 21,156,446 | 886,190 | 332,322 | 22,374,961 | 94.55% | 3.96% | 1.49% | — |
+| Belize | BLZ | Americas | Upper middle income | — | Yes | 7 | 257,020 | 56,725 | 313,752 | 0.00% | 81.92% | 18.08% | — |
+| Benin | BEN | Africa | Lower middle income | Yes | — | 824,747 | 26,699 | 193,694 | 1,045,140 | 78.91% | 2.55% | 18.53% | — |
+| Bhutan | BTN | Asia | Lower middle income | — | — | 6,483 | 7,291 | 70,938 | 84,712 | 7.65% | 8.61% | 83.74% | — |
+| Bolivia, Plurinational State of | BOL | Americas | Lower middle income | — | — | 4,292 | 1,066,939 | 306,520 | 1,377,766 | 0.31% | 77.44% | 22.25% | — |
+| Bosnia and Herzegovina | BIH | Europe | Upper middle income | — | — | 0 | 48,535 | 19,607 | 68,143 | 0.00% | 71.23% | 28.77% | — |
+| Botswana | BWA | Africa | Upper middle income | — | — | 20,031 | 40,408 | 132,612 | 193,051 | 10.38% | 20.93% | 68.69% | — |
+| Brazil | BRA | Americas | Upper middle income | — | — | 13,516,974 | 2,535,141 | 2,100,657 | 18,152,807 | 74.46% | 13.97% | 11.57% | — |
+| Brunei Darussalam | BRN | Asia | High income | — | — | 0 | 141 | 65,062 | 65,204 | 0.00% | 0.22% | 99.78% | — |
+| Bulgaria | BGR | Europe | High income | — | — | 40,527 | 256,528 | 195,615 | 492,696 | 8.23% | 52.07% | 39.70% | — |
+| Burkina Faso | BFA | Africa | Low income | Yes | — | 6,979 | 43,521 | 182,503 | 233,003 | 3.00% | 18.68% | 78.33% | — |
+| Burundi | BDI | Africa | Low income | Yes | — | 1,148 | 1,731 | 111,141 | 114,020 | 1.01% | 1.52% | 97.48% | — |
+| Cabo Verde | CPV | Africa | Upper middle income | — | Yes | 0 | 61 | 129,063 | 129,124 | 0.00% | 0.05% | 99.95% | No domestic publisher |
+| Cambodia | KHM | Asia | Lower middle income | Yes | — | 24,074 | 7,545 | 83,266 | 114,885 | 20.95% | 6.57% | 72.48% | — |
+| Cameroon | CMR | Africa | Lower middle income | — | — | 77,830 | 81,536 | 698,655 | 858,061 | 9.07% | 9.50% | 81.42% | — |
+| Canada | CAN | Americas | High income | — | — | 15,948,516 | 9,494,874 | 6,275,229 | 31,718,655 | 50.28% | 29.93% | 19.78% | — |
+| Central African Republic | CAF | Africa | Low income | Yes | — | 0 | 10,168 | 103,782 | 113,952 | 0.00% | 8.92% | 91.08% | No domestic publisher |
+| Chad | TCD | Africa | Low income | Yes | — | 0 | 66 | 59,979 | 60,045 | 0.00% | 0.11% | 99.89% | — |
+| Chile | CHL | Americas | High income | — | — | 3,827,845 | 769,590 | 488,686 | 5,086,440 | 75.26% | 15.13% | 9.61% | — |
+| China | CHN | Asia | Upper middle income | — | — | 4,245,544 | 57,602 | 4,059,833 | 8,363,020 | 50.77% | 0.69% | 48.55% | — |
+| Colombia | COL | Americas | Upper middle income | — | — | 10,709,185 | 1,189,291 | 698,296 | 12,596,774 | 85.02% | 9.44% | 5.54% | — |
+| Comoros | COM | Africa | Lower middle income | Yes | Yes | 0 | 3,375 | 40,547 | 43,922 | 0.00% | 7.68% | 92.32% | — |
+| Congo | COG | Africa | Lower middle income | — | — | 155 | 3,872 | 106,970 | 110,998 | 0.14% | 3.49% | 96.37% | — |
+| Congo, the Democratic Republic of the | COD | Africa | Low income | Yes | — | 27,215 | 15,508 | 1,123,493 | 1,166,216 | 2.33% | 1.33% | 96.34% | — |
+| Cook Islands | COK | Oceania | High income | — | Yes | 0 | 31,433 | 36,351 | 67,784 | 0.00% | 46.37% | 53.63% | — |
+| Costa Rica | CRI | Americas | High income | — | — | 3,987,628 | 1,670,460 | 5,441,956 | 11,100,060 | 35.92% | 15.05% | 49.03% | — |
+| Cote d'Ivoire | CIV | Africa | Lower middle income | — | — | 62,787 | 21,921 | 441,559 | 526,267 | 11.93% | 4.17% | 83.90% | — |
+| Croatia | HRV | Europe | High income | — | — | 7,908 | 333,954 | 222,566 | 564,538 | 1.40% | 59.16% | 39.42% | — |
+| Cuba | CUB | Americas | Upper middle income | — | Yes | 58,360 | 431,507 | 216,557 | 706,424 | 8.26% | 61.08% | 30.66% | — |
+| Cyprus | CYP | Asia | High income | — | — | 0 | 735 | 174,096 | 174,834 | 0.00% | 0.42% | 99.58% | No domestic publisher |
+| Czech Republic | CZE | Europe | High income | — | — | 162,422 | 897,203 | 606,628 | 1,667,733 | 9.74% | 53.80% | 36.37% | — |
+| Denmark | DNK | Europe | High income | — | — | 22,701,136 | 835,289 | 632,709 | 24,169,196 | 93.93% | 3.46% | 2.62% | — |
+| Djibouti | DJI | Africa | Lower middle income | Yes | — | 0 | 48 | 12,541 | 12,589 | 0.00% | 0.38% | 99.62% | — |
+| Dominica | DMA | Americas | Upper middle income | — | Yes | 0 | 54,825 | 32,482 | 87,307 | 0.00% | 62.80% | 37.20% | — |
+| Dominican Republic | DOM | Americas | Upper middle income | — | Yes | 14,764 | 333,142 | 59,015 | 406,921 | 3.63% | 81.87% | 14.50% | — |
+| Ecuador | ECU | Americas | Upper middle income | — | — | 427,361 | 1,758,200 | 673,550 | 2,859,124 | 14.95% | 61.49% | 23.56% | — |
+| Egypt | EGY | Africa | Lower middle income | — | — | 0 | 624 | 391,254 | 391,880 | 0.00% | 0.16% | 99.84% | No domestic publisher |
+| El Salvador | SLV | Americas | Upper middle income | — | — | 0 | 130,191 | 100,320 | 230,511 | 0.00% | 56.48% | 43.52% | No domestic publisher |
+| Equatorial Guinea | GNQ | Africa | Upper middle income | — | — | 0 | 1,757 | 90,955 | 92,712 | 0.00% | 1.90% | 98.10% | — |
+| Eritrea | ERI | Africa | Low income | Yes | — | 0 | 156 | 25,077 | 25,233 | 0.00% | 0.62% | 99.38% | — |
+| Estonia | EST | Europe | High income | — | — | 5,015,238 | 127,626 | 47,178 | 5,190,077 | 96.63% | 2.46% | 0.91% | — |
+| Ethiopia | ETH | Africa | Low income | Yes | — | 1,771 | 4,846 | 458,814 | 465,431 | 0.38% | 1.04% | 98.58% | — |
+| Fiji | FJI | Oceania | Upper middle income | — | Yes | 38,077 | 37,492 | 252,476 | 328,051 | 11.61% | 11.43% | 76.96% | — |
+| Finland | FIN | Europe | High income | — | — | 24,176,455 | 1,032,345 | 665,443 | 25,875,260 | 93.43% | 3.99% | 2.57% | — |
+| France | FRA | Europe | High income | — | — | 142,147,612 | 4,324,040 | 2,798,816 | 149,270,619 | 95.23% | 2.90% | 1.87% | — |
+| Gabon | GAB | Africa | Upper middle income | — | — | 79,075 | 45,167 | 666,988 | 791,230 | 9.99% | 5.71% | 84.30% | — |
+| Gambia | GMB | Africa | Low income | Yes | — | 0 | 508 | 49,429 | 49,937 | 0.00% | 1.02% | 98.98% | — |
+| Georgia | GEO | Asia | Upper middle income | — | — | 17,200 | 308 | 372,639 | 390,152 | 4.41% | 0.08% | 95.51% | — |
+| Germany | DEU | Europe | High income | — | — | 35,616,913 | 8,091,563 | 3,033,966 | 46,742,713 | 76.20% | 17.31% | 6.49% | — |
+| Ghana | GHA | Africa | Lower middle income | — | — | 132,983 | 12,263 | 270,881 | 416,127 | 31.96% | 2.95% | 65.10% | — |
+| Greece | GRC | Europe | High income | — | — | 32,063 | 1,094,665 | 457,235 | 1,584,075 | 2.02% | 69.10% | 28.86% | — |
+| Grenada | GRD | Americas | Upper middle income | — | Yes | 0 | 21,735 | 10,023 | 31,758 | 0.00% | 68.44% | 31.56% | — |
+| Guatemala | GTM | Americas | Upper middle income | — | — | 51,315 | 518,708 | 106,570 | 676,594 | 7.58% | 76.66% | 15.75% | — |
+| Guinea | GIN | Africa | Lower middle income | Yes | — | 43,452 | 7,530 | 189,199 | 240,185 | 18.09% | 3.14% | 78.77% | — |
+| Guinea-Bissau | GNB | Africa | Low income | Yes | Yes | 0 | 264 | 38,641 | 38,905 | 0.00% | 0.68% | 99.32% | — |
+| Guyana | GUY | Americas | High income | — | Yes | 6,787 | 290,552 | 170,799 | 468,138 | 1.45% | 62.07% | 36.48% | — |
+| Haiti | HTI | Americas | Lower middle income | Yes | Yes | 0 | 160,642 | 24,547 | 185,189 | 0.00% | 86.74% | 13.26% | No domestic publisher |
+| Honduras | HND | Americas | Lower middle income | — | — | 0 | 353,184 | 93,889 | 447,073 | 0.00% | 79.00% | 21.00% | No domestic publisher |
+| Hungary | HUN | Europe | High income | — | — | 405,868 | 319,411 | 340,646 | 1,065,973 | 38.07% | 29.96% | 31.96% | — |
+| Iceland | ISL | Europe | High income | — | — | 474,918 | 313,127 | 69,709 | 857,754 | 55.37% | 36.51% | 8.13% | — |
+| India | IND | Asia | Lower middle income | — | — | 613,960 | 30,095 | 2,499,910 | 3,143,981 | 19.53% | 0.96% | 79.51% | — |
+| Indonesia | IDN | Asia | Upper middle income | — | — | 83,972 | 116,124 | 2,900,007 | 3,100,119 | 2.71% | 3.75% | 93.55% | — |
+| Iran, Islamic Republic of | IRN | Asia | Upper middle income | — | — | 4,251 | 1,728 | 543,684 | 550,173 | 0.77% | 0.31% | 98.82% | — |
+| Iraq | IRQ | Asia | Upper middle income | — | — | 0 | 2,454 | 103,283 | 105,737 | 0.00% | 2.32% | 97.68% | No domestic publisher |
+| Ireland | IRL | Europe | High income | — | — | 1,717,573 | 996,674 | 138,589 | 2,852,837 | 60.21% | 34.94% | 4.86% | — |
+| Israel | ISR | Asia | High income | — | — | 1,410,081 | 285 | 421,925 | 1,832,304 | 76.96% | 0.02% | 23.03% | — |
+| Italy | ITA | Europe | High income | — | — | 1,376,755 | 3,048,131 | 1,758,224 | 6,183,142 | 22.27% | 49.30% | 28.44% | — |
+| Jamaica | JAM | Americas | Upper middle income | — | Yes | 13,207 | 356,152 | 78,588 | 447,953 | 2.95% | 79.51% | 17.54% | — |
+| Japan | JPN | Asia | High income | — | — | 10,807,360 | 146,423 | 1,880,040 | 12,833,843 | 84.21% | 1.14% | 14.65% | — |
+| Jordan | JOR | Asia | Lower middle income | — | — | 0 | 4,750 | 56,117 | 60,867 | 0.00% | 7.80% | 92.20% | — |
+| Kazakhstan | KAZ | Asia | Upper middle income | — | — | 24,053 | 44,954 | 240,451 | 309,459 | 7.77% | 14.53% | 77.70% | — |
+| Kenya | KEN | Africa | Lower middle income | — | — | 152,281 | 27,767 | 705,876 | 885,924 | 17.19% | 3.13% | 79.68% | — |
+| Kiribati | KIR | Oceania | Lower middle income | Yes | Yes | 0 | 9,791 | 163,113 | 172,904 | 0.00% | 5.66% | 94.34% | No domestic publisher |
+| Korea, Democratic People's Republic of | PRK | Asia | Low income | — | — | 0 | 45,852 | 24,148 | 70,000 | 0.00% | 65.50% | 34.50% | — |
+| Korea, Republic of | KOR | Asia | High income | — | — | 5,429,343 | 21,163 | 787,400 | 6,237,906 | 87.04% | 0.34% | 12.62% | — |
+| Kuwait | KWT | Asia | High income | — | — | 0 | 39 | 19,760 | 19,799 | 0.00% | 0.20% | 99.80% | — |
+| Kyrgyzstan | KGZ | Asia | Lower middle income | — | — | 0 | 4,905 | 163,359 | 168,264 | 0.00% | 2.92% | 97.08% | No domestic publisher |
+| Lao People's Democratic Republic | LAO | Asia | Lower middle income | Yes | — | 0 | 6,709 | 153,429 | 160,138 | 0.00% | 4.19% | 95.81% | No domestic publisher |
+| Latvia | LVA | Europe | High income | — | — | 100,531 | 270,944 | 31,327 | 402,823 | 24.96% | 67.26% | 7.78% | — |
+| Lebanon | LBN | Asia | Lower middle income | — | — | 4,845 | 1,480 | 135,937 | 142,315 | 3.40% | 1.04% | 95.52% | — |
+| Lesotho | LSO | Africa | Lower middle income | Yes | — | 0 | 32,837 | 20,507 | 53,344 | 0.00% | 61.56% | 38.44% | — |
+| Liberia | LBR | Africa | Low income | Yes | — | 5,027 | 8,039 | 171,573 | 184,639 | 2.72% | 4.35% | 92.92% | — |
+| Libya | LBY | Africa | Upper middle income | — | — | 0 | 71 | 48,047 | 48,118 | 0.00% | 0.15% | 99.85% | — |
+| Liechtenstein | LIE | Europe | High income | — | — | 0 | 79,566 | 2,246 | 81,812 | 0.00% | 97.25% | 2.75% | — |
+| Lithuania | LTU | Europe | High income | — | — | 8,078 | 650,455 | 199,951 | 858,496 | 0.94% | 75.77% | 23.29% | — |
+| Luxembourg | LUX | Europe | High income | — | — | 1,820,807 | 120,423 | 173,270 | 2,114,500 | 86.11% | 5.70% | 8.19% | — |
+| Macedonia, the former Yugoslav Republic of | MKD | Europe | Upper middle income | — | — | 1,785 | 60,186 | 20,017 | 81,990 | 2.18% | 73.41% | 24.41% | — |
+| Madagascar | MDG | Africa | Low income | Yes | — | 70,780 | 13,706 | 2,463,227 | 2,552,022 | 2.77% | 0.54% | 96.52% | — |
+| Malawi | MWI | Africa | Low income | Yes | — | 28,789 | 21,055 | 210,272 | 260,116 | 11.07% | 8.09% | 80.84% | — |
+| Malaysia | MYS | Asia | Upper middle income | — | — | 4,474 | 103,974 | 1,445,542 | 1,554,010 | 0.29% | 6.69% | 93.02% | — |
+| Maldives | MDV | Asia | Upper middle income | — | Yes | 0 | 1,298 | 105,548 | 106,846 | 0.00% | 1.21% | 98.79% | No domestic publisher |
+| Mali | MLI | Africa | Low income | Yes | — | 0 | 1,516 | 109,586 | 111,102 | 0.00% | 1.36% | 98.64% | No domestic publisher |
+| Malta | MLT | Europe | High income | — | — | 0 | 39,270 | 20,269 | 59,576 | 0.00% | 65.92% | 34.02% | — |
+| Marshall Islands | MHL | Oceania | Upper middle income | — | Yes | 0 | 17,676 | 151,897 | 169,573 | 0.00% | 10.42% | 89.58% | No domestic publisher |
+| Mauritania | MRT | Africa | Lower middle income | Yes | — | 1,812 | 198 | 62,257 | 64,267 | 2.82% | 0.31% | 96.87% | — |
+| Mauritius | MUS | Africa | Upper middle income | — | Yes | 1,022 | 7,158 | 114,347 | 122,530 | 0.83% | 5.84% | 93.32% | — |
+| Mexico | MEX | Americas | Upper middle income | — | — | 7,196,880 | 6,448,314 | 1,257,691 | 14,902,888 | 48.29% | 43.27% | 8.44% | — |
+| Micronesia, Federated States of | FSM | Oceania | Lower middle income | — | Yes | 14 | 10,923 | 215,074 | 226,013 | 0.01% | 4.83% | 95.16% | — |
+| Moldova, Republic of | MDA | Europe | Upper middle income | — | — | 0 | 18,250 | 13,075 | 31,325 | 0.00% | 58.26% | 41.74% | — |
+| Monaco | MCO | Europe | High income | — | — | 0 | 3,043 | 1,528 | 4,571 | 0.00% | 66.57% | 33.43% | — |
+| Mongolia | MNG | Asia | Upper middle income | — | — | 1,309 | 4,318 | 258,709 | 264,338 | 0.50% | 1.63% | 97.87% | — |
+| Montenegro | MNE | Europe | Upper middle income | — | — | 1,682 | 53,173 | 43,285 | 98,141 | 1.71% | 54.18% | 44.10% | — |
+| Morocco | MAR | Africa | Lower middle income | — | — | 3,712 | 237 | 622,560 | 626,509 | 0.59% | 0.04% | 99.37% | — |
+| Mozambique | MOZ | Africa | Low income | Yes | — | 180,903 | 46,009 | 269,931 | 496,843 | 36.41% | 9.26% | 54.33% | — |
+| Myanmar | MMR | Asia | Lower middle income | Yes | — | 0 | 4,906 | 188,913 | 193,819 | 0.00% | 2.53% | 97.47% | No domestic publisher |
+| Namibia | NAM | Africa | Lower middle income | — | — | 9,732 | 142,173 | 424,374 | 576,279 | 1.69% | 24.67% | 73.64% | — |
+| Nauru | NRU | Oceania | High income | — | Yes | 0 | 3,972 | 1,436 | 5,408 | 0.00% | 73.45% | 26.55% | — |
+| Nepal | NPL | Asia | Lower middle income | Yes | — | 40,281 | 38,773 | 259,265 | 338,461 | 11.90% | 11.46% | 76.60% | — |
+| Netherlands | NLD | Europe | High income | — | — | 68,603,544 | 1,228,523 | 453,679 | 70,285,757 | 97.61% | 1.75% | 0.65% | — |
+| New Zealand | NZL | Oceania | High income | — | — | 5,129,838 | 174,666 | 3,499,584 | 8,804,103 | 58.27% | 1.98% | 39.75% | — |
+| Nicaragua | NIC | Americas | Lower middle income | — | — | 115,380 | 452,486 | 37,996 | 605,864 | 19.04% | 74.68% | 6.27% | — |
+| Niger | NER | Africa | Low income | Yes | — | 402 | 1,227 | 98,053 | 99,682 | 0.40% | 1.23% | 98.37% | — |
+| Nigeria | NGA | Africa | Lower middle income | — | — | 72,859 | 5,880 | 377,683 | 456,424 | 15.96% | 1.29% | 82.75% | — |
+| Niue | NIU | Oceania | High income | — | Yes | 0 | 7,504 | 76,354 | 83,858 | 0.00% | 8.95% | 91.05% | — |
+| Norway | NOR | Europe | High income | — | — | 21,443,848 | 1,228,967 | 362,628 | 23,058,128 | 93.00% | 5.33% | 1.57% | — |
+| Oman | OMN | Asia | High income | — | — | 0 | 1,296 | 171,460 | 172,756 | 0.00% | 0.75% | 99.25% | No domestic publisher |
+| Pakistan | PAK | Asia | Lower middle income | — | — | 123,396 | 3,812 | 454,881 | 582,090 | 21.20% | 0.65% | 78.15% | — |
+| Palau | PLW | Oceania | High income | — | Yes | 16 | 17,875 | 117,132 | 135,023 | 0.01% | 13.24% | 86.75% | — |
+| Palestine, State of | PSE | Asia | Lower middle income | — | — | 0 | 187,372 | 35,818 | 223,193 | 0.00% | 83.95% | 16.05% | No domestic publisher |
+| Panama | PAN | Americas | High income | — | — | 24 | 1,099,020 | 257,397 | 1,356,452 | 0.00% | 81.02% | 18.98% | — |
+| Papua New Guinea | PNG | Oceania | Lower middle income | — | Yes | 178,621 | 465,267 | 1,141,457 | 1,785,348 | 10.00% | 26.06% | 63.93% | — |
+| Paraguay | PRY | Americas | Upper middle income | — | — | 0 | 386,273 | 164,182 | 550,457 | 0.00% | 70.17% | 29.83% | No domestic publisher |
+| Peru | PER | Americas | Upper middle income | — | — | 18,118 | 1,656,662 | 891,138 | 2,565,935 | 0.71% | 64.56% | 34.73% | — |
+| Philippines | PHL | Asia | Lower middle income | — | — | 18,528 | 75,587 | 1,643,172 | 1,737,287 | 1.07% | 4.35% | 94.58% | — |
+| Poland | POL | Europe | High income | — | — | 9,556,333 | 547,277 | 679,762 | 10,879,202 | 87.84% | 5.03% | 6.25% | — |
+| Portugal | PRT | Europe | High income | — | — | 8,413,301 | 1,117,738 | 1,020,535 | 10,551,581 | 79.73% | 10.59% | 9.67% | — |
+| Qatar | QAT | Asia | High income | — | — | 0 | 130 | 68,692 | 68,822 | 0.00% | 0.19% | 99.81% | — |
+| Romania | ROU | Europe | High income | — | — | 0 | 496,750 | 169,887 | 666,668 | 0.00% | 74.51% | 25.48% | No domestic publisher |
+| Russian Federation | RUS | Europe | High income | — | — | 4,524,236 | 1,396,710 | 5,777,215 | 11,698,166 | 38.67% | 11.94% | 49.39% | — |
+| Rwanda | RWA | Africa | Low income | Yes | — | 569 | 3,975 | 131,044 | 135,588 | 0.42% | 2.93% | 96.65% | — |
+| Saint Kitts and Nevis | KNA | Americas | High income | — | — | 0 | 19,469 | 3,383 | 22,852 | 0.00% | 85.20% | 14.80% | — |
+| Saint Lucia | LCA | Americas | Upper middle income | — | — | 0 | 18,184 | 3,737 | 21,921 | 0.00% | 82.95% | 17.05% | — |
+| Saint Vincent and the Grenadines | VCT | Americas | Upper middle income | — | — | 0 | 24,472 | 5,580 | 30,052 | 0.00% | 81.43% | 18.57% | — |
+| Samoa | WSM | Oceania | Upper middle income | — | Yes | 6,452 | 14,311 | 47,839 | 68,602 | 9.40% | 20.86% | 69.73% | — |
+| San Marino | SMR | Europe | High income | — | — | 0 | 1,883 | 146 | 2,029 | 0.00% | 92.80% | 7.20% | — |
+| Sao Tome and Principe | STP | Africa | Lower middle income | Yes | Yes | 3,170 | 619 | 85,997 | 89,786 | 3.53% | 0.69% | 95.78% | — |
+| Saudi Arabia | SAU | Asia | High income | — | — | 0 | 717 | 731,524 | 732,241 | 0.00% | 0.10% | 99.90% | No domestic publisher |
+| Senegal | SEN | Africa | Lower middle income | — | — | 17,887 | 2,718 | 242,496 | 263,102 | 6.80% | 1.03% | 92.17% | — |
+| Serbia | SRB | Europe | Upper middle income | — | — | 2,153 | 87,673 | 55,003 | 144,829 | 1.49% | 60.54% | 37.98% | — |
+| Seychelles | SYC | Africa | High income | — | Yes | 79,002 | 4,793 | 162,895 | 246,694 | 32.02% | 1.94% | 66.03% | — |
+| Sierra Leone | SLE | Africa | Low income | — | — | 0 | 7,328 | 117,880 | 125,208 | 0.00% | 5.85% | 94.15% | No domestic publisher |
+| Singapore | SGP | Asia | High income | — | Yes | 479 | 4,575 | 402,635 | 407,691 | 0.12% | 1.12% | 98.76% | — |
+| Slovakia | SVK | Europe | High income | — | — | 1,036,090 | 234,623 | 157,740 | 1,428,525 | 72.53% | 16.42% | 11.04% | — |
+| Slovenia | SVN | Europe | High income | — | — | 353,043 | 173,113 | 99,712 | 625,874 | 56.41% | 27.66% | 15.93% | — |
+| Solomon Islands | SLB | Oceania | Lower middle income | Yes | Yes | 2,826 | 65,196 | 182,508 | 250,530 | 1.13% | 26.02% | 72.85% | — |
+| Somalia | SOM | Africa | Low income | Yes | — | 939 | 1,103 | 72,967 | 75,009 | 1.25% | 1.47% | 97.28% | — |
+| South Africa | ZAF | Africa | Upper middle income | — | — | 2,480,199 | 5,032 | 4,589,133 | 7,074,367 | 35.06% | 0.07% | 64.87% | — |
+| South Sudan | SSD | Africa | Low income | Yes | — | 61 | 890 | 12,320 | 13,271 | 0.46% | 6.71% | 92.83% | — |
+| Spain | ESP | Europe | High income | — | — | 25,312,184 | 4,714,735 | 2,163,324 | 32,190,269 | 78.63% | 14.65% | 6.72% | — |
+| Sri Lanka | LKA | Asia | Lower middle income | — | — | 14,958 | 4,816 | 387,898 | 407,673 | 3.67% | 1.18% | 95.15% | — |
+| Sudan | SDN | Africa | Low income | Yes | — | 0 | 445 | 124,484 | 124,929 | 0.00% | 0.36% | 99.64% | No domestic publisher |
+| Suriname | SUR | Americas | Upper middle income | — | Yes | 26,059 | 133,156 | 205,750 | 364,965 | 7.14% | 36.48% | 56.38% | — |
+| Swaziland | SWZ | Africa | Lower middle income | — | — | 0 | 33,502 | 41,407 | 74,909 | 0.00% | 44.72% | 55.28% | — |
+| Sweden | SWE | Europe | High income | — | — | 64,000,590 | 1,276,880 | 626,269 | 65,904,001 | 97.11% | 1.94% | 0.95% | — |
+| Switzerland | CHE | Europe | High income | — | — | 24,621,043 | 1,773,242 | 546,139 | 26,946,647 | 91.37% | 6.58% | 2.03% | — |
+| Syrian Arab Republic | SYR | Asia | Low income | — | — | 0 | 177,207 | 128,653 | 305,861 | 0.00% | 57.94% | 42.06% | No domestic publisher |
+| Tajikistan | TJK | Asia | Lower middle income | Yes | — | 9,176 | 1,541 | 76,322 | 87,039 | 10.54% | 1.77% | 87.69% | — |
+| Tanzania, United Republic of | TZA | Africa | Lower middle income | Yes | — | 85,132 | 35,085 | 1,240,311 | 1,360,528 | 6.26% | 2.58% | 91.16% | — |
+| Thailand | THA | Asia | Upper middle income | — | — | 45,876 | 160,792 | 1,269,628 | 1,476,309 | 3.11% | 10.89% | 86.00% | — |
+| Timor-Leste | TLS | Asia | Lower middle income | Yes | Yes | 0 | 55 | 31,802 | 31,857 | 0.00% | 0.17% | 99.83% | — |
+| Togo | TGO | Africa | Low income | Yes | — | 53,239 | 7,362 | 66,778 | 127,379 | 41.80% | 5.78% | 52.42% | — |
+| Tonga | TON | Oceania | Upper middle income | — | Yes | 3,601 | 98,469 | 56,624 | 158,694 | 2.27% | 62.05% | 35.68% | — |
+| Trinidad and Tobago | TTO | Americas | High income | — | Yes | 53,981 | 145,401 | 50,214 | 249,596 | 21.63% | 58.25% | 20.12% | — |
+| Tunisia | TUN | Africa | Lower middle income | — | — | 0 | 226 | 182,268 | 182,494 | 0.00% | 0.12% | 99.88% | No domestic publisher |
+| Turkey | TUR | Asia | Upper middle income | — | — | 0 | 4,979 | 1,000,600 | 1,005,743 | 0.00% | 0.50% | 99.49% | No domestic publisher |
+| Turkmenistan | TKM | Asia | Upper middle income | — | — | 0 | 921 | 47,766 | 48,687 | 0.00% | 1.89% | 98.11% | — |
+| Tuvalu | TUV | Oceania | Upper middle income | Yes | Yes | 0 | 6,567 | 5,547 | 12,114 | 0.00% | 54.21% | 45.79% | — |
+| Uganda | UGA | Africa | Low income | Yes | — | 101,424 | 29,835 | 482,318 | 613,578 | 16.53% | 4.86% | 78.61% | — |
+| Ukraine | UKR | Europe | Upper middle income | — | — | 1,193,658 | 329,133 | 922,289 | 2,445,294 | 48.81% | 13.46% | 37.72% | — |
+| United Arab Emirates | ARE | Asia | High income | — | — | 0 | 102 | 50,796 | 50,898 | 0.00% | 0.20% | 99.80% | — |
+| United Kingdom | GBR | Europe | High income | — | — | 126,547,437 | 1,841,056 | 3,919,727 | 132,308,244 | 95.65% | 1.39% | 2.96% | — |
+| Uruguay | URY | Americas | High income | — | — | 13,772 | 135,316 | 54,433 | 203,522 | 6.77% | 66.49% | 26.75% | — |
+| Uzbekistan | UZB | Asia | Lower middle income | — | — | 32,837 | 1,550 | 78,362 | 112,749 | 29.12% | 1.37% | 69.50% | — |
+| Vanuatu | VUT | Oceania | Lower middle income | — | Yes | 18,932 | 30,127 | 116,073 | 165,132 | 11.46% | 18.24% | 70.29% | — |
+| Venezuela, Bolivarian Republic of | VEN | Americas | Lower middle income | — | — | 275,113 | 853,484 | 203,689 | 1,332,288 | 20.65% | 64.06% | 15.29% | — |
+| Viet Nam | VNM | Asia | Lower middle income | — | — | 12,530 | 42,143 | 516,789 | 571,464 | 2.19% | 7.37% | 90.43% | — |
+| Yemen | YEM | Asia | Low income | Yes | — | 0 | 157 | 133,931 | 134,120 | 0.00% | 0.12% | 99.86% | No domestic publisher |
+| Zambia | ZMB | Africa | Lower middle income | Yes | — | 3,024 | 22,680 | 340,628 | 366,332 | 0.83% | 6.19% | 92.98% | — |
+| Zimbabwe | ZWE | Africa | Lower middle income | — | — | 56,432 | 69,770 | 263,860 | 390,062 | 14.47% | 17.89% | 67.65% | — |
 
 ---
 
@@ -117,7 +320,7 @@ There is a steep gradient: low and lower-middle income countries are almost enti
 
 - **Developing countries publish a minority of their own biodiversity data internally.** The majority of records for developing CBD Parties are published by organisations based in other countries.
 - **Low and lower-middle income countries are almost entirely dependent on external publishers**, with very low internal shares.
-- **Europe is the only region where internal publishing dominates** (excluding Aves). Africa (81% external) and the Americas (49% external) have the majority of their biodiversity data published by organisations in other countries. However, much of the 'external' publishing for the Americas comes from US-based organisations within the same UN region — a regional (same-region) classification would show the Americas at only ~29% truly external to the region.
+- **Europe is the only region where internal publishing dominates** (excluding Aves). When including regional (same-UN-region) publishing, the picture changes significantly: the Americas has 51% internal + regional publishing combined, meaning only 49% of data is published from outside the region. Africa has 19% internal + regional, with 81% published from outside the region.
 - **Southern Africa is an outlier within Africa**, with higher internal publishing compared to Eastern and Middle Africa.
 - **Excluding Aves provides a more accurate picture of domestic taxonomic capacity.** Including Aves data systematically depresses internal publishing percentages for countries with extensive citizen-science coverage, as these records are classified under the publisher's country (typically a developed country).
 
@@ -148,78 +351,78 @@ The tables below include all taxa, including Class Aves (birds). As explained in
 
 ### A.1 By UN Region
 
-| Un Region Name | Internal Count | External Count | Unknown Count | Total Count | Internal % | External % |
-| --- | --- | --- | --- | --- | --- | --- |
-| Africa | 34,684,383 | 45,033,221 | 4,376 | 79,721,980 | 43.51% | 56.49% |
-| Americas | 61,260,870 | 353,820,662 | 525 | 415,082,057 | 14.76% | 85.24% |
-| Asia | 25,338,094 | 114,379,097 | 1,063 | 139,718,254 | 18.14% | 81.86% |
-| Europe | 964,704,824 | 207,483,708 | 137,123 | 1,172,325,655 | 82.29% | 17.70% |
-| Oceania | 87,685,054 | 74,375,161 | 49 | 162,060,264 | 54.11% | 45.89% |
+| Un Region Name | Internal Count | Regional Count | External Count | Unknown Count | Total Count | Internal % | Regional % | External % |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Africa | 34,684,383 | 2,224,148 | 42,809,073 | 4,376 | 79,721,980 | 43.51% | 2.79% | 53.70% |
+| Americas | 61,260,870 | 331,952,593 | 21,868,069 | 525 | 415,082,057 | 14.76% | 79.97% | 5.27% |
+| Asia | 25,338,094 | 1,630,168 | 112,748,929 | 1,063 | 139,718,254 | 18.14% | 1.17% | 80.70% |
+| Europe | 964,704,824 | 58,510,066 | 148,973,642 | 137,123 | 1,172,325,655 | 82.29% | 4.99% | 12.71% |
+| Oceania | 87,685,054 | 1,119,988 | 73,255,173 | 49 | 162,060,264 | 54.11% | 0.69% | 45.20% |
 
 ### A.2 By UN Sub-region
 
-| UN Region | UN Sub-region | Internal Count | External Count | Unknown Count | Total Count | Internal % | External % |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| Africa | Northern Africa | 3,712 | 3,436,517 | 6 | 3,440,235 | 0.11% | 99.89% |
-| Africa | Sub-Saharan Africa | 34,680,671 | 41,596,704 | 4,370 | 76,281,745 | 45.46% | 54.53% |
-| Americas | Latin America and the Caribbean | 44,338,339 | 189,174,880 | 489 | 233,513,708 | 18.99% | 81.01% |
-| Americas | Northern America | 16,922,531 | 164,645,782 | 36 | 181,568,349 | 9.32% | 90.68% |
-| Asia | Central Asia | 66,369 | 1,105,188 | 1 | 1,171,558 | 5.67% | 94.33% |
-| Asia | Eastern Asia | 22,227,547 | 14,013,011 | 63 | 36,240,621 | 61.33% | 38.67% |
-| Asia | South-eastern Asia | 196,162 | 22,786,686 | 54 | 22,982,902 | 0.85% | 99.15% |
-| Asia | Southern Asia | 895,918 | 59,225,985 | 670 | 60,122,573 | 1.49% | 98.51% |
-| Asia | Western Asia | 1,952,098 | 17,248,227 | 275 | 19,200,600 | 10.17% | 89.83% |
-| Europe | Eastern Europe | 22,088,212 | 26,421,044 | 105,985 | 48,615,241 | 45.43% | 54.35% |
-| Europe | Northern Europe | 459,001,512 | 63,862,640 | 24,119 | 522,888,271 | 87.78% | 12.21% |
-| Europe | Southern Europe | 49,994,934 | 65,879,551 | 337 | 115,874,822 | 43.15% | 56.85% |
-| Europe | Western Europe | 433,620,166 | 51,320,473 | 6,682 | 484,947,321 | 89.42% | 10.58% |
-| Oceania | Australia and New Zealand | 87,435,348 | 70,103,851 | 38 | 157,539,237 | 55.50% | 44.50% |
-| Oceania | Melanesia | 238,457 | 3,026,013 | 9 | 3,264,479 | 7.30% | 92.70% |
-| Oceania | Micronesia | 30 | 831,559 | 2 | 831,591 | 0.00% | 100.00% |
-| Oceania | Polynesia | 11,219 | 413,738 | 0 | 424,957 | 2.64% | 97.36% |
+| UN Region | UN Sub-region | Internal Count | Regional Count | External Count | Unknown Count | Total Count | Internal % | Regional % | External % |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Africa | Northern Africa | 3,712 | 1,837 | 3,434,680 | 6 | 3,440,235 | 0.11% | 0.05% | 99.84% |
+| Africa | Sub-Saharan Africa | 34,680,671 | 2,222,311 | 39,374,393 | 4,370 | 76,281,745 | 45.46% | 2.91% | 51.62% |
+| Americas | Latin America and the Caribbean | 44,338,339 | 173,654,649 | 15,520,231 | 489 | 233,513,708 | 18.99% | 74.37% | 6.65% |
+| Americas | Northern America | 16,922,531 | 158,297,944 | 6,347,838 | 36 | 181,568,349 | 9.32% | 87.18% | 3.50% |
+| Asia | Central Asia | 66,369 | 53,882 | 1,051,306 | 1 | 1,171,558 | 5.67% | 4.60% | 89.74% |
+| Asia | Eastern Asia | 22,227,547 | 429,129 | 13,583,882 | 63 | 36,240,621 | 61.33% | 1.18% | 37.48% |
+| Asia | South-eastern Asia | 196,162 | 529,029 | 22,257,657 | 54 | 22,982,902 | 0.85% | 2.30% | 96.84% |
+| Asia | Southern Asia | 895,918 | 91,534 | 59,134,451 | 670 | 60,122,573 | 1.49% | 0.15% | 98.36% |
+| Asia | Western Asia | 1,952,098 | 526,594 | 16,721,633 | 275 | 19,200,600 | 10.17% | 2.74% | 87.09% |
+| Europe | Eastern Europe | 22,088,212 | 5,753,760 | 20,667,284 | 105,985 | 48,615,241 | 45.43% | 11.84% | 42.51% |
+| Europe | Northern Europe | 459,001,512 | 11,902,961 | 51,959,679 | 24,119 | 522,888,271 | 87.78% | 2.28% | 9.94% |
+| Europe | Southern Europe | 49,994,934 | 15,479,161 | 50,400,390 | 337 | 115,874,822 | 43.15% | 13.36% | 43.50% |
+| Europe | Western Europe | 433,620,166 | 25,374,184 | 25,946,289 | 6,682 | 484,947,321 | 89.42% | 5.23% | 5.35% |
+| Oceania | Australia and New Zealand | 87,435,348 | 279,201 | 69,824,650 | 38 | 157,539,237 | 55.50% | 0.18% | 44.32% |
+| Oceania | Melanesia | 238,457 | 621,662 | 2,404,351 | 9 | 3,264,479 | 7.30% | 19.04% | 73.65% |
+| Oceania | Micronesia | 30 | 60,481 | 771,078 | 2 | 831,591 | 0.00% | 7.27% | 92.72% |
+| Oceania | Polynesia | 11,219 | 158,644 | 255,094 | 0 | 424,957 | 2.64% | 37.33% | 60.03% |
 
 ### A.3 By UN Intermediate Region
 
-| UN Region | UN Sub-region | Intermediate Region | Internal Count | External Count | Unknown Count | Total Count | Internal % | External % |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Africa | Northern Africa | — | 3,712 | 3,436,517 | 6 | 3,440,235 | 0.11% | 99.89% |
-| Africa | Sub-Saharan Africa | Eastern Africa | 1,068,586 | 17,770,413 | 4,317 | 18,843,316 | 5.67% | 94.31% |
-| Africa | Sub-Saharan Africa | Middle Africa | 231,175 | 4,046,656 | 43 | 4,277,874 | 5.40% | 94.60% |
-| Africa | Sub-Saharan Africa | Southern Africa | 31,483,111 | 14,332,655 | 3 | 45,815,769 | 68.72% | 31.28% |
-| Africa | Sub-Saharan Africa | Western Africa | 1,897,799 | 5,446,980 | 7 | 7,344,786 | 25.84% | 74.16% |
-| Americas | Latin America and the Caribbean | Caribbean | 144,314 | 7,434,227 | 6 | 7,578,547 | 1.90% | 98.10% |
-| Americas | Latin America and the Caribbean | Central America | 12,046,707 | 82,509,115 | 33 | 94,555,855 | 12.74% | 87.26% |
-| Americas | Latin America and the Caribbean | South America | 32,147,318 | 99,231,538 | 450 | 131,379,306 | 24.47% | 75.53% |
-| Americas | Northern America | — | 16,922,531 | 164,645,782 | 36 | 181,568,349 | 9.32% | 90.68% |
-| Asia | Central Asia | — | 66,369 | 1,105,188 | 1 | 1,171,558 | 5.67% | 94.33% |
-| Asia | Eastern Asia | — | 22,227,547 | 14,013,011 | 63 | 36,240,621 | 61.33% | 38.67% |
-| Asia | South-eastern Asia | — | 196,162 | 22,786,686 | 54 | 22,982,902 | 0.85% | 99.15% |
-| Asia | Southern Asia | — | 895,918 | 59,225,985 | 670 | 60,122,573 | 1.49% | 98.51% |
-| Asia | Western Asia | — | 1,952,098 | 17,248,227 | 275 | 19,200,600 | 10.17% | 89.83% |
-| Europe | Eastern Europe | — | 22,088,212 | 26,421,044 | 105,985 | 48,615,241 | 45.43% | 54.35% |
-| Europe | Northern Europe | — | 459,001,512 | 63,862,640 | 24,119 | 522,888,271 | 87.78% | 12.21% |
-| Europe | Southern Europe | — | 49,994,934 | 65,879,551 | 337 | 115,874,822 | 43.15% | 56.85% |
-| Europe | Western Europe | — | 433,620,166 | 51,320,473 | 6,682 | 484,947,321 | 89.42% | 10.58% |
-| Oceania | Australia and New Zealand | — | 87,435,348 | 70,103,851 | 38 | 157,539,237 | 55.50% | 44.50% |
-| Oceania | Melanesia | — | 238,457 | 3,026,013 | 9 | 3,264,479 | 7.30% | 92.70% |
-| Oceania | Micronesia | — | 30 | 831,559 | 2 | 831,591 | 0.00% | 100.00% |
-| Oceania | Polynesia | — | 11,219 | 413,738 | 0 | 424,957 | 2.64% | 97.36% |
+| UN Region | UN Sub-region | Intermediate Region | Internal Count | Regional Count | External Count | Unknown Count | Total Count | Internal % | Regional % | External % |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Africa | Northern Africa | — | 3,712 | 1,837 | 3,434,680 | 6 | 3,440,235 | 0.11% | 0.05% | 99.84% |
+| Africa | Sub-Saharan Africa | Eastern Africa | 1,068,586 | 1,196,162 | 16,574,251 | 4,317 | 18,843,316 | 5.67% | 6.35% | 87.96% |
+| Africa | Sub-Saharan Africa | Middle Africa | 231,175 | 175,465 | 3,871,191 | 43 | 4,277,874 | 5.40% | 4.10% | 90.49% |
+| Africa | Sub-Saharan Africa | Southern Africa | 31,483,111 | 698,858 | 13,633,797 | 3 | 45,815,769 | 68.72% | 1.53% | 29.76% |
+| Africa | Sub-Saharan Africa | Western Africa | 1,897,799 | 151,826 | 5,295,154 | 7 | 7,344,786 | 25.84% | 2.07% | 72.09% |
+| Americas | Latin America and the Caribbean | Caribbean | 144,314 | 6,831,623 | 602,604 | 6 | 7,578,547 | 1.90% | 90.14% | 7.95% |
+| Americas | Latin America and the Caribbean | Central America | 12,046,707 | 74,885,542 | 7,623,573 | 33 | 94,555,855 | 12.74% | 79.20% | 8.06% |
+| Americas | Latin America and the Caribbean | South America | 32,147,318 | 91,937,484 | 7,294,054 | 450 | 131,379,306 | 24.47% | 69.98% | 5.55% |
+| Americas | Northern America | — | 16,922,531 | 158,297,944 | 6,347,838 | 36 | 181,568,349 | 9.32% | 87.18% | 3.50% |
+| Asia | Central Asia | — | 66,369 | 53,882 | 1,051,306 | 1 | 1,171,558 | 5.67% | 4.60% | 89.74% |
+| Asia | Eastern Asia | — | 22,227,547 | 429,129 | 13,583,882 | 63 | 36,240,621 | 61.33% | 1.18% | 37.48% |
+| Asia | South-eastern Asia | — | 196,162 | 529,029 | 22,257,657 | 54 | 22,982,902 | 0.85% | 2.30% | 96.84% |
+| Asia | Southern Asia | — | 895,918 | 91,534 | 59,134,451 | 670 | 60,122,573 | 1.49% | 0.15% | 98.36% |
+| Asia | Western Asia | — | 1,952,098 | 526,594 | 16,721,633 | 275 | 19,200,600 | 10.17% | 2.74% | 87.09% |
+| Europe | Eastern Europe | — | 22,088,212 | 5,753,760 | 20,667,284 | 105,985 | 48,615,241 | 45.43% | 11.84% | 42.51% |
+| Europe | Northern Europe | — | 459,001,512 | 11,902,961 | 51,959,679 | 24,119 | 522,888,271 | 87.78% | 2.28% | 9.94% |
+| Europe | Southern Europe | — | 49,994,934 | 15,479,161 | 50,400,390 | 337 | 115,874,822 | 43.15% | 13.36% | 43.50% |
+| Europe | Western Europe | — | 433,620,166 | 25,374,184 | 25,946,289 | 6,682 | 484,947,321 | 89.42% | 5.23% | 5.35% |
+| Oceania | Australia and New Zealand | — | 87,435,348 | 279,201 | 69,824,650 | 38 | 157,539,237 | 55.50% | 0.18% | 44.32% |
+| Oceania | Melanesia | — | 238,457 | 621,662 | 2,404,351 | 9 | 3,264,479 | 7.30% | 19.04% | 73.65% |
+| Oceania | Micronesia | — | 30 | 60,481 | 771,078 | 2 | 831,591 | 0.00% | 7.27% | 92.72% |
+| Oceania | Polynesia | — | 11,219 | 158,644 | 255,094 | 0 | 424,957 | 2.64% | 37.33% | 60.03% |
 
 ### A.4 By Development Status
 
-| Development Status | Internal Count | External Count | Unknown Count | Total Count | Internal % | External % |
-| --- | --- | --- | --- | --- | --- | --- |
-| Developed | 1,087,025,479 | 448,094,610 | 137,217 | 1,535,257,306 | 70.80% | 29.19% |
-| Developing | 86,647,746 | 346,997,239 | 5,919 | 433,650,904 | 19.98% | 80.02% |
+| Development Status | Internal Count | Regional Count | External Count | Unknown Count | Total Count | Internal % | Regional % | External % |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Developed | 1,087,025,479 | 217,263,074 | 230,831,536 | 137,217 | 1,535,257,306 | 70.80% | 14.15% | 15.04% |
+| Developing | 86,647,746 | 178,173,889 | 168,823,350 | 5,919 | 433,650,904 | 19.98% | 41.09% | 38.93% |
 
 ### A.5 By World Bank Income Group
 
-| Income Group | Internal Count | External Count | Unknown Count | Total Count | Internal % | External % |
-| --- | --- | --- | --- | --- | --- | --- |
-| High income | 1,095,562,980 | 505,547,293 | 137,369 | 1,601,247,642 | 68.42% | 31.57% |
-| Low income | 547,980 | 13,135,172 | 4,345 | 13,687,497 | 4.00% | 95.96% |
-| Lower middle income | 4,097,489 | 99,714,095 | 292 | 103,811,876 | 3.95% | 96.05% |
-| Upper middle income | 73,464,776 | 176,695,289 | 1,130 | 250,161,195 | 29.37% | 70.63% |
+| Income Group | Internal Count | Regional Count | External Count | Unknown Count | Total Count | Internal % | Regional % | External % |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| High income | 1,095,562,980 | 258,876,688 | 246,670,605 | 137,369 | 1,601,247,642 | 68.42% | 16.17% | 15.40% |
+| Low income | 547,980 | 553,649 | 12,581,523 | 4,345 | 13,687,497 | 4.00% | 4.04% | 91.92% |
+| Lower middle income | 4,097,489 | 15,212,325 | 84,501,770 | 292 | 103,811,876 | 3.95% | 14.65% | 81.40% |
+| Upper middle income | 73,464,776 | 120,794,301 | 55,900,988 | 1,130 | 250,161,195 | 29.37% | 48.29% | 22.35% |
 
 
 ---

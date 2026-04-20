@@ -78,10 +78,12 @@ def _render_table(col_specs, rows):
 
 _COUNT_COLS = [
     ("Internal Count", "internal_count", False),
+    ("Regional Count", "regional_count", False),
     ("External Count", "external_count", False),
     ("Unknown Count", "unknown_count", False),
     ("Total Count", "total_count", False),
     ("Internal %", "internal_percentage", True),
+    ("Regional %", "regional_percentage", True),
     ("External %", "external_percentage", True),
 ]
 
@@ -118,6 +120,26 @@ def _income_table(rows):
     return _render_table(col_specs, rows)
 
 
+def _country_table(rows):
+    col_specs = [
+        ("Country", "country_name", False),
+        ("ISO3", "iso3c", False),
+        ("UN Region", "un_region_name", False),
+        ("Income Group", "wb_income_group", False),
+        ("LDC", "is_ldc", False),
+        ("SIDS", "is_sids", False),
+        ("Internal", "internal_count", False),
+        ("Regional", "regional_count", False),
+        ("External", "external_count", False),
+        ("Total", "total_count", False),
+        ("Int %", "internal_percentage", True),
+        ("Reg %", "regional_percentage", True),
+        ("Ext %", "external_percentage", True),
+        ("Flags", "data_flags", False),
+    ]
+    return _render_table(col_specs, rows)
+
+
 def _section(data, key, renderer_fn):
     rows = data.get(key, [])
     if not rows:
@@ -140,7 +162,8 @@ def generate_report(output_path=OUTPUT_PATH):
         "Each occurrence record in the GBIF dataset is classified as:",
         "",
         "- **Internal**: The record was published by an organisation based in the same country as the occurrence.",
-        "- **External**: The record was published by an organisation based in a different country.",
+        "- **Regional**: The record was published by an organisation in a different country within the same UN region (e.g. a US-published record for Canada is Regional, not External, because both are in the Americas).",
+        "- **External**: The record was published by an organisation in a different UN region from the occurrence.",
         "- **Unknown**: The publisher's country could not be resolved from the GBIF registry.",
         "",
         "**Note on coverage:** Approximately 43 million records in the GBIF dataset (roughly 1.2% of 3.7 billion) have no occurrence country code and therefore cannot be assigned to any CBD Party. These records are excluded from the analysis.",
@@ -209,13 +232,32 @@ def generate_report(output_path=OUTPUT_PATH):
         "There is a steep gradient: low and lower-middle income countries are almost entirely dependent on external publishers. "
         "Upper middle income countries show improved internal publishing shares when Aves is excluded.",
         "",
+    ])
+
+    # Country table
+    import sys, importlib
+    sys.path.insert(0, os.path.dirname(__file__))
+    from generate_country_tables import generate_country_table
+    country_df = generate_country_table()
+    country_rows = [row._asdict() if hasattr(row, '_asdict') else row for row in country_df.to_dict('records')]
+    lines.append("### 2.6 Per-Country Table (Alphabetical)")
+    lines.append("")
+    lines.append("LDC = Least Developed Country. SIDS = Small Island Developing State. "
+                 "Int % = Internal publishing percentage (same country). "
+                 "Reg % = Regional publishing percentage (same UN region, different country). "
+                 "Ext % = External publishing percentage (different UN region). "
+                 "Flags indicate data quality concerns.")
+    lines.append("")
+    lines.append(_country_table(country_rows))
+    lines.extend([
+        "",
         "---",
         "",
         "## 3. Key Findings",
         "",
         "- **Developing countries publish a minority of their own biodiversity data internally.** The majority of records for developing CBD Parties are published by organisations based in other countries.",
         "- **Low and lower-middle income countries are almost entirely dependent on external publishers**, with very low internal shares.",
-        "- **Europe is the only region where internal publishing dominates** (excluding Aves). Africa (81% external) and the Americas (49% external) have the majority of their biodiversity data published by organisations in other countries. However, much of the 'external' publishing for the Americas comes from US-based organisations within the same UN region — a regional (same-region) classification would show the Americas at only ~29% truly external to the region.",
+        "- **Europe is the only region where internal publishing dominates** (excluding Aves). When including regional (same-UN-region) publishing, the picture changes significantly: the Americas has 51% internal + regional publishing combined, meaning only 49% of data is published from outside the region. Africa has 19% internal + regional, with 81% published from outside the region.",
         "- **Southern Africa is an outlier within Africa**, with higher internal publishing compared to Eastern and Middle Africa.",
         "- **Excluding Aves provides a more accurate picture of domestic taxonomic capacity.** Including Aves data systematically depresses internal publishing percentages for countries with extensive citizen-science coverage, as these records are classified under the publisher's country (typically a developed country).",
         "",

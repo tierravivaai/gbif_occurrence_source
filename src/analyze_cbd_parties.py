@@ -7,13 +7,15 @@ def generate_summaries(df, prefix):
     # Grouping columns
     groups = [
         ['un_region_name'],
-        ['un_region_name', 'un_intermediate_region_name'],
+        ['un_region_name', 'un_sub_region_name'],
+        ['un_region_name', 'un_sub_region_name', 'un_intermediate_region_name'],
         ['un_developed_or_developing_countries'],
         ['wb_income_group']
     ]
     
     file_map = {
         "un_region_name": "un_region",
+        "un_sub_region_name": "un_sub_region",
         "un_intermediate_region_name": "un_intermediate_region",
         "un_developed_or_developing_countries": "development_status",
         "wb_income_group": "income_group"
@@ -23,13 +25,15 @@ def generate_summaries(df, prefix):
         # Weighted aggregation
         summary = df.groupby(group, dropna=False).agg({
             'internal_count': 'sum',
+            'regional_count': 'sum',
             'external_count': 'sum',
             'unknown_count': 'sum',
             'total_count': 'sum'
         }).reset_index()
-        
+
         # Calculate percentages on aggregated totals
         summary['internal_percentage'] = round(100.0 * summary['internal_count'] / summary['total_count'], 2)
+        summary['regional_percentage'] = round(100.0 * summary['regional_count'] / summary['total_count'], 2)
         summary['external_percentage'] = round(100.0 * summary['external_count'] / summary['total_count'], 2)
         
         # Determine filename based on grouping
@@ -53,8 +57,9 @@ def run_cbd_analysis():
     print("Analyzing CBD Parties (Excluding Aves)...")
     df_no_aves = pd.read_parquet(f"{PROCESSED_DIR}/source_by_country_kingdom_no_aves.parquet")
     # Aggregate kingdom-level records back to country level for this summary
-    df_no_aves_country = df_no_aves.groupby(['iso2c', 'iso3c', 'country_name', 'un_region_name', 'un_intermediate_region_name', 'un_developed_or_developing_countries', 'wb_income_group', 'is_cbd_party'], dropna=False).agg({
+    df_no_aves_country = df_no_aves.groupby(['iso2c', 'iso3c', 'country_name', 'un_region_name', 'un_sub_region_name', 'un_intermediate_region_name', 'un_developed_or_developing_countries', 'wb_income_group', 'is_cbd_party'], dropna=False).agg({
         'internal_count': 'sum',
+        'regional_count': 'sum',
         'external_count': 'sum',
         'unknown_count': 'sum',
         'total_count': 'sum'

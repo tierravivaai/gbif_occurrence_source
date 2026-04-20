@@ -3,9 +3,11 @@
 import re
 import os
 from docx import Document
-from docx.shared import Pt, Inches, RGBColor
+from docx.shared import Pt, Inches, RGBColor, Cm
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.enum.table import WD_TABLE_ALIGNMENT
+from docx.oxml.ns import qn, nsdecls
+from docx.oxml import parse_xml
 
 MD_PATH = "CBD_Publisher_Country_Share_Report.md"
 DOCX_PATH = "CBD_Publisher_Country_Share_Report.docx"
@@ -45,28 +47,41 @@ def _parse_table_rows(lines, start_idx):
 
 
 def _add_table(doc, rows):
-    """Add a Word table from parsed row data."""
+    """Add a Word table from parsed row data. Black and white styling throughout."""
     if not rows:
         return
     ncols = len(rows[0])
-    table = doc.add_table(rows=len(rows), cols=ncols, style='Light Shading Accent 1')
+    table = doc.add_table(rows=len(rows), cols=ncols, style='TableGrid')
     table.alignment = WD_TABLE_ALIGNMENT.CENTER
+    table.autofit = True
 
     for i, row_data in enumerate(rows):
         for j, cell_text in enumerate(row_data):
-            if j < ncols:
-                cell = table.cell(i, j)
-                cell.text = ''
-                p = cell.paragraphs[0]
-                p.paragraph_format.space_before = Pt(1)
-                p.paragraph_format.space_after = Pt(1)
-                if i == 0:
-                    run = p.add_run(cell_text)
-                    run.bold = True
-                    run.font.size = Pt(9)
-                else:
-                    run = p.add_run(cell_text)
-                    run.font.size = Pt(9)
+            if j >= ncols:
+                continue
+            cell = table.cell(i, j)
+            cell.text = ''
+            p = cell.paragraphs[0]
+            p.paragraph_format.space_before = Pt(1)
+            p.paragraph_format.space_after = Pt(1)
+
+            if i == 0:
+                # Header row: black background, white text, bold
+                run = p.add_run(cell_text)
+                run.bold = True
+                run.font.size = Pt(9)
+                run.font.color.rgb = RGBColor(0xFF, 0xFF, 0xFF)
+                shading = parse_xml(f'<w:shd {nsdecls("w")} w:fill="000000"/>')
+                cell._tc.get_or_add_tcPr().append(shading)
+            else:
+                # Body row: white background, black text
+                run = p.add_run(cell_text)
+                run.font.size = Pt(9)
+                run.font.color.rgb = RGBColor(0x00, 0x00, 0x00)
+                # Alternating row shading (light grey for even rows)
+                if i % 2 == 0:
+                    shading = parse_xml(f'<w:shd {nsdecls("w")} w:fill="F2F2F2"/>')
+                    cell._tc.get_or_add_tcPr().append(shading)
 
 
 def _strip_yaml_front_matter(lines):
@@ -89,9 +104,16 @@ def convert(md_path=MD_PATH, docx_path=DOCX_PATH):
 
     doc = Document()
 
+    # Set default style to black text
     style = doc.styles['Normal']
     style.font.name = 'Calibri'
     style.font.size = Pt(11)
+    style.font.color.rgb = RGBColor(0x00, 0x00, 0x00)
+
+    # Ensure all heading styles are black
+    for level in range(1, 5):
+        heading_style = doc.styles[f'Heading {level}']
+        heading_style.font.color.rgb = RGBColor(0x00, 0x00, 0x00)
 
     idx = 0
     while idx < len(lines):
