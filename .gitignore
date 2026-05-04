@@ -9,3 +9,11 @@ data-raw/*
 *.csv
 !data/processed/*.csv
 !data/processed/source_by_country_no_aves.csv
+# Large hexbin intermediate files (regenerate from parquet with scripts)
+data/processed/hexbin_coords_all_no_aves_p1.csv
+data/processed/hexbin_coords_all_no_aves_p1_enriched.csv
+# kepler.gl HTML output (very large, regenerate from data)
+output/*.html
+# venv
+.venv/
+.Rhistory
