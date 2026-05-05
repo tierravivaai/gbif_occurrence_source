@@ -166,9 +166,6 @@ def render_drilldown(
         pickable=True,
         color_range=GBIF_COLOR_RANGE,
         upper_percentile=100,
-        color_aggregation="SUM",
-        get_elevation_weight="record_count",
-        elevation_aggregation="SUM",
     )
 
     view_state = pdk.ViewState(
@@ -190,7 +187,7 @@ def render_drilldown(
         api_keys=api_keys,
         tooltip={
             "html": (
-                "<b>Records in cell:</b> {elevationValue}<br/>"
+                "<b>Records in cell:</b> {count}<br/>"
                 "<b>Hold Shift</b> to rotate"
             ),
             "style": {

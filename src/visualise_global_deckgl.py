@@ -138,9 +138,6 @@ def render_hexagon_map(
         pickable=True,
         color_range=GBIF_COLOR_RANGE,
         upper_percentile=100,
-        color_aggregation="SUM",
-        get_elevation_weight="record_count",
-        elevation_aggregation="SUM",
     )
 
     view_state = pdk.ViewState(
@@ -162,7 +159,7 @@ def render_hexagon_map(
         api_keys=api_keys,
         tooltip={
             "html": (
-                "<b>Records in cell:</b> {elevationValue}<br/>"
+                "<b>Records in cell:</b> {count}<br/>"
                 "<b>Hold Shift</b> to rotate  |  <b>Scroll</b> to zoom"
             ),
             "style": {
