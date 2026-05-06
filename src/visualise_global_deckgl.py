@@ -181,7 +181,7 @@ def render_hexagon_map(
     html = html.replace("</head>", """
 <style>
   html, body { width:100%; height:100vh; margin:0; padding:0; overflow:hidden; }
-  #deck-canvas { width:100% !important; height:100vh !important; }
+  #deck-container, #deck-container canvas { width:100% !important; height:100vh !important; }
 </style>
 <script>
   // Hold shift to rotate hint

@@ -224,6 +224,31 @@ Countries with pre-built data by default: BR, US, ZA, IN, CO, MX, AU, GB, FR, DE
 | Aves exclusion | Results do not represent total GBIF holdings | Stated explicitly in titles and tooltips; all-taxa versions available from `source_by_country.csv` |
 | WB income group | Some territories (e.g. Taiwan, Kosovo, small islands) lack WB classification | Shown as "Not classified" |
 | Precision rounding | p1 (~11km) cells may straddle country borders | Cells are attributed to whichever country polygon contains the cell centroid |
+| deck.gl v9.2 regression | HexagonLayer may not render in some browsers with pydeck 0.9.2 | Use `render_static_maps.py` for guaranteed static PNG output |
+
+---
+
+## 8. Static PNG Output
+
+If the interactive HTML maps do not render in your browser due to a deck.gl 9.2 regression, use `render_static_maps.py` to generate publication-quality static PNGs or SVGs using matplotlib.
+
+```bash
+# Render all configured maps as static PNGs
+python src/render_static_maps.py --all
+
+# Render a specific map
+python src/render_static_maps.py --map global_all --method hexbin
+
+# Scatter plot (faster, less precise)
+python src/render_static_maps.py --map br_internal --method scatter
+
+# SVG output for print
+python src/render_static_maps.py --map global_all --format svg
+```
+
+**Output**: `output/static_maps/`
+
+Available maps: `global_all`, `global_internal`, `global_external`, `br_all`, `br_internal`, `za_all`, `za_internal`, `us_all`, `us_internal`.
 
 ---
 
@@ -232,9 +257,9 @@ Countries with pre-built data by default: BR, US, ZA, IN, CO, MX, AU, GB, FR, DE
 ### Prerequisites
 
 - Python 3.11+
-- Packages: `pydeck`, `keplergl`, `duckdb`, `pandas`, `geopandas`, `shapely`, `pyarrow`
+- Packages: `pydeck`, `keplergl`, `duckdb`, `pandas`, `geopandas`, `shapely`, `pyarrow`, `matplotlib`, `playwright`
 - GBIF occurrence parquet at the path in `OCC_PATH` (external drive)
-- `MAPBOX_API_KEY` in `~/hermes-secure-runner/hermes-data/.env`
+- `MAPBOX_API_KEY` in `~/hermes-secure-runner/hermes-data/.env` (optional, for dark basemap)
 
 ### Full Pipeline
 
