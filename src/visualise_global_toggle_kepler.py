@@ -8,15 +8,15 @@ public presentations and policy audiences.
 Layers (all toggleable in sidebar):
   All Records            -- every hexbin cell
   Self-Published         -- source_type == INTERNAL only
-  High income — Internal
-  Upper-middle — Internal
-  Lower-middle — Internal
-  Low income — Internal
-  Africa — Internal
-  Americas — Internal
-  Asia — Internal
-  Europe — Internal
-  Oceania — Internal
+  High income - Internal
+  Upper-middle - Internal
+  Lower-middle - Internal
+  Low income - Internal
+  Africa - Internal
+  Americas - Internal
+  Asia - Internal
+  Europe - Internal
+  Oceania - Internal
 
 Default visible: All Records + Self-Published only (others hidden).
 
@@ -190,7 +190,7 @@ def create_toggle_map(precision: int, country: str) -> str:
     for ig, color in INCOME_LAYER_COLORS.items():
         subset = df[(df["source_type"] == "INTERNAL") & (df["wb_income_group"] == ig)].copy()
         if not subset.empty:
-            key = f"Internal — {ig}"
+            key = f"Internal - {ig}"
             datasets[key] = subset
             layers.append(_hexbin_layer(
                 str(uuid.uuid4()), key,
@@ -202,7 +202,7 @@ def create_toggle_map(precision: int, country: str) -> str:
     for region, color in UN_REGION_COLORS.items():
         subset = df[(df["source_type"] == "INTERNAL") & (df["un_region_name"] == region)].copy()
         if not subset.empty:
-            key = f"{region} — Internal"
+            key = f"{region} - Internal"
             datasets[key] = subset
             layers.append(_hexbin_layer(
                 str(uuid.uuid4()), key,
