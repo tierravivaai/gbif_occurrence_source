@@ -230,7 +230,7 @@ def main() -> None:
     parser.add_argument("--mode",       choices=["all", "internal", "external", "both"], default="both")
     parser.add_argument("--precision",  type=int,  default=0,      help="0=111km (~73K cells), 1=11km (~1M+ cells)")
     parser.add_argument("--sample",     type=int,  default=None,  help="Cap to N highest-record_count cells")
-    parser.add_argument("--radius",     type=float, default=5.0,  help="Point radius in screen pixels")
+    parser.add_argument("--radius",     type=float, default=2.0,  help="Point radius in screen pixels (default 2)")
     parser.add_argument("--viewport",   default="ALL", help="Starting viewport country code or ALL")
     args = parser.parse_args()
 
