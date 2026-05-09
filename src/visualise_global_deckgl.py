@@ -124,9 +124,17 @@ def render_hexagon_map(
 
     preset = COUNTRY_PRESETS.get(viewport.upper(), COUNTRY_PRESETS["ALL"])
 
+    # pydeck 0.8.0 JSON serialization fails on numpy dtypes; coerce to native Python
+    data["record_count"] = data["record_count"].astype(int)
+    data["lat"] = data["lat"].astype(float)
+    data["lon"] = data["lon"].astype(float)
+    for col in ["source_type", "countrycode", "country_name", "wb_income_group", "un_region_name"]:
+        if col in data.columns:
+            data[col] = data[col].astype(str)
+
     layer = pdk.Layer(
         "HexagonLayer",
-        data=data,
+        data=data.to_dict("records"),
         get_position=["lon", "lat"],
         get_weight="record_count",
         radius=radius,

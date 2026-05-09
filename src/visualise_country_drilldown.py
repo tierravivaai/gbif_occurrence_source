@@ -152,9 +152,19 @@ def render_drilldown(
         print(f"  Skipping {mode} map — no data")
         return ""
 
+    data = data.copy()
+    # pydeck 0.8.0 JSON serialization: convert DataFrame to plain Python dicts
+    data["record_count"] = data["record_count"].astype(int)
+    data["lat"] = data["lat"].astype(float)
+    data["lon"] = data["lon"].astype(float)
+    for col in ["countrycode", "country_name", "wb_income_group", "un_region_name", "un_sub_region_name"]:
+        if col in data.columns:
+            data[col] = data[col].fillna("").astype(str)
+    records = data.to_dict("records")  # native Python types only
+
     layer = pdk.Layer(
         "HexagonLayer",
-        data=data,
+        data=records,
         get_position=["lon", "lat"],
         get_weight="record_count",
         radius=preset["radius"],

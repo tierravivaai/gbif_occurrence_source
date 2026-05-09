@@ -224,7 +224,7 @@ Countries with pre-built data by default: BR, US, ZA, IN, CO, MX, AU, GB, FR, DE
 | Aves exclusion | Results do not represent total GBIF holdings | Stated explicitly in titles and tooltips; all-taxa versions available from `source_by_country.csv` |
 | WB income group | Some territories (e.g. Taiwan, Kosovo, small islands) lack WB classification | Shown as "Not classified" |
 | Precision rounding | p1 (~11km) cells may straddle country borders | Cells are attributed to whichever country polygon contains the cell centroid |
-| deck.gl v9.2 regression | HexagonLayer may not render in some browsers with pydeck 0.9.2 | Use `render_static_maps.py` for guaranteed static PNG output |
+| deck.gl v9.2 regression | pydeck 0.9.2 bundles deck.gl v9.2 which has a HexagonLayer WebGL regression | Use pydeck 0.8.0 (bundles proven deck.gl 8.x) or `render_static_maps.py` for static PNGs |
 
 ---
 
