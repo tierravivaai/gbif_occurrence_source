@@ -98,6 +98,19 @@ def _build_classification_query(precision: int, country_code: str = "") -> str:
           AND occ.occurrencestatus = 'PRESENT'
           AND occ.basisofrecord    IN ({BASIS_SQL})
           AND (occ.class != 'Aves' OR occ.class IS NULL)
+          AND (
+              -- Exclude records with known bad coordinates
+              occ.issue IS NULL
+              OR (
+                  NOT list_contains(occ.issue, 'COORDINATE_INVALID')
+                  AND NOT list_contains(occ.issue, 'COORDINATE_OUT_OF_RANGE')
+                  AND NOT list_contains(occ.issue, 'PRESUMED_NEGATED_LATITUDE')
+                  AND NOT list_contains(occ.issue, 'PRESUMED_NEGATED_LONGITUDE')
+                  AND NOT list_contains(occ.issue, 'PRESUMED_SWAPPED_COORDINATE')
+                  AND NOT list_contains(occ.issue, 'ZERO_COORDINATE')
+                  AND NOT list_contains(occ.issue, 'COUNTRY_COORDINATE_MISMATCH')
+              )
+          )
           {where_country}
         GROUP BY 1, 2, 3
         ORDER BY record_count DESC
