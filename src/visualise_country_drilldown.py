@@ -13,6 +13,9 @@ Additional filters:
   --income-group                    subset by WB income group
   --un-region                       subset by UN region
 
+Scaling options:
+  --log-scale                       Apply log10 to weights (makes low-density visible)
+
 Data requirement:
   hexbin_{cc}_no_aves_p1_enriched.parquet must exist in data/processed/.
   If missing, run: python src/aggregate_hexbin_pipeline.py --countries {CC}
@@ -21,7 +24,7 @@ Usage:
     python src/visualise_country_drilldown.py --country BR
     python src/visualise_country_drilldown.py --country ZA --filter internal
     python src/visualise_country_drilldown.py --country IN --income-group "Lower middle income"
-    python src/visualise_country_drilldown.py --country US --filter all
+    python src/visualise_country_drilldown.py --country US --filter all --log-scale
 
 Output:
     output/gbif_drilldown_{cc}_all.html
@@ -32,6 +35,7 @@ import argparse
 import os
 import sys
 
+import numpy as np
 import pandas as pd
 
 PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -126,6 +130,7 @@ def render_drilldown(
     country_code: str,
     mapbox_token: str,
     label_suffix: str = "",
+    log_scale: bool = False,
 ) -> str:
     import pydeck as pdk
 
@@ -144,6 +149,12 @@ def render_drilldown(
     if label_suffix:
         out_stem += f"_{label_suffix}"
 
+    scale_suffix = ""
+    if log_scale:
+        scale_suffix += "_log"
+    if scale_suffix:
+        out_stem += scale_suffix
+
     title = f"GBIF Species Occurrences — {cc} — {mode_label} (No Aves)"
 
     print(f"  {mode_label}: {len(data):,} cells, {data['record_count'].sum():,} records")
@@ -160,13 +171,22 @@ def render_drilldown(
     for col in ["countrycode", "country_name", "wb_income_group", "un_region_name", "un_sub_region_name"]:
         if col in data.columns:
             data[col] = data[col].fillna("").astype(str)
+
+    # Apply log scaling if requested
+    weight_col = "record_count"
+    if log_scale:
+        data["_weight_log"] = np.log10(data["record_count"].clip(lower=1))
+        weight_col = "_weight_log"
+        data[weight_col] = data[weight_col].astype(float)
+        print(f"  Log scale applied to weights")
+
     records = data.to_dict("records")  # native Python types only
 
     layer = pdk.Layer(
         "HexagonLayer",
         data=records,
         get_position=["lon", "lat"],
-        get_weight="record_count",
+        get_weight=weight_col,
         radius=preset["radius"],
         elevation_scale=50,
         elevation_range=[0, 3000],
@@ -250,6 +270,7 @@ def main() -> None:
                         default="both",  help="Source type filter")
     parser.add_argument("--income-group", default="",   help="Filter by WB income group")
     parser.add_argument("--un-region",    default="",   help="Filter by UN region")
+    parser.add_argument("--log-scale",      action="store_true", help="Apply log10 scaling to weights")
     args = parser.parse_args()
 
     cc = args.country.upper()
@@ -272,7 +293,7 @@ def main() -> None:
     modes = ["all", "internal"] if args.filter == "both" else [args.filter]
     outputs = []
     for m in modes:
-        path = render_drilldown(df, m, cc, token, label_suffix=label)
+        path = render_drilldown(df, m, cc, token, label_suffix=label, log_scale=args.log_scale)
         if path:
             outputs.append(path)
 
