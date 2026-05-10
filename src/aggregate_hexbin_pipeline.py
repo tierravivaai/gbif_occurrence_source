@@ -113,6 +113,10 @@ def _build_classification_query(precision: int, country_code: str = "") -> str:
                   AND NOT list_contains(occ.issue, 'COUNTRY_COORDINATE_MISMATCH')
               )
           )
+          -- Exclude exact poles and Null Island (default missing coordinates)
+          AND occ.decimallatitude != 90
+          AND occ.decimallatitude != -90
+          AND NOT (occ.decimallatitude = 0 AND occ.decimallongitude = 0)
           {where_country}
         GROUP BY 1, 2, 3
         ORDER BY record_count DESC
@@ -199,6 +203,17 @@ def build_global(precision: int, con: duckdb.DuckDBPyConnection) -> None:
 
     t0 = time.time()
     df_raw = con.execute(_build_classification_query(precision)).df()
+    # Drop cells that round to the exact poles or Null Island
+    before = len(df_raw)
+    df_raw = df_raw[
+        ~(
+            (df_raw["lat"].abs() == 90.0)
+            | ((df_raw["lat"] == 0.0) & (df_raw["lon"] == 0.0))
+        )
+    ].copy()
+    dropped = before - len(df_raw)
+    if dropped:
+        print(f"  Dropped {dropped:,} pole/Null-Island cells post-rounding")
     print(f"  Aggregated: {len(df_raw):,} cells in {time.time()-t0:.0f}s")
     _save(df_raw, f"hexbin_{label}")
 
@@ -213,6 +228,16 @@ def build_country(country_code: str, precision: int, con: duckdb.DuckDBPyConnect
 
     t0 = time.time()
     df_raw = con.execute(_build_classification_query(precision, country_code=country_code)).df()
+    before = len(df_raw)
+    df_raw = df_raw[
+        ~(
+            (df_raw["lat"].abs() == 90.0)
+            | ((df_raw["lat"] == 0.0) & (df_raw["lon"] == 0.0))
+        )
+    ].copy()
+    dropped = before - len(df_raw)
+    if dropped:
+        print(f"  Dropped {dropped:,} pole/Null-Island cells post-rounding")
     print(f"  Aggregated: {len(df_raw):,} cells in {time.time()-t0:.0f}s")
 
     if df_raw.empty:
