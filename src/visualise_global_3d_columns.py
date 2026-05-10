@@ -143,11 +143,12 @@ def render_3d_column_map(
     data["_color"] = data["_color_val"].apply(lambda v: _color_for_value(v, GBIF_COLORS))
 
     # --- Log-scaled elevation ---
-    # Use log10 so low-density cells get visible columns alongside giants
+    # Use log10 so low-density cells get visible columns alongside giants.
+    # Elevation range: 10–1000 (before any scale multiplier).
     log_rc = np.log10(rc.clip(1))
     min_log, max_log = log_rc.min(), log_rc.max()
     if max_log > min_log:
-        data["_elevation"] = ((log_rc - min_log) / (max_log - min_log) * 5000 + 100).astype(float)
+        data["_elevation"] = ((log_rc - min_log) / (max_log - min_log) * 990 + 10).astype(float)
     else:
         data["_elevation"] = 100.0
 
@@ -157,11 +158,11 @@ def render_3d_column_map(
         get_position=["lon", "lat"],
         get_elevation="_elevation",
         get_fill_color="_color",
-        elevation_scale=elevation_scale,
+        elevation_scale=1,       # elevation is now the actual height directly
         extruded=True,
         pickable=True,
         auto_highlight=True,
-        disk_resolution=6,   # hexagonal cross-section
+        disk_resolution=6,         # hexagonal cross-section
         radius=radius,
         coverage=1,
     )
