@@ -1,5 +1,5 @@
-wb_income_group,internal_count,external_count,unknown_count,total_count,internal_percentage,external_percentage
-High income,7971994,11238522,351,19210867,41.5,58.5
-Low income,479246,6577621,4312,7061179,6.79,93.15
-Lower middle income,1982494,10088713,67,12071274,16.42,83.58
-Upper middle income,35721033,30559334,129,66280496,53.89,46.11
+wb_income_group,internal_count,regional_count,sub_regional_count,external_count,unknown_count,total_count,internal_percentage,regional_percentage,sub_regional_percentage,external_percentage
+High income,713056746,25248161,30959261,61984295,129090,831377553,85.77,3.04,3.72,7.46
+Low income,479246,2882,441593,7493409,4345,8421475,5.69,0.03,5.24,88.98
+Lower middle income,3087738,3448435,989362,16677623,292,24203450,12.76,14.25,4.09,68.91
+Upper middle income,41438113,17422144,1466168,27797137,1130,88124692,47.02,19.77,1.66,31.54

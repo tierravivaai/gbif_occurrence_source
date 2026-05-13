@@ -1,3 +1,6 @@
-un_region_name,internal_count,external_count,unknown_count,total_count,internal_percentage,external_percentage
-Africa,4726284,19103327,4370,23833981,19.83,80.15
-Americas,41428483,39360863,489,80789835,51.28,48.72
+un_region_name,internal_count,regional_count,sub_regional_count,external_count,unknown_count,total_count,internal_percentage,regional_percentage,sub_regional_percentage,external_percentage
+Africa,4729996,1750,868298,19903384,4376,25507804,18.54,0.01,3.4,78.03
+Americas,57376999,23456110,10850728,20824128,525,112508490,51.0,20.85,9.64,18.51
+Asia,23015653,608936,719234,25392713,1063,49737599,46.27,1.22,1.45,51.05
+Europe,620197243,21279004,21104590,30537817,128844,693247498,89.46,3.07,3.04,4.41
+Oceania,52741952,775822,313534,17294422,49,71125779,74.15,1.09,0.44,24.32

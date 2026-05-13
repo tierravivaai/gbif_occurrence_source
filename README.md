@@ -82,4 +82,4 @@ Filtered the enriched data for CBD Parties and generated weighted summary statis
 ## Note on the use of AI
 
 The analysis in this repository was designed by Paul Oldham and implemented in Droid from Factory AI. The main models used in code 
-generation and testing were Gemini 3 Flash with planning performed in GPT-5.4 Codex.
+generation and testing were Gemini 3 Flash with planning performed in GPT-5.4 Codex. Subsquent work was performed in Droid using GLM5.1 from Z.ai.

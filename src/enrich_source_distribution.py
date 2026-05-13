@@ -15,7 +15,7 @@ def enrich_files():
     
     # Load overlay metadata (CBD and WB Income)
     print("Loading country overlay...")
-    con.execute(f"CREATE OR REPLACE TABLE country_overlay AS SELECT iso3c, is_cbd_party, wb_income_group FROM read_csv('{COUNTRY_OVERLAY_PATH}', ALL_VARCHAR=TRUE)")
+    con.execute(f"CREATE OR REPLACE TABLE country_overlay AS SELECT iso3c, is_cbd_party, wb_income_group, is_ldc, is_sids FROM read_csv('{COUNTRY_OVERLAY_PATH}', ALL_VARCHAR=TRUE)")
     
     files_to_enrich = [
         "source_by_country.parquet",
@@ -36,7 +36,9 @@ def enrich_files():
             SELECT 
                 c.*,
                 o.is_cbd_party,
-                o.wb_income_group
+                o.wb_income_group,
+                o.is_ldc,
+                o.is_sids
             FROM current_data c
             LEFT JOIN country_overlay o ON c.iso3c = o.iso3c
             ORDER BY c.total_count DESC

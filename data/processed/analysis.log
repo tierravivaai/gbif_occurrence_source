@@ -1,0 +1,8 @@
+Classifying occurrences (Internal vs External)...
+Generating Report A: Source by Country...
+Traceback (most recent call last):
+  File "/Users/pauloldham/Documents/gbif_country_index/src/calculate_source_distribution.py", line 94, in <module>
+    try:
+  File "/Users/pauloldham/Documents/gbif_country_index/src/calculate_source_distribution.py", line 36, in run_analysis
+    df_country = con.execute("""
+AttributeError: '_duckdb.DuckDBPyConnection' object has no attribute 'to_df'

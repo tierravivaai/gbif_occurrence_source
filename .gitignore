@@ -7,5 +7,28 @@ data-raw/*
 .factory/
 *.parquet
 *.csv
-!data/processed/*.csv
-!data/processed/source_by_country_no_aves.csv
+# Only track CSVs used by the top-level Word document (generate_cbd_report.py)
+!data/processed/cbd_parties_no_aves_development_status_summary.csv
+!data/processed/cbd_parties_no_aves_income_group_summary.csv
+!data/processed/cbd_parties_no_aves_un_region_summary.csv
+!data/processed/cbd_parties_no_aves_un_region_un_sub_region_summary.csv
+!data/processed/cbd_parties_no_aves_un_region_un_sub_region_un_intermediate_region_summary.csv
+!data/processed/cbd_parties_all_taxa_development_status_summary.csv
+!data/processed/cbd_parties_all_taxa_income_group_summary.csv
+!data/processed/cbd_parties_all_taxa_un_region_summary.csv
+!data/processed/cbd_parties_all_taxa_un_region_un_sub_region_summary.csv
+!data/processed/cbd_parties_all_taxa_un_region_un_sub_region_un_intermediate_region_summary.csv
+# Hexbin intermediate files (regenerate with scripts)
+data/processed/hexbin_*.csv
+data/processed/hexbin_*.parquet
+# GeoJSON (regenerate with scripts)
+data/processed/*.geojson
+# Large output directory
+output/
+# Archived files
+archived/
+# venv
+.venv/
+.Rhistory
+__pycache__/
+.playwright-mcp/
