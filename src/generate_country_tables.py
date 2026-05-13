@@ -19,14 +19,14 @@ def generate_country_table():
     df['is_cbd_party'] = df['is_cbd_party'].astype(str).str.lower() == 'true'
     cbd = df[df['is_cbd_party']].copy()
 
-    # Select and rename columns
+    # Select and rename columns (ISO3 dropped for readability)
     table = cbd[[
-        'country_name', 'iso3c', 'iso2c',
+        'country_name', 'iso2c',
         'un_region_name', 'un_sub_region_name',
         'wb_income_group', 'is_ldc', 'is_sids',
-        'internal_count', 'regional_count', 'external_count', 'unknown_count',
+        'internal_count', 'sub_regional_count', 'regional_count', 'external_count', 'unknown_count',
         'total_count',
-        'internal_percentage', 'regional_percentage', 'external_percentage',
+        'internal_percentage', 'sub_regional_percentage', 'regional_percentage', 'external_percentage',
     ]].copy()
 
     # Sort alphabetically by country name

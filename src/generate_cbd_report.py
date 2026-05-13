@@ -5,17 +5,36 @@ excluded as the primary dataset, because bird observation data from citizen scie
 platforms (eBird, iNaturalist) dominate the dataset and are primarily published by
 organisations in developed countries. An annex with All Taxa (including Aves) is
 provided for reference.
+
+The opening section of the report (title through ### Bird Data to ---) is read
+from the existing report.md template and preserved. Only {var} placeholders are
+filled. The data sections and annexes are generated from CSV summaries.
+Methods are read from methods.md and appended as an annex.
 """
 
 import csv
 import os
+import re
 from datetime import date
 
 PROCESSED_DIR = "data/processed"
 OUTPUT_PATH = "CBD_Publisher_Country_Share_Report.md"
+TEMPLATE_PATH = "CBD_Publisher_Country_Share_Report_template.md"
+METHODS_PATH = "methods.md"
 
-DATA_SOURCE_CITATION = "GBIF.org (1 June 2025) GBIF Occurrence Download https://doi.org/10.15468/dl.jsevhc, downloaded 1 January 2026."
-SNAPSHOT_LABEL = "2026"
+DATA_SOURCE_CITATION = "GBIF.org (1 April 2026) GBIF Occurrence Download https://doi.org/10.15468/dl.9z6p8m"
+SNAPSHOT_LABEL = "April 2026"
+
+# Template variable values — update when running against a new snapshot
+VARS = {
+    "Sys Data": "22 April 2026",
+    "occurrence citations": "[DOI 10.15468/dl.9z6p8m](https://doi.org/10.15468/dl.9z6p8m)",
+    # Snapshot counts (April 2026 S3 open data: 3.58B; DOI full download: 3.77B)
+    "aves_total_billion": "2.2",
+    "aves_percentage": "61.9",
+    "current_snapshot_total_billion": "3.6",
+    "ref_snapshot_total_billion": "3.17",
+}
 
 # File registry
 NO_AVES_FILES = {
@@ -73,16 +92,48 @@ def _render_table(col_specs, rows):
             _cell(row.get(spec[1], ""), is_pct=spec[2])
             for spec in col_specs
         ) + " |")
+    # Add total row
+    total_row = {}
+    for spec in col_specs:
+        key = spec[1]
+        is_pct = spec[2]
+        if is_pct:
+            # Calculate percentage from totals
+            if key == "internal_percentage" and "internal_count" in total_row and "total_count" in total_row:
+                total_row[key] = round(100.0 * total_row["internal_count"] / total_row["total_count"], 2) if total_row["total_count"] > 0 else 0
+            elif key == "sub_regional_percentage" and "sub_regional_count" in total_row and "total_count" in total_row:
+                total_row[key] = round(100.0 * total_row["sub_regional_count"] / total_row["total_count"], 2) if total_row["total_count"] > 0 else 0
+            elif key == "regional_percentage" and "regional_count" in total_row and "total_count" in total_row:
+                total_row[key] = round(100.0 * total_row["regional_count"] / total_row["total_count"], 2) if total_row["total_count"] > 0 else 0
+            elif key == "external_percentage" and "external_count" in total_row and "total_count" in total_row:
+                total_row[key] = round(100.0 * total_row["external_count"] / total_row["total_count"], 2) if total_row["total_count"] > 0 else 0
+        else:
+            # Sum numeric columns, leave label columns blank for "Total" row
+            if key in ("internal_count", "sub_regional_count", "regional_count", "external_count", "unknown_count", "total_count"):
+                total_row[key] = sum(int(row.get(key, 0) or 0) for row in rows)
+    total_cells = []
+    for spec in col_specs:
+        key = spec[1]
+        is_pct = spec[2]
+        if key in total_row:
+            total_cells.append(_cell(total_row[key], is_pct=is_pct))
+        elif spec == col_specs[0]:
+            total_cells.append("**Total**")
+        else:
+            total_cells.append("")
+    table.append("| " + " | ".join(total_cells) + " |")
     return "\n".join(table)
 
 
 _COUNT_COLS = [
     ("Internal Count", "internal_count", False),
+    ("Sub-regional Count", "sub_regional_count", False),
     ("Regional Count", "regional_count", False),
     ("External Count", "external_count", False),
     ("Unknown Count", "unknown_count", False),
     ("Total Count", "total_count", False),
     ("Internal %", "internal_percentage", True),
+    ("Sub-regional %", "sub_regional_percentage", True),
     ("Regional %", "regional_percentage", True),
     ("External %", "external_percentage", True),
 ]
@@ -123,16 +174,17 @@ def _income_table(rows):
 def _country_table(rows):
     col_specs = [
         ("Country", "country_name", False),
-        ("ISO3", "iso3c", False),
         ("UN Region", "un_region_name", False),
         ("Income Group", "wb_income_group", False),
         ("LDC", "is_ldc", False),
         ("SIDS", "is_sids", False),
         ("Internal", "internal_count", False),
+        ("Sub-regional", "sub_regional_count", False),
         ("Regional", "regional_count", False),
         ("External", "external_count", False),
         ("Total", "total_count", False),
         ("Int %", "internal_percentage", True),
+        ("Sub-reg %", "sub_regional_percentage", True),
         ("Reg %", "regional_percentage", True),
         ("Ext %", "external_percentage", True),
         ("Flags", "data_flags", False),
@@ -147,52 +199,101 @@ def _section(data, key, renderer_fn):
     return [renderer_fn(rows), ""]
 
 
-def generate_report(output_path=OUTPUT_PATH):
+def _read_template(path):
+    """Read the opening section of the report (everything up to and including the
+    first '---' after a heading containing 'Bird'). Fills {var} placeholders."""
+    with open(path, "r", encoding="utf-8") as f:
+        content = f.read()
+
+    # Find the --- that separates the opening section from the data sections.
+    # The opening section runs from the start through the '---' after ### Bird Data.
+    # Strategy: find the LAST '---' that appears before Section 2.
+    # We look for the pattern: a line that is just '---' followed by a blank line
+    # and then '## 2.' — this is the separator we want.
+    lines = content.split("\n")
+
+    # Find all '---' lines
+    hr_indices = [i for i, line in enumerate(lines) if line.strip() == "---"]
+
+    # The opening section ends at the --- that comes AFTER the Bird Data heading
+    # and BEFORE the data sections. We find the --- after the ### Bird heading
+    # and before the data tables.
+    bird_heading_idx = None
+    for i, line in enumerate(lines):
+        if "Bird Data" in line and line.strip().startswith("###"):
+            bird_heading_idx = i
+            break
+
+    if bird_heading_idx is None:
+        raise ValueError("Could not find '### Bird Data' heading in template")
+
+    # Find the first --- after the Bird Data heading
+    split_idx = None
+    for idx in hr_indices:
+        if idx > bird_heading_idx:
+            split_idx = idx
+            break
+
+    if split_idx is None:
+        raise ValueError("Could not find '---' separator after Bird Data section")
+
+    opening_lines = lines[:split_idx + 1]  # Include the --- line
+
+    # Fill {var} placeholders
+    opening_text = "\n".join(opening_lines)
+    for key, value in VARS.items():
+        opening_text = opening_text.replace("{" + key + "}", value)
+
+    return opening_text
+
+
+def _read_methods(path=METHODS_PATH):
+    """Read methods.md and fill {var} placeholders."""
+    methods_vars = {
+        "insert date of current snapshot": "1 April 2026",
+    }
+    with open(path, "r", encoding="utf-8") as f:
+        content = f.read()
+    # Replace numbered {var} placeholders in order of appearance
+    # Pattern: {var} followed by optional unit like % or billion
+    # We need context-dependent replacement, so we do it carefully:
+    # "roughly {var}% of {var} billion" for the reference snapshot
+    # "roughly {var}% of {var} billion" for the current snapshot
+    content = content.replace("{insert date of current snapshot}", "1 April 2026")
+
+    # Replace remaining {var} placeholders with snapshot-specific values
+    # The methods.md has specific patterns like "roughly {var}% of {var} billion"
+    # Reference snapshot: ~43M of 3.17B → 1.36% of 3.17 billion
+    content = content.replace(
+        "roughly {var}% of {var} billion) had no occurrence country code",
+        "roughly 1.36% of 3.17 billion) had no occurrence country code",
+    )
+    # Current snapshot: ~45.6M of 3.58B → 1.27%
+    content = content.replace(
+        "roughly {var}% of {var} billion had no occurrence country code",
+        "roughly 1.27% of 3.58 billion had no occurrence country code",
+    )
+
+    return content
+
+
+def generate_report(output_path=OUTPUT_PATH, template_path=TEMPLATE_PATH):
     no_aves = {key: _read_csv(fname) for key, fname in NO_AVES_FILES.items()}
     all_taxa = {key: _read_csv(fname) for key, fname in ALL_TAXA_FILES.items()}
 
-    lines = [
-        "# CBD Parties Publisher Country Share Report",
-        "",
-        f"_Generated: {date.today().isoformat()} | Snapshot: {SNAPSHOT_LABEL}_",
-        "",
-        "## 1. Introduction",
-        "",
-        "This report examines the geographic origin of data publishing for countries that are Parties to the Convention on Biological Diversity (CBD). "
-        "Each occurrence record in the GBIF dataset is classified as:",
-        "",
-        "- **Internal**: The record was published by an organisation based in the same country as the occurrence.",
-        "- **Regional**: The record was published by an organisation in a different country within the same UN region (e.g. a US-published record for Canada is Regional, not External, because both are in the Americas).",
-        "- **External**: The record was published by an organisation in a different UN region from the occurrence.",
-        "- **Unknown**: The publisher's country could not be resolved from the GBIF registry.",
-        "",
-        "**Note on coverage:** Approximately 43 million records in the GBIF dataset (roughly 1.2% of 3.7 billion) have no occurrence country code and therefore cannot be assigned to any CBD Party. These records are excluded from the analysis.",
-        "",
-        f"**Data Source:** {DATA_SOURCE_CITATION}",
-        "",
-        "### Why Birds (Aves) are Excluded from the Primary Analysis",
-        "",
-        "Bird observation data (Class Aves) accounts for approximately 2 billion of the 3.7 billion records in the GBIF dataset (64%). "
-        "This data is overwhelmingly generated by citizen science platforms — principally **eBird** (Cornell Lab of Ornithology, US) and **iNaturalist** (US) — "
-        "which are based in developed countries. Because these platforms are classified as publishers in the country where the organisation is registered, "
-        "bird records for any country are counted as externally published, even when the observations are submitted by in-country citizen scientists.",
-        "",
-        "This creates a systematic bias: the internal publishing percentage for countries with large citizen-science bird datasets is artificially depressed, "
-        "while countries with domestic bird organisations (e.g. South Africa's FitzPatrick Institute) appear to have higher internal shares. "
-        "The effect is particularly pronounced for biodiverse developing countries that have extensive eBird coverage but few domestic GBIF publishers.",
-        "",
-        "For this reason, **the primary analysis in this report excludes Class Aves**. An annex with Aves (Birds) data is provided for reference, "
-        "but the Excluding Birds data should be used for policy analysis concerning gaps in taxonomic capacity and domestic data publishing infrastructure.",
-        "",
-        "---",
-        "",
-        "## 2. Source Distribution (Excluding Birds)",
-        "",
-        "### 2.1 By UN Region",
-        "",
-    ]
+    # Step 1: Read the opening section from the existing report (preserving hand-edits)
+    opening = _read_template(template_path)
+
+    # Step 2: Generate data sections
+    lines = []
+    lines.append("")  # blank line after the --- separator
+
+    lines.append("## 2. Source Distribution (Excluding Birds)")
+    lines.append("")
+
+    lines.append("### 2.1 By UN Region")
+    lines.append("")
     lines.extend(_section(no_aves, "un_region", _region_table))
-    # Add interpretive text
     lines.extend([
         "Europe dominates internal publishing, while Africa and the Americas have the majority of their biodiversity data published by organisations based elsewhere.",
         "",
@@ -235,7 +336,7 @@ def generate_report(output_path=OUTPUT_PATH):
     ])
 
     # Country table
-    import sys, importlib
+    import sys
     sys.path.insert(0, os.path.dirname(__file__))
     from generate_country_tables import generate_country_table
     country_df = generate_country_table()
@@ -243,9 +344,10 @@ def generate_report(output_path=OUTPUT_PATH):
     lines.append("### 2.6 Per-Country Table (Alphabetical)")
     lines.append("")
     lines.append("LDC = Least Developed Country. SIDS = Small Island Developing State. "
-                 "Int % = Internal publishing percentage (same country). "
-                 "Reg % = Regional publishing percentage (same UN region, different country). "
-                 "Ext % = External publishing percentage (different UN region). "
+                 "Int % = Internal (same country). "
+                 "Sub-reg % = Sub-regional (same UN sub-region, different country). "
+                 "Reg % = Regional (same UN region, different sub-region). "
+                 "Ext % = External (different UN region). "
                  "Flags indicate data quality concerns.")
     lines.append("")
     lines.append(_country_table(country_rows))
@@ -257,28 +359,9 @@ def generate_report(output_path=OUTPUT_PATH):
         "",
         "- **Developing countries publish a minority of their own biodiversity data internally.** The majority of records for developing CBD Parties are published by organisations based in other countries.",
         "- **Low and lower-middle income countries are almost entirely dependent on external publishers**, with very low internal shares.",
-        "- **Europe is the only region where internal publishing dominates** (excluding Aves). When including regional (same-UN-region) publishing, the picture changes significantly: the Americas has 51% internal + regional publishing combined, meaning only 49% of data is published from outside the region. Africa has 19% internal + regional, with 81% published from outside the region.",
+        "- **Europe is the only region where internal publishing dominates** (excluding Aves). When including sub-regional and regional publishing, the picture changes: the Americas has 51% internal + sub-regional + regional combined, meaning only 49% of data is published from outside the region. However, much of this is cross-sub-regional (e.g. US-published records for LAC countries). At the tighter sub-regional level, internal + sub-regional within LAC is lower. Africa has 19% internal + sub-regional + regional, with 81% published from outside the region.",
         "- **Southern Africa is an outlier within Africa**, with higher internal publishing compared to Eastern and Middle Africa.",
         "- **Excluding Aves provides a more accurate picture of domestic taxonomic capacity.** Including Aves data systematically depresses internal publishing percentages for countries with extensive citizen-science coverage, as these records are classified under the publisher's country (typically a developed country).",
-        "",
-        "---",
-        "",
-        "## 4. Methodology",
-        "",
-        "For full methodology details, see [README.md](README.md).",
-        "",
-        "In summary:",
-        "",
-        "1. The GBIF registry was downloaded and a local lookup table (`data/gbif_registry_lookup.parquet`) was built mapping `publishingorgkey` to `resolved_country`.",
-        "2. Each occurrence record was classified as Internal (publisher country = occurrence country) or External (publisher country differs) or Unknown (no registry match).",
-        "3. Results were enriched with UN regional, development status, and World Bank income group metadata.",
-        "4. CBD party records were filtered and aggregated into the summary tables used in this report.",
-        "",
-        "**Processing scripts:**",
-        "- `src/calculate_source_distribution.py` — Source classification and aggregation",
-        "- `src/create_registry_lookup.py` — Registry reconciliation",
-        "- `src/enrich_source_distribution.py` — Metadata enrichment",
-        "- `src/analyze_cbd_parties.py` — CBD Parties summaries",
         "",
         "---",
         "",
@@ -312,7 +395,7 @@ def generate_report(output_path=OUTPUT_PATH):
     lines.append("")
     lines.extend(_section(all_taxa, "income_group", _income_table))
 
-    # Source data listing
+    # Step 3: Source data listing
     lines.extend([
         "",
         "---",
@@ -326,14 +409,22 @@ def generate_report(output_path=OUTPUT_PATH):
     for fname in all_source_files:
         lines.append(f"- `data/processed/{fname}`")
 
+    # Step 4: Append methods.md as Annex B
+    methods_content = _read_methods()
     lines.extend([
+        "",
+        "",
+        methods_content.strip(),
         "",
         f"**Data Source:** {DATA_SOURCE_CITATION}",
         f"**Generated:** {date.today().isoformat()}",
     ])
 
+    # Step 5: Combine opening + data sections
+    full_report = opening + "\n".join(lines) + "\n"
+
     with open(output_path, "w", encoding="utf-8") as f:
-        f.write("\n".join(lines) + "\n")
+        f.write(full_report)
 
     print(f"CBD Publisher Country Share Report written to {output_path}")
 

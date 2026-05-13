@@ -19,7 +19,8 @@ def run_analysis():
 
     # 1. Base classification table (In-Memory)
     # source_type: INTERNAL (same country), REGIONAL (different country, same UN region), EXTERNAL (different UN region), UNKNOWN
-    print("Classifying occurrences (Internal / Regional / External / Unknown)...")
+    # sub_regional_type: same as source_type but REGIONAL uses UN sub-region instead of UN region
+    print("Classifying occurrences (Internal / Regional / Sub-regional / External / Unknown)...")
     con.execute(f"""
         CREATE OR REPLACE VIEW occurrence_classification AS
         SELECT 
@@ -31,7 +32,15 @@ def run_analysis():
                 WHEN occ.countrycode = reg.resolved_country THEN 'INTERNAL'
                 WHEN occ_region.un_region_name = pub_region.un_region_name THEN 'REGIONAL'
                 ELSE 'EXTERNAL'
-            END as source_type
+            END as source_type,
+            CASE 
+                WHEN reg.resolved_country IS NULL THEN 'UNKNOWN'
+                WHEN occ.countrycode = reg.resolved_country THEN 'INTERNAL'
+                WHEN COALESCE(occ_region.un_sub_region_name, '') != '' 
+                     AND occ_region.un_sub_region_name = pub_region.un_sub_region_name THEN 'SUB_REGIONAL'
+                WHEN occ_region.un_region_name = pub_region.un_region_name THEN 'REGIONAL'
+                ELSE 'EXTERNAL'
+            END as sub_source_type
         FROM read_parquet('{OCC_PATH}') occ
         LEFT JOIN (
             SELECT original_key, resolved_country 
@@ -44,11 +53,13 @@ def run_analysis():
     
     _COUNT_SQL = """
         count(*) filter (where source_type = 'INTERNAL') as internal_count,
-        count(*) filter (where source_type = 'REGIONAL') as regional_count,
+        count(*) filter (where sub_source_type = 'SUB_REGIONAL') as sub_regional_count,
+        count(*) filter (where sub_source_type = 'REGIONAL') as regional_count,
         count(*) filter (where source_type = 'EXTERNAL') as external_count,
         count(*) filter (where source_type = 'UNKNOWN') as unknown_count,
         count(*) as total_count,
         round(100.0 * internal_count / total_count, 2) as internal_percentage,
+        round(100.0 * sub_regional_count / total_count, 2) as sub_regional_percentage,
         round(100.0 * regional_count / total_count, 2) as regional_percentage,
         round(100.0 * external_count / total_count, 2) as external_percentage
     """
@@ -58,11 +69,13 @@ def run_analysis():
             m.*,
             c.internal_count,
             c.regional_count,
+            c.sub_regional_count,
             c.external_count,
             c.unknown_count,
             c.total_count,
             c.internal_percentage,
             c.regional_percentage,
+            c.sub_regional_percentage,
             c.external_percentage
     """
 
@@ -105,11 +118,13 @@ def run_analysis():
             c.kingdom,
             c.internal_count,
             c.regional_count,
+            c.sub_regional_count,
             c.external_count,
             c.unknown_count,
             c.total_count,
             c.internal_percentage,
             c.regional_percentage,
+            c.sub_regional_percentage,
             c.external_percentage
         FROM (
             SELECT countrycode, kingdom, {_COUNT_SQL}
@@ -130,11 +145,13 @@ def run_analysis():
             c.kingdom,
             c.internal_count,
             c.regional_count,
+            c.sub_regional_count,
             c.external_count,
             c.unknown_count,
             c.total_count,
             c.internal_percentage,
             c.regional_percentage,
+            c.sub_regional_percentage,
             c.external_percentage
         FROM (
             SELECT countrycode, kingdom, {_COUNT_SQL}

@@ -14,7 +14,43 @@ DOCX_PATH = "CBD_Publisher_Country_Share_Report.docx"
 
 
 def _add_formatted_runs(paragraph, text):
-    """Parse inline markdown formatting (bold, italic, code) into runs."""
+    """Parse inline markdown formatting (bold, italic, code, links) into runs."""
+    # Handle links first: [text](url)
+    link_pattern = r'\[([^\]]+)\]\(([^)]+)\)'
+    last = 0
+    for m in re.finditer(link_pattern, text):
+        # Add any text before the link
+        before = text[last:m.start()]
+        if before:
+            _add_inline_runs(paragraph, before)
+        # Add hyperlink
+        _add_hyperlink(paragraph, m.group(1), m.group(2))
+        last = m.end()
+    # Add remaining text after last link
+    remaining = text[last:]
+    if remaining:
+        _add_inline_runs(paragraph, remaining)
+
+
+def _add_hyperlink(paragraph, text, url):
+    """Add a clickable hyperlink to a paragraph."""
+    part = paragraph.part
+    r_id = part.relate_to(url, 'http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink', is_external=True)
+    hyperlink = parse_xml(
+        f'<w:hyperlink {nsdecls("w")} r:id="{r_id}" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"/>'
+    )
+    new_run = parse_xml(
+        f'<w:r {nsdecls("w")}>'
+        f'<w:rPr><w:color w:val="0563C1"/><w:u w:val="single"/></w:rPr>'
+        f'<w:t xml:space="preserve">{text}</w:t>'
+        f'</w:r>'
+    )
+    hyperlink.append(new_run)
+    paragraph._p.append(hyperlink)
+
+
+def _add_inline_runs(paragraph, text):
+    """Parse bold, italic, code formatting into runs."""
     parts = re.split(r'(\*\*.*?\*\*|\*.*?\*|`[^`]+`)', text)
     for part in parts:
         if part.startswith('**') and part.endswith('**'):
@@ -47,7 +83,7 @@ def _parse_table_rows(lines, start_idx):
 
 
 def _add_table(doc, rows):
-    """Add a Word table from parsed row data. Black and white styling throughout."""
+    """Add a Word table from parsed row data. Light grey header, alternating body rows."""
     if not rows:
         return
     ncols = len(rows[0])
@@ -66,19 +102,19 @@ def _add_table(doc, rows):
             p.paragraph_format.space_after = Pt(1)
 
             if i == 0:
-                # Header row: black background, white text, bold
+                # Header row: light grey background, dark text, bold
                 run = p.add_run(cell_text)
                 run.bold = True
-                run.font.size = Pt(9)
-                run.font.color.rgb = RGBColor(0xFF, 0xFF, 0xFF)
-                shading = parse_xml(f'<w:shd {nsdecls("w")} w:fill="000000"/>')
+                run.font.size = Pt(8)
+                run.font.color.rgb = RGBColor(0x33, 0x33, 0x33)
+                shading = parse_xml(f'<w:shd {nsdecls("w")} w:fill="D9D9D9"/>')
                 cell._tc.get_or_add_tcPr().append(shading)
             else:
                 # Body row: white background, black text
                 run = p.add_run(cell_text)
-                run.font.size = Pt(9)
+                run.font.size = Pt(8)
                 run.font.color.rgb = RGBColor(0x00, 0x00, 0x00)
-                # Alternating row shading (light grey for even rows)
+                # Alternating row shading (lighter grey for even rows)
                 if i % 2 == 0:
                     shading = parse_xml(f'<w:shd {nsdecls("w")} w:fill="F2F2F2"/>')
                     cell._tc.get_or_add_tcPr().append(shading)

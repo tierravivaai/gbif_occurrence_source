@@ -26,6 +26,7 @@ def generate_summaries(df, prefix):
         summary = df.groupby(group, dropna=False).agg({
             'internal_count': 'sum',
             'regional_count': 'sum',
+            'sub_regional_count': 'sum',
             'external_count': 'sum',
             'unknown_count': 'sum',
             'total_count': 'sum'
@@ -34,6 +35,7 @@ def generate_summaries(df, prefix):
         # Calculate percentages on aggregated totals
         summary['internal_percentage'] = round(100.0 * summary['internal_count'] / summary['total_count'], 2)
         summary['regional_percentage'] = round(100.0 * summary['regional_count'] / summary['total_count'], 2)
+        summary['sub_regional_percentage'] = round(100.0 * summary['sub_regional_count'] / summary['total_count'], 2)
         summary['external_percentage'] = round(100.0 * summary['external_count'] / summary['total_count'], 2)
         
         # Determine filename based on grouping
@@ -60,6 +62,7 @@ def run_cbd_analysis():
     df_no_aves_country = df_no_aves.groupby(['iso2c', 'iso3c', 'country_name', 'un_region_name', 'un_sub_region_name', 'un_intermediate_region_name', 'un_developed_or_developing_countries', 'wb_income_group', 'is_cbd_party'], dropna=False).agg({
         'internal_count': 'sum',
         'regional_count': 'sum',
+        'sub_regional_count': 'sum',
         'external_count': 'sum',
         'unknown_count': 'sum',
         'total_count': 'sum'

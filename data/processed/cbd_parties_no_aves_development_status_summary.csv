@@ -1,3 +1,3 @@
-un_developed_or_developing_countries,internal_count,regional_count,external_count,unknown_count,total_count,internal_percentage,regional_percentage,external_percentage
-Developed,704875875,52318807,54211027,128938,811534647,86.86,6.45,6.68
-Developing,53185968,27659199,59741437,5919,140592523,37.83,19.67,42.49
+un_developed_or_developing_countries,internal_count,regional_count,sub_regional_count,external_count,unknown_count,total_count,internal_percentage,regional_percentage,sub_regional_percentage,external_percentage
+Developed,704875875,21324932,30993875,54211027,128938,811534647,86.86,2.63,3.82,6.68
+Developing,53185968,24796690,2862509,59741437,5919,140592523,37.83,17.64,2.04,42.49
